@@ -1,0 +1,3 @@
+All UniStorm Documentation can be found under the UniStorm drop down menu window above within Unity. 
+Window>UniStorm>Documentation>
+All names will bring you to our official UniStorm Wiki website. This site is constantly being updated with new information and material. It contains tutorials, code references, code examples, solutions to possible issues, patch notes, and more.
