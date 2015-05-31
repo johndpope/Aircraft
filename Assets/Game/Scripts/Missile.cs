@@ -1,18 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityStandardAssets.Utility;
 public class Missile : Entity {
 	public float damage=500;
 	public GameObject boom;
 	public ParticleSystem smoke;
 	public float dropDuration=1;
+
 	private Rigidbody body;
 	public float speed=100;
 	public Entity target;
+
+	public float lifeTimer;
+	public float lifeTime=10;
+
+
+
 	public Transform startTransform;
 	public Transform targetTransform;
 
+	public float homingAngle=90;
 
+	void Awake(){
+
+		body=this.GetComponent<Rigidbody>();
+	}
 	public void OnCollisionEnter(){
 
 		Expolde();
@@ -49,7 +61,6 @@ public class Missile : Entity {
 	private Vector3 originPos;
 	public IEnumerator DoFire(){
 		Collider col=this.GetComponent<Collider>();
-		Rigidbody body=this.GetComponent<Rigidbody>();
 		col.enabled=false;
 
 		originForward=transform.forward;
@@ -58,24 +69,44 @@ public class Missile : Entity {
 
 		col.enabled=true;
 
-
-
-
-
+//		yield return new WaitForSeconds(homingDuration);
+//		GetComponent<WaypointProgressTracker>().enabled=false;
+//		target=null;
 
 	}
 
 	void Update(){
+		if (lifeTimer<lifeTime){
+			lifeTimer+=Time.deltaTime;
+		}
+		else{
+			Destroy(this.gameObject);
+		}
+
+
+//		Debug.Log(body.velocity.magnitude);
+//		if (body.velocity.magnitude>300){
+//			target=null;
+//		}
 
 		if (target!=null){
-			startTransform.position=transform.position;
 //			startTransform.position=originPos;
+			startTransform.position=transform.position;
+
 			targetTransform.position=target.transform.position;
 		}
 		else{
 //			startTransform.position=originPos;
 			startTransform.position=transform.position;
 			targetTransform.position=startTransform.position+originForward*10000;
+		}
+
+		Vector3 dir=targetTransform.position-startTransform.position;
+		float angle=Vector3.Angle(dir,body.velocity);
+//		Debug.Log(angle);
+		if (angle>homingAngle ){
+			originForward=transform.forward;
+			target=null;
 		}
 
 //		Vector3 dir=transform.forward;
