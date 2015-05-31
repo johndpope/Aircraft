@@ -5,6 +5,7 @@ public class Missile : Entity {
 	public float damage=500;
 	public GameObject boom;
 	public ParticleSystem smoke;
+	public TrailRenderer trail;
 	public float dropDuration=1;
 
 	private Rigidbody body;
@@ -20,6 +21,8 @@ public class Missile : Entity {
 	public Transform targetTransform;
 
 	public float homingAngle=90;
+
+	public float explodeRadius=10;
 
 	void Awake(){
 
@@ -38,10 +41,20 @@ public class Missile : Entity {
 
 		}
 
+		Collider[] hitCol=Physics.OverlapSphere(transform.position,explodeRadius);
+		for (int i=0;i<hitCol.Length;i++){
+			if (hitCol[i].CompareTag("AttackTarget")){
+				Entity ent=hitCol[i].GetComponent<Entity>();
+				ent.Hurt(damage);
+			}
+		}
+
 		smoke.transform.SetParent(null);
 		smoke.Stop();
 		GameManager.Instance().StartCoroutine(DoExplode() );
 		Destroy(this.gameObject);
+
+
 	}
 
 	public IEnumerator DoExplode(){

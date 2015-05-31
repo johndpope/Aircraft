@@ -6,7 +6,7 @@ public class Entity : MonoBehaviour {
 	public float hp=100;
 	public float maxHP=100;
 	public BasePlayer player;
-	public bool isAlive=true;
+	public bool alive=true;
 
 	public BasePlayer Player {
 		get {
@@ -25,7 +25,7 @@ public class Entity : MonoBehaviour {
 	}
 
 	public virtual void Die(){
-
+		alive=false;
 	}
 
 

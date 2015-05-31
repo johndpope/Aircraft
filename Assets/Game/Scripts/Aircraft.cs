@@ -19,23 +19,26 @@ public class Aircraft : Entity {
 			boomObj.transform.position=transform.position;
 			
 		}
-		Destroy(this.gameObject);
+//		Destroy(this.gameObject);
 	}
 	
 	public void OnCollisionEnter(){
-		
-		Expolde();
+		if (alive){
+			Die();
+		}
 	}
 
 	public override void Die(){
 		base.Die();
-		aiController.enabled=false;
+		if (aiController!=null){
+			aiController.enabled=false;
+		}
+
+		plane.Immobilize();
+//		plane.enabled=false;
 //		aiController.
 //		plane.=0;
-		if (boom!=null){
-			GameObject boomObj=Instantiate(boom);
-			boomObj.transform.position=transform.position;
-		}
+		Expolde();
 	}
 
 
