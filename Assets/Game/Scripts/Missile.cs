@@ -41,6 +41,7 @@ public class Missile : Entity {
 
 	public void Fire(){
 		StartCoroutine(DoFire());
+
 //		GetComponent<UnityStandardAssets.Utility.WaypointProgressTracker>().cir =EnemyManager.Instance().path;
 	}
 
@@ -67,13 +68,13 @@ public class Missile : Entity {
 	void Update(){
 
 		if (target!=null){
-//			startTransform.position=transform.position;
-			startTransform.position=originPos;
+			startTransform.position=transform.position;
+//			startTransform.position=originPos;
 			targetTransform.position=target.transform.position;
 		}
 		else{
-			startTransform.position=originPos;
-//			startTransform.position=transform.position;
+//			startTransform.position=originPos;
+			startTransform.position=transform.position;
 			targetTransform.position=startTransform.position+originForward*10000;
 		}
 

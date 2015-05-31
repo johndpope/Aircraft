@@ -12,7 +12,7 @@ public class MissileLauncher : WeaponObject {
 			missile.transform.position=transform.position+new Vector3(0,0,0);
 			missile.target=target;
 			missile.Fire ();
-//			missile.GetComponent<Rigidbody>().velocity=owner.GetComponent<Rigidbody>().velocity;
+			missile.GetComponent<Rigidbody>().velocity=owner.GetComponent<Rigidbody>().velocity;
 		}
 	}
 
