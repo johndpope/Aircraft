@@ -46,6 +46,7 @@ public class Missile : Entity {
 			if (hitCol[i].CompareTag("AttackTarget")){
 				Entity ent=hitCol[i].GetComponent<Entity>();
 				ent.Hurt(damage);
+				GameManager.Instance().ShowLog("missile hits: "+ent.gameObject.name,2);
 			}
 		}
 

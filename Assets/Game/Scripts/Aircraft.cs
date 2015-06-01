@@ -6,10 +6,12 @@ public class Aircraft : Entity {
 
 	public AeroplaneAiControl aiController;
 	public AeroplaneController plane;
+	private Rigidbody body;
 
 	void Awake(){
 		aiController=GetComponent<AeroplaneAiControl>();
 		plane=GetComponent<AeroplaneController>();
+		body=GetComponent<Rigidbody>();
 	}
 
 	public void Expolde(){
@@ -26,6 +28,10 @@ public class Aircraft : Entity {
 		if (alive){
 			Die();
 		}
+	}
+
+	public override Vector3 GetPredictPos(){
+		return transform.position+body.velocity;
 	}
 
 	public override void Die(){

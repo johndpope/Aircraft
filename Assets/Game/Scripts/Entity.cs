@@ -28,5 +28,8 @@ public class Entity : MonoBehaviour {
 		alive=false;
 	}
 
+	public virtual Vector3 GetPredictPos(){
+		return transform.position;
+	}
 
 }
