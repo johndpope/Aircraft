@@ -26,9 +26,9 @@ public class Aircraft : Entity {
 		Destroy(this.gameObject);
 	}
 	
-	public void OnCollisionEnter(){
+	public void OnCollisionEnter(Collision _collision){
 		if (alive){
-			Die();
+//			Die();
 		}
 	}
 

@@ -28,12 +28,20 @@ public class Missile : Entity {
 
 		body=this.GetComponent<Rigidbody>();
 	}
-	public void OnCollisionEnter(){
 
-		Expolde();
+	public void OnCollisionEnter(Collision _collision){
+		if (_collision.collider.CompareTag("AttackTarget") ){
+			Entity ent=_collision.collider.GetComponent<Entity>();
+			if (ent.player.flag!=player.flag){
+				Explode();
+			}
+		}
+		else{
+			Explode();
+		}
 	}
 
-	public void Expolde(){
+	public void Explode(){
 
 		if (boom!=null){
 			GameObject boomObj=Instantiate(boom);

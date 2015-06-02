@@ -7,6 +7,7 @@ public class WeaponObject : MonoBehaviour {
 	public float detectRange=50;
 	public float detectAngle=180;
 	public Entity target;
+	public Transform bulletTransform;
 
 	public void Dectect(){
 		
