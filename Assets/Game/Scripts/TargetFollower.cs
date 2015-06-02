@@ -11,7 +11,7 @@ public class TargetFollower : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		if (target!=null){
 			transform.position=target.position+offset;
 		}

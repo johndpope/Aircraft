@@ -12,7 +12,7 @@ public class CameraFollower : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 		if (target!=null){
 			transform.rotation=target.rotation;
 			transform.position=target.TransformPoint(offset);
