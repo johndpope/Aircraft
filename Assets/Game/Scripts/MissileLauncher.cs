@@ -9,7 +9,7 @@ public class MissileLauncher : WeaponObject {
 		if (missilePrefab!=null){
 			Missile missile=Instantiate(missilePrefab);
 			missile.transform.rotation=transform.rotation;
-			missile.transform.position=transform.position+new Vector3(0,0,0);
+			missile.transform.position=transform.TransformPoint(new Vector3(0,-5,0) );
 			missile.target=target;
 			missile.Fire ();
 			missile.player=owner.player;

@@ -21,7 +21,9 @@ public class Aircraft : Entity {
 			boomObj.transform.position=transform.position;
 			
 		}
-//		Destroy(this.gameObject);
+
+//		body.isKinematic=true;
+		Destroy(this.gameObject);
 	}
 	
 	public void OnCollisionEnter(){
