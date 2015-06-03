@@ -45,7 +45,7 @@ public class Missile : Entity {
 
 		if (boom!=null){
 			GameObject boomObj=Instantiate(boom);
-			boomObj.transform.position=transform.position;
+			boomObj.transform.position=body.position;
 
 		}
 
