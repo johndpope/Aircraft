@@ -7,6 +7,7 @@ public class LoopSE : MonoBehaviour {
 	public float loopStartTime;
 	public float loopEndTime;
 	public bool isLoop=false;
+	public bool isPlaying=false;
 	
 	private AudioSource SEAudioSource;
 
@@ -17,6 +18,7 @@ public class LoopSE : MonoBehaviour {
 		
 		SEAudioSource.loop=true;
 		isLoop = false;
+		isPlaying = false;
 	}
 	
 	// Update is called once per frame
@@ -29,13 +31,18 @@ public class LoopSE : MonoBehaviour {
 	}
 
 	public void PlaySE () {
-		if (!SEAudioSource.isPlaying) {
+		if (!isPlaying && !SEAudioSource.isPlaying) {
 			SEAudioSource.time = 0;
 			SEAudioSource.Play();
+			isPlaying = true;
 		}
 	}
 
 	public void StopSE () {
-		SEAudioSource.Stop();
+		if (isPlaying) {
+			SEAudioSource.Stop();
+			isPlaying = false;
+		}
+
 	}
 }
