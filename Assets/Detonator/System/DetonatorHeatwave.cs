@@ -51,8 +51,14 @@ public class DetonatorHeatwave : DetonatorComponent {
 			
 			//thought about this, and really, the wave would move linearly, fading in amplitude. 
 			s = Mathf.Lerp(_startSize,_maxSize,_normalizedTime);
-			
-			_heatwave.GetComponent<Renderer>().material.SetFloat("_BumpAmt", ((1-_normalizedTime) * distortion));
+
+			//not works with particles/additive material
+			//_heatwave.GetComponent<Renderer>().material.SetFloat("_BumpAmt", ((1-_normalizedTime) * distortion));
+
+			//this works fine with particles/additive material to fadeout
+			Color matColor = _heatwave.GetComponent<Renderer>().material.GetColor("_TintColor");
+			matColor.a = (1-_normalizedTime)*1;
+			_heatwave.GetComponent<Renderer>().material.SetColor("_TintColor", matColor);
 			
 			_heatwave.gameObject.transform.localScale = new Vector3(s,s,s);
 			if (_elapsedTime > duration) Destroy(_heatwave.gameObject);
