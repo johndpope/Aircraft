@@ -15,6 +15,7 @@ public class MissileLauncher : WeaponObject {
 			missile.Fire ();
 			missile.player=owner.player;
 			missile.GetComponent<Rigidbody>().velocity=owner.GetComponent<Rigidbody>().velocity;
+			gameObject.GetComponent<AudioSource>().Play();
 		}
 	}
 

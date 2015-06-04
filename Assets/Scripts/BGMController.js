@@ -23,7 +23,8 @@ function Start () {
 function Update () {
 	if (BGMAudioSource.isPlaying && BGMAudioSource.time >= loopEndTime) {
 		isLoop = true;
-		BGMAudioSource.time = loopStartTime;
+		var delayTime:double = BGMAudioSource.time - loopEndTime;
+		BGMAudioSource.time = loopStartTime + delayTime;
 	}
 	
 }
