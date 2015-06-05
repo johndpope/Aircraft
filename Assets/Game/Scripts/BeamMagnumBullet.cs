@@ -6,7 +6,7 @@ public class BeamMagnumBullet : Entity {
 	public GameObject spark;
 	public Rigidbody body;
 	public float lifeTimer;
-	public float lifeTime=6;
+	public float lifeTime=8;
 	public float damage=800;
 	public GameObject launchSpark;
 
@@ -15,15 +15,16 @@ public class BeamMagnumBullet : Entity {
 	private float bulletLength;
 
 	public void OnTriggerEnter(Collider _collider){
-		Debug.Log ("mega hit "+_collider.name);
+
 		if (_collider.CompareTag("AttackTarget") ){
+			Debug.Log ("mega hit "+_collider.name);
 			Entity ent=_collider.GetComponent<Entity>();
 			if (ent.player.flag!=player.flag){
 				Explode();
 				ent.Hurt(damage);
 			}
 		}
-		else{
+		else if(_collider.name=="Terrain"){
 			Explode();
 		}
 	}
