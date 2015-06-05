@@ -6,6 +6,7 @@ public class BeamMagnumController : WeaponObject {
 	public BeamMagnumBullet bulletPrefab;
 	public float speed;
 	public float fireInterval=1.0f;
+	public MagnumLaunchSpark launchSpark;
 	private float fireToggle;
 	
 	public void Fire(){
@@ -26,6 +27,9 @@ public class BeamMagnumController : WeaponObject {
 			
 			this.GetComponent<AudioSource>().Play();
 			
+		}
+		if (launchSpark!=null){
+			launchSpark.PlayAnimation();
 		}
 	}
 	

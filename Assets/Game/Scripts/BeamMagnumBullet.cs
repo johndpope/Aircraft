@@ -8,6 +8,7 @@ public class BeamMagnumBullet : Entity {
 	public float lifeTimer;
 	public float lifeTime=6;
 	public float damage=800;
+	public GameObject launchSpark;
 
 	private CapsuleCollider bulletCollider;
 	private LineRenderer bulletBody;
@@ -49,8 +50,8 @@ public class BeamMagnumBullet : Entity {
 		if (bulletCollider.height < 7) {
 			bulletCollider.height = bulletCollider.height + 20*Time.deltaTime;
 		}
-		if (bulletLength<24) {
-			bulletLength = bulletLength +40*Time.deltaTime;
+		if (bulletLength<50) {
+			bulletLength = bulletLength +100*Time.deltaTime;
 			Vector3 pos = new Vector3(0,0,bulletLength);
 			bulletBody.SetPosition(1,pos);
 		}
