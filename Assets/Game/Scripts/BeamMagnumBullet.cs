@@ -30,8 +30,8 @@ public class BeamMagnumBullet : Entity {
 	
 	public void Explode(){
 		if (spark!=null){
-			GameObject sparkObj=Instantiate(spark);
-			sparkObj.transform.position=body.position;//transform.position;
+			Object sparkObj=Instantiate(spark,transform.position,transform.rotation);
+			//sparkObj.transform.position=body.position;//transform.position;
 		}
 		Destroy(this.gameObject);
 	}
@@ -47,7 +47,7 @@ public class BeamMagnumBullet : Entity {
 	}
 	
 	void Update(){
-		if (bulletCollider.height < 7) {
+		if (bulletCollider.height < 5) {
 			bulletCollider.height = bulletCollider.height + 20*Time.deltaTime;
 		}
 		if (bulletLength<50) {
