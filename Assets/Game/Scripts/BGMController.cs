@@ -5,6 +5,9 @@ public class BGMController : MonoBehaviour {
 	public AudioClip BGMClip;
 	public float loopStartTime;
 	public float loopEndTime;
+	public AudioClip BGMClip2;
+	public float loopStartTime2;
+	public float loopEndTime2;
 	public bool isLoop=false;
 	public bool isPlaying=false;
 	
@@ -14,7 +17,7 @@ public class BGMController : MonoBehaviour {
 	void Start () {
 		BGMAudioSource = gameObject.AddComponent<AudioSource>();
 		BGMAudioSource.playOnAwake = false;
-		BGMAudioSource.clip = BGMClip;
+		BGMAudioSource.clip = BGMClip2;
 		
 		BGMAudioSource.loop=false;
 		isLoop = false;
@@ -25,10 +28,10 @@ public class BGMController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (BGMAudioSource.isPlaying && BGMAudioSource.time >= loopEndTime) {
+		if (BGMAudioSource.isPlaying && BGMAudioSource.time >= loopEndTime2) {
 			isLoop = true;
-			float delayTime = BGMAudioSource.time - loopEndTime;
-			BGMAudioSource.time = loopStartTime + delayTime;
+			float delayTime = BGMAudioSource.time - loopEndTime2;
+			BGMAudioSource.time = loopStartTime2 + delayTime;
 		}
 	}
 

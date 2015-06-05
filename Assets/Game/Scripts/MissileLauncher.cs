@@ -21,7 +21,7 @@ public class MissileLauncher : WeaponObject {
 
 	protected override void Update(){
 		base.Update();
-		if (Input.GetKeyDown(KeyCode.M)){
+		if (Input.GetKeyDown(KeyCode.C)){
 			Fire ();
 		}
 	}
