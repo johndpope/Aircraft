@@ -39,11 +39,8 @@ public class CameraFollower : MonoBehaviour {
 				transform.rotation=target.rotation;
 			}
 
-<<<<<<< HEAD
 			if (camera!=null) {
-=======
-			if (camera!=null){
->>>>>>> 33ea5213c807f6a8972c1e8bcab3e4e25080ebf6
+
 				if (longRangeMode) {
 					if (camera.transform.localPosition.z > -30) {
 						camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z-(30-20)/cameraModeChangeTime*Time.deltaTime);
