@@ -7,6 +7,7 @@ public class BeamMagnumController : WeaponObject {
 	public float speed;
 	public float fireInterval=1.0f;
 	public MagnumLaunchSpark launchSpark;
+	public HyperMegaCanon hyperMegaCanon;
 	private float fireToggle;
 	
 	public void Fire(){
@@ -49,6 +50,11 @@ public class BeamMagnumController : WeaponObject {
 		}
 		else {
 
+		}
+
+		if (Input.GetKey(KeyCode.V)) {
+			hyperMegaCanon.gameObject.SetActive(true);
+			hyperMegaCanon.Launch();
 		}
 	}
 }
