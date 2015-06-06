@@ -60,9 +60,10 @@ public class BeamMagnumController : WeaponObject {
 
 	void HyperMegaCanonLaunch () {
 		hyperMegaCanon.gameObject.SetActive(true);
-		hyperMegaCanon.Launch();
 		if (launchSpark!=null){
 			launchSpark.PlayAnimation();
 		}
+		hyperMegaCanon.Launch();
+
 	}
 }

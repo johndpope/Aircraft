@@ -8,30 +8,42 @@ public class BGMController : MonoBehaviour {
 	public AudioClip BGMClip2;
 	public float loopStartTime2;
 	public float loopEndTime2;
+	public BGMData[] bgmData=new BGMData[1];
 	public bool isLoop=false;
 	public bool isPlaying=false;
+	public int bgmID=0;
 	
 	private AudioSource BGMAudioSource;
+
 
 	// Use this for initialization
 	void Start () {
 		BGMAudioSource = gameObject.AddComponent<AudioSource>();
 		BGMAudioSource.playOnAwake = false;
-		BGMAudioSource.clip = BGMClip2;
+
 		
 		BGMAudioSource.loop=false;
 		isLoop = false;
 		isPlaying = false;
 
+		if (bgmID > bgmData.Length-1){
+			bgmID=0;
+		}
+
+		BGMData currentBGMData = bgmData[bgmID];
+		BGMAudioSource.clip = currentBGMData.bgmClip;
+		loopStartTime = currentBGMData.loopStartTime;
+		loopEndTime = currentBGMData.loopEndTime;
+		
 		StartMusic();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (BGMAudioSource.isPlaying && BGMAudioSource.time >= loopEndTime2) {
+		if (BGMAudioSource.isPlaying && BGMAudioSource.time >= loopEndTime) {
 			isLoop = true;
-			float delayTime = BGMAudioSource.time - loopEndTime2;
-			BGMAudioSource.time = loopStartTime2 + delayTime;
+			float delayTime = BGMAudioSource.time - loopEndTime;
+			BGMAudioSource.time = loopStartTime + delayTime;
 		}
 	}
 

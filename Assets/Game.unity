@@ -3949,7 +3949,7 @@ GameObject:
   - 4: {fileID: 393420088}
   - 114: {fileID: 393420089}
   - 82: {fileID: 393420090}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BeamMagnumController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5248,7 +5248,7 @@ GameObject:
   - 114: {fileID: 472049721}
   - 65: {fileID: 472049720}
   - 114: {fileID: 4343722}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: AircraftJet
   m_TagString: AttackTarget
   m_Icon: {fileID: 0}
@@ -7260,6 +7260,14 @@ Prefab:
       propertyPath: m_seaLevel
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
+      propertyPath: m_lodFadeDist
+      value: 5000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
   m_IsPrefabParent: 0
@@ -7444,7 +7452,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 711337224}
   - 108: {fileID: 711337225}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BeamLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7628,7 +7636,7 @@ GameObject:
   - 4: {fileID: 738946381}
   - 199: {fileID: 738946383}
   - 198: {fileID: 738946382}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12745,7 +12753,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1076125174}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BulletTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12773,6 +12781,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 433526, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: m_LocalPosition.x
       value: 996.044678
@@ -12816,6 +12828,46 @@ Prefab:
     - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: loopEndTime2
       value: 52.9980011
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[0].bgmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d5ca8812fe8842a8af7760a7d3dd974, type: 3}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[0].loopStartTime
+      value: 22.2159996
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[0].loopEndTime
+      value: 79.8079987
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[1].bgmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c9af2b4c78d82467d9463f37d46c8163, type: 3}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[1].loopStartTime
+      value: 1.47500002
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[1].loopEndTime
+      value: 52.9980011
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[2].bgmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af9dba4b91494b1eb34b281cab6e376, type: 3}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[2].loopEndTime
+      value: 76.1969986
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[2].loopStartTime
+      value: 13.757
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmID
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
@@ -16913,7 +16965,7 @@ GameObject:
   - 4: {fileID: 1372276685}
   - 136: {fileID: 1372276686}
   - 114: {fileID: 1372276687}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: HyperMegaCanon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17046,7 +17098,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1379895968}
   - 82: {fileID: 1379895969}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LaunchAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17229,7 +17281,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1430480228}
   - 120: {fileID: 1430480229}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BeamBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17420,7 +17472,7 @@ GameObject:
   - 33: {fileID: 1454069808}
   - 64: {fileID: 1454069807}
   - 23: {fileID: 1454069806}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: MagnumRing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19827,7 +19879,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1680901071}
   - 114: {fileID: 1680901072}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: LaunchSpark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20653,7 +20705,7 @@ GameObject:
   - 4: {fileID: 1850915875}
   - 199: {fileID: 1850915877}
   - 198: {fileID: 1850915876}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BulletParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21846,7 +21898,7 @@ GameObject:
   - 33: {fileID: 1872878696}
   - 64: {fileID: 1872878695}
   - 23: {fileID: 1872878694}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: MagnumFireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23020,7 +23072,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1917770659}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: SoundEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}

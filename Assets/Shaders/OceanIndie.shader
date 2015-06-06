@@ -88,7 +88,7 @@ Shader "Ocean/Indie/OceanShader"
 			
 			//Transparency has been set up if you want it but 
 			//since I am not using it alpha is just set to 1.
-			o.Alpha = 1.0;
+			o.Alpha = 0.7;
 			
 		}
 		ENDCG
