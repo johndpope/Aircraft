@@ -53,8 +53,13 @@ public class BeamMagnumController : WeaponObject {
 		}
 
 		if (Input.GetKey(KeyCode.V)) {
-			hyperMegaCanon.gameObject.SetActive(true);
-			hyperMegaCanon.Launch();
+			HyperMegaCanonLaunch();
+
 		}
+	}
+
+	void HyperMegaCanonLaunch () {
+		hyperMegaCanon.gameObject.SetActive(true);
+		hyperMegaCanon.Launch();
 	}
 }

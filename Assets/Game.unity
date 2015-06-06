@@ -7462,7 +7462,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1372276685}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!108 &711337225
 Light:
   m_ObjectHideFlags: 0
@@ -16919,7 +16919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1372276685
 Transform:
   m_ObjectHideFlags: 0
@@ -16933,8 +16933,8 @@ Transform:
   - {fileID: 1850915875}
   - {fileID: 738946381}
   - {fileID: 1430480228}
-  - {fileID: 1917770659}
   - {fileID: 711337224}
+  - {fileID: 1917770659}
   m_Father: {fileID: 1076125174}
   m_RootOrder: 1
 --- !u!136 &1372276686
@@ -16971,6 +16971,7 @@ MonoBehaviour:
   bodyParticleObj: {fileID: 1850915874}
   headParticleObj: {fileID: 738946380}
   launchAudio: {fileID: 1379895969}
+  cameraFollower: {fileID: 1479173782}
 --- !u!1 &1375524225
 GameObject:
   m_ObjectHideFlags: 0
@@ -18693,10 +18694,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3caf18442a04487aaf97a00c4b844f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 1633353499}
   target: {fileID: 472049717}
   offset: {x: 0, y: 0, z: 0}
   useSlerp: 1
-  slerpSpeed: 1
+  slerpSpeed: 5
+  longRangeMode: 0
+  longRangeSlerpSpeed: 1
 --- !u!4 &1479173783
 Transform:
   m_ObjectHideFlags: 0
@@ -19333,7 +19337,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1633353488}
   m_LocalRotation: {x: .0523359627, y: 0, z: 0, w: .99862951}
-  m_LocalPosition: {x: 0, y: 6, z: -30}
+  m_LocalPosition: {x: 0, y: 6, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1479173783}
@@ -23035,7 +23039,7 @@ Transform:
   m_Children:
   - {fileID: 1379895968}
   m_Father: {fileID: 1372276685}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1930916059
 GameObject:
   m_ObjectHideFlags: 0
@@ -24610,10 +24614,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3caf18442a04487aaf97a00c4b844f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camera: {fileID: 0}
   target: {fileID: 472049717}
   offset: {x: 0, y: 3, z: 8}
   useSlerp: 0
   slerpSpeed: .0500000007
+  longRangeMode: 0
+  longRangeSlerpSpeed: 1
 --- !u!114 &2001277533
 MonoBehaviour:
   m_ObjectHideFlags: 0
