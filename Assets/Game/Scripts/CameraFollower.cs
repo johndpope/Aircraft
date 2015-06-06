@@ -39,16 +39,18 @@ public class CameraFollower : MonoBehaviour {
 				transform.rotation=target.rotation;
 			}
 
-			if (longRangeMode) {
-				if (camera.transform.localPosition.z > -30) {
-					camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z-(30-20)/cameraModeChangeTime*Time.deltaTime);
+			if (camera!=null){
+				if (longRangeMode) {
+					if (camera.transform.localPosition.z > -30) {
+						camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z-(30-20)/cameraModeChangeTime*Time.deltaTime);
+						
+					}
 					
 				}
-				
-			}
-			else {
-				if (camera.transform.localPosition.z < -20) {
-					camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z+(30-20)/cameraModeChangeTime*Time.deltaTime);
+				else {
+					if (camera.transform.localPosition.z < -20) {
+						camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z+(30-20)/cameraModeChangeTime*Time.deltaTime);
+					}
 				}
 			}
 			

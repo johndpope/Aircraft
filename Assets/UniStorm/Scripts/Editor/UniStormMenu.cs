@@ -10,7 +10,7 @@ public class UniStormMenu : MonoBehaviour {
         
 	   Selection.activeObject = SceneView.currentDrawingSceneView;
 		
-	   GameObject codeInstantiatedPrefab = GameObject.Instantiate( Resources.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/UniStormPrefab_JS.prefab", typeof(GameObject))) as GameObject;
+	   GameObject codeInstantiatedPrefab = GameObject.Instantiate( AssetDatabase.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/UniStormPrefab_JS.prefab", typeof(GameObject))) as GameObject;
 		
        codeInstantiatedPrefab.name = "UniStormPrefab_JS";
        Selection.activeGameObject = codeInstantiatedPrefab;
@@ -20,7 +20,7 @@ public class UniStormMenu : MonoBehaviour {
     static void InstantiateCVersion () {	
 	   Selection.activeObject = SceneView.currentDrawingSceneView;
 		
-	   GameObject codeInstantiatedPrefab = GameObject.Instantiate( Resources.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/UniStormPrefab_C.prefab", typeof(GameObject))) as GameObject;
+	   GameObject codeInstantiatedPrefab = GameObject.Instantiate( AssetDatabase.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/UniStormPrefab_C.prefab", typeof(GameObject))) as GameObject;
 		
        codeInstantiatedPrefab.name = "UniStormPrefab_C";
        Selection.activeGameObject = codeInstantiatedPrefab;
@@ -33,7 +33,7 @@ public class UniStormMenu : MonoBehaviour {
         Camera sceneCam = SceneView.currentDrawingSceneView.camera;
         Vector3 spawnPos = sceneCam.ViewportToWorldPoint(new Vector3(0.5f,0.5f,10f));
 		
-		GameObject codeInstantiatedPrefab = GameObject.Instantiate(Resources.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/WeatherZone_JS.prefab", typeof(GameObject))) as GameObject;
+		GameObject codeInstantiatedPrefab = GameObject.Instantiate(AssetDatabase.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/WeatherZone_JS.prefab", typeof(GameObject))) as GameObject;
 
 		codeInstantiatedPrefab.transform.position = new Vector3 (spawnPos.x, spawnPos.y, spawnPos.z);
 		
@@ -47,7 +47,7 @@ public class UniStormMenu : MonoBehaviour {
         Camera sceneCam = SceneView.currentDrawingSceneView.camera;
         Vector3 spawnPos = sceneCam.ViewportToWorldPoint(new Vector3(0.5f,0.5f,10f));
 		
-		GameObject codeInstantiatedPrefab = GameObject.Instantiate( Resources.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/WeatherZone_C.prefab", typeof(GameObject))) as GameObject;
+		GameObject codeInstantiatedPrefab = GameObject.Instantiate( AssetDatabase.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/WeatherZone_C.prefab", typeof(GameObject))) as GameObject;
 		codeInstantiatedPrefab.transform.position = new Vector3 (spawnPos.x, spawnPos.y, spawnPos.z);
 		
 		codeInstantiatedPrefab.name = "WeatherZone_C";
@@ -56,13 +56,13 @@ public class UniStormMenu : MonoBehaviour {
 	
 	[MenuItem ("Window/UniStorm/Create Time Event/JavaScript")]
     static void InstantiateTimeEventJS () {
-		GameObject codeInstantiatedPrefab = GameObject.Instantiate( Resources.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/TimeEvent_JS.prefab", typeof(GameObject))) as GameObject;
+		GameObject codeInstantiatedPrefab = GameObject.Instantiate( AssetDatabase.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/TimeEvent_JS.prefab", typeof(GameObject))) as GameObject;
 		codeInstantiatedPrefab.name = "TimeEvent_JS";
     }
 	
 	[MenuItem ("Window/UniStorm/Create Time Event/C#")]
     static void InstantiateTimeEventC () {
-		GameObject codeInstantiatedPrefab = GameObject.Instantiate( Resources.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/TimeEvent_C.prefab", typeof(GameObject))) as GameObject;
+		GameObject codeInstantiatedPrefab = GameObject.Instantiate( AssetDatabase.LoadAssetAtPath("Assets/UniStorm/Prefabs/UniStormPrefabs/TimeEvent_C.prefab", typeof(GameObject))) as GameObject;
 		codeInstantiatedPrefab.name = "TimeEvent_C";
     }
 	
