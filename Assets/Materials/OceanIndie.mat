@@ -145,7 +145,11 @@ Material:
       data:
         first:
           name: _SunColor
+<<<<<<< HEAD
         second: {r: .950943172, g: .816591084, b: .568460643, a: 1}
+=======
+        second: {r: .944408655, g: .830367446, b: .616774619, a: 1}
+>>>>>>> 33ea5213c807f6a8972c1e8bcab3e4e25080ebf6
       data:
         first:
           name: _SampleScale
@@ -165,4 +169,8 @@ Material:
       data:
         first:
           name: _SunDir
+<<<<<<< HEAD
         second: {r: -9.31322575e-10, g: .241368383, b: -.970433593, a: 0}
+=======
+        second: {r: -1.86264515e-09, g: .286380589, b: -.958115935, a: 0}
+>>>>>>> 33ea5213c807f6a8972c1e8bcab3e4e25080ebf6
