@@ -21,8 +21,12 @@ public class HyperMegaCanon : Entity {
 	private ParticleSystem bodyParticle;
 	private ParticleSystem headParticle;
 	private float disapperTimer;
-	private float disapperTime=1;
+	private float disapperTime=0.4f;
+	private bool disappering=false;
 	private bool launching=false;
+	private float beamBodyWidth;
+	private float beamBodyCurrentWidth;
+	private Light beamLight;
 	
 	public void OnTriggerEnter(Collider _collider){
 		
@@ -43,9 +47,11 @@ public class HyperMegaCanon : Entity {
 		bulletBody = this.GetComponentInChildren<LineRenderer>();
 		bodyParticle = bodyParticleObj.GetComponent<ParticleSystem>();
 		headParticle = headParticleObj.GetComponent<ParticleSystem>();
+		beamLight = this.GetComponentInChildren<Light>();
 		bulletTargetLength = 1000;
 		bulletLength = 1;
 		raiseTime = 2.5f;
+		beamBodyWidth = 20;
 
 
 		Reset();
@@ -53,26 +59,39 @@ public class HyperMegaCanon : Entity {
 	
 	void Update(){
 		if (launching) {
-			if (bulletCollider.height < bulletTargetLength) {
-				bulletCollider.height = bulletCollider.height + (bulletTargetLength/raiseTime)*Time.deltaTime;
-			}
-			if (bulletLength<bulletTargetLength) {
-				bulletLength = bulletLength + (bulletTargetLength/raiseTime)*Time.deltaTime;
-				Vector3 pos = new Vector3(0,0,bulletLength);
-				bulletBody.SetPosition(1,pos);
-			}
-			if (bulletColliderPos.z < bulletTargetLength/2) {
-				bulletColliderPos = bulletColliderPos + new Vector3(0,0,(bulletTargetLength/2/raiseTime)*Time.deltaTime);
-				bulletCollider.center = bulletColliderPos;
-			}
-			
 
 			if (lifeTimer<lifeTime){
 				lifeTimer+=Time.deltaTime;
+
+				if (bulletCollider.height < bulletTargetLength) {
+					bulletCollider.height = bulletCollider.height + (bulletTargetLength/raiseTime)*Time.deltaTime;
+				}
+				if (bulletLength<bulletTargetLength) {
+					bulletLength = bulletLength + (bulletTargetLength/raiseTime)*Time.deltaTime;
+					Vector3 pos = new Vector3(0,0,bulletLength);
+					bulletBody.SetPosition(1,pos);
+				}
+				if (bulletColliderPos.z < bulletTargetLength/2) {
+					bulletColliderPos = bulletColliderPos + new Vector3(0,0,(bulletTargetLength/2/raiseTime)*Time.deltaTime);
+					bulletCollider.center = bulletColliderPos;
+				}
 			}
-			else{
+			else if (disapperTimer<disapperTime){
+				disapperTimer+=Time.deltaTime;
+				if (!disappering) {
+					Disapper();
+				}
+				if (beamBodyCurrentWidth>0) {
+					beamBodyCurrentWidth -= (beamBodyWidth/disapperTime)*Time.deltaTime;
+					bulletBody.SetWidth(beamBodyCurrentWidth,beamBodyCurrentWidth);
+				}
+			}
+			else {
 				Reset();
 			}
+
+
+
 		}
 
 	}
@@ -82,9 +101,18 @@ public class HyperMegaCanon : Entity {
 	
 	}
 
+	void Disapper (){
+		bodyParticle.enableEmission = false;
+		headParticle.enableEmission = false;
+		bodyParticle.gameObject.SetActive(false);
+		beamLight.gameObject.SetActive(false);
+	}
+
 	void Reset () {
 		launching = false;
+		disappering = false;
 		lifeTimer=0;
+		disapperTimer=0;
 		bulletColliderPos = new Vector3(0,0,0);
 		bulletCollider.height = 0;
 		bulletCollider.center = bulletColliderPos;
@@ -92,16 +120,22 @@ public class HyperMegaCanon : Entity {
 		bulletLength = 1;
 		Vector3 pos = new Vector3(0,0,bulletLength);
 		bulletBody.SetPosition(1,pos);
+		beamBodyCurrentWidth = beamBodyWidth;
+		bulletBody.SetWidth(beamBodyCurrentWidth,beamBodyCurrentWidth);
 
 		bodyParticle.enableEmission = false;
 		headParticle.enableEmission = false;
 
-		this.gameObject.SetActive(false);
+		bulletBody.gameObject.SetActive(false);
+		//this.gameObject.SetActive(false);
 	}
 
 	public void Launch () {
 		if (!launching) {
 			this.gameObject.SetActive(true);
+			bulletBody.gameObject.SetActive(true);
+			bodyParticle.gameObject.SetActive(true);
+			beamLight.gameObject.SetActive(true);
 			launching = true;
 			bodyParticle.enableEmission=true;
 			headParticle.enableEmission=true;
