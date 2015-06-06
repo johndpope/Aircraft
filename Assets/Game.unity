@@ -12783,7 +12783,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: bgmData.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 433526, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: m_LocalPosition.x
@@ -12867,7 +12867,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: bgmID
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[3].bgmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ca173c88db65546f8ad5dd243cbdd022, type: 3}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[3].loopStartTime
+      value: .725000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[3].loopEndTime
+      value: 58.6469994
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: random
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}

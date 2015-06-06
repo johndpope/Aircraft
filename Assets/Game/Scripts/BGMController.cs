@@ -12,6 +12,7 @@ public class BGMController : MonoBehaviour {
 	public bool isLoop=false;
 	public bool isPlaying=false;
 	public int bgmID=0;
+	public bool random=false;
 	
 	private AudioSource BGMAudioSource;
 
@@ -29,8 +30,16 @@ public class BGMController : MonoBehaviour {
 		if (bgmID > bgmData.Length-1){
 			bgmID=0;
 		}
+		BGMData currentBGMData;
 
-		BGMData currentBGMData = bgmData[bgmID];
+		if (random) {
+			int num = Mathf.FloorToInt(Random.Range(0,bgmData.Length));
+			if (num>bgmData.Length-1) {
+				num=bgmData.Length-1;
+			}
+			bgmID=num;
+		}
+		currentBGMData = bgmData[bgmID];
 		BGMAudioSource.clip = currentBGMData.bgmClip;
 		loopStartTime = currentBGMData.loopStartTime;
 		loopEndTime = currentBGMData.loopEndTime;
