@@ -3,11 +3,16 @@ using System.Collections;
 
 public class CameraFollower : MonoBehaviour {
 
-
+	public Camera camera;
 	public Transform target;
 	public Vector3 offset;
 	public bool useSlerp=true;
-	public float slerpSpeed=10f;
+	public float slerpSpeed=8f;
+	public bool longRangeMode=false;
+	public float longRangeSlerpSpeed=1f;
+
+	private float cameraModeChangeTime=0.5f;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -22,14 +27,34 @@ public class CameraFollower : MonoBehaviour {
 	void Update() {
 		if (target!=null){
 			if (useSlerp) {
-				transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, slerpSpeed*Time.deltaTime);
+				if (longRangeMode) {
+					transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, longRangeSlerpSpeed*Time.deltaTime);
+				}
+				else {
+					transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, slerpSpeed*Time.deltaTime);
+				}
+
 			}
 			else {
 				transform.rotation=target.rotation;
+			}
+
+			if (longRangeMode) {
+				if (camera.transform.localPosition.z > -30) {
+					camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z-(30-20)/cameraModeChangeTime*Time.deltaTime);
+					
+				}
+				
+			}
+			else {
+				if (camera.transform.localPosition.z < -20) {
+					camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z+(30-20)/cameraModeChangeTime*Time.deltaTime);
+				}
 			}
 			
 			
 			transform.position=target.TransformPoint(offset);
 		}
 	}
+
 }
