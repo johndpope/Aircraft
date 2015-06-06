@@ -6,6 +6,8 @@ public class CameraFollower : MonoBehaviour {
 
 	public Transform target;
 	public Vector3 offset;
+	public bool useSlerp=true;
+	public float slerpSpeed=10f;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,10 +15,21 @@ public class CameraFollower : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
+
+//		transform.LookAt(target);
+	}
+
+	void Update() {
 		if (target!=null){
-			transform.rotation=target.rotation;
+			if (useSlerp) {
+				transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, slerpSpeed*Time.deltaTime);
+			}
+			else {
+				transform.rotation=target.rotation;
+			}
+			
+			
 			transform.position=target.TransformPoint(offset);
 		}
-//		transform.LookAt(target);
 	}
 }

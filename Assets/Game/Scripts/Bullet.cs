@@ -48,8 +48,8 @@ public class Bullet : Entity {
 
 	public void Explode(){
 		if (spark!=null){
-			GameObject sparkObj=Instantiate(spark);
-			sparkObj.transform.position=body.position;//transform.position;
+			Object sparkObj=Instantiate(spark,transform.position,transform.rotation);
+			//sparkObj.transform.position=body.position;//transform.position;
 		}
 		Destroy(this.gameObject);
 	}

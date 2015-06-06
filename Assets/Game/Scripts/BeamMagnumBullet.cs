@@ -6,31 +6,33 @@ public class BeamMagnumBullet : Entity {
 	public GameObject spark;
 	public Rigidbody body;
 	public float lifeTimer;
-	public float lifeTime=6;
+	public float lifeTime=8;
 	public float damage=800;
+	public GameObject launchSpark;
 
 	private CapsuleCollider bulletCollider;
 	private LineRenderer bulletBody;
 	private float bulletLength;
 
 	public void OnTriggerEnter(Collider _collider){
-		Debug.Log ("mega hit "+_collider.name);
+
 		if (_collider.CompareTag("AttackTarget") ){
+			Debug.Log ("mega hit "+_collider.name);
 			Entity ent=_collider.GetComponent<Entity>();
 			if (ent.player.flag!=player.flag){
 				Explode();
 				ent.Hurt(damage);
 			}
 		}
-		else{
+		else if(_collider.name=="Terrain"){
 			Explode();
 		}
 	}
 	
 	public void Explode(){
 		if (spark!=null){
-			GameObject sparkObj=Instantiate(spark);
-			sparkObj.transform.position=body.position;//transform.position;
+			Object sparkObj=Instantiate(spark,transform.position,transform.rotation);
+			//sparkObj.transform.position=body.position;//transform.position;
 		}
 		Destroy(this.gameObject);
 	}
@@ -46,11 +48,11 @@ public class BeamMagnumBullet : Entity {
 	}
 	
 	void Update(){
-		if (bulletCollider.height < 7) {
+		if (bulletCollider.height < 5) {
 			bulletCollider.height = bulletCollider.height + 20*Time.deltaTime;
 		}
-		if (bulletLength<24) {
-			bulletLength = bulletLength +40*Time.deltaTime;
+		if (bulletLength<50) {
+			bulletLength = bulletLength +100*Time.deltaTime;
 			Vector3 pos = new Vector3(0,0,bulletLength);
 			bulletBody.SetPosition(1,pos);
 		}

@@ -25,7 +25,7 @@ public class MachineGunController : WeaponObject {
 
 			bullet.GetComponent<Rigidbody>().velocity=bulletTransform.forward* speed;
 
-			//this.GetComponent<AudioSource>().Play();
+			this.GetComponent<AudioSource>().Play();
 
 		}
 	}
@@ -42,13 +42,13 @@ public class MachineGunController : WeaponObject {
 		if (Input.GetKey(KeyCode.Z)){
 			Fire ();
 			if (soundEffect!=null) {
-				soundEffect.GetComponent<LoopSE>().PlaySE();
+				//soundEffect.GetComponent<LoopSE>().PlaySE();
 			}
 
 		}
 		else {
 			if (soundEffect!=null) {
-				soundEffect.GetComponent<LoopSE>().StopSE();
+				//soundEffect.GetComponent<LoopSE>().StopSE();
 
 			}
 		}
