@@ -35,9 +35,9 @@ public class MagnumLaunchSpark : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (isSparking) {
-			float fracComplete = (time - currentTime) / time;
-			sparkRing.transform.localScale=Vector3.Lerp(sparkRingEndScale,sparkRingStartScale,fracComplete);
-			sparkBall.transform.localScale=Vector3.Lerp(sparkBallEndScale,sparkBallStartScale,fracComplete);
+			float fracComplete = currentTime / time;
+			sparkRing.transform.localScale=Vector3.Lerp(sparkRingStartScale,sparkRingEndScale,fracComplete);
+			sparkBall.transform.localScale=Vector3.Lerp(sparkBallStartScale,sparkBallEndScale,fracComplete);
 
 			float lSpeed = (sparkLightStartIntensity-sparkLightEndIntensity)/time*Time.deltaTime;
 			lightComponent.intensity-=lSpeed;
@@ -57,7 +57,7 @@ public class MagnumLaunchSpark : MonoBehaviour {
 
 			currentTime += Time.deltaTime;
 
-			if (fracComplete<=0) {
+			if (fracComplete>1) {
 				Reset();
 			}
 		}
