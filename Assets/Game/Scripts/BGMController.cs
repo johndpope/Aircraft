@@ -21,7 +21,6 @@ public class BGMController : MonoBehaviour {
 	void Start () {
 		BGMAudioSource = gameObject.AddComponent<AudioSource>();
 		BGMAudioSource.playOnAwake = false;
-
 		
 		BGMAudioSource.loop=false;
 		isLoop = false;

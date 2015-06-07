@@ -265,5 +265,26 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         {
             m_Immobilized = false;
         }
+
+		public float AircraftMaxEnginePower(float aircraftMaxEnginePower=0) {
+			if (aircraftMaxEnginePower>0) {
+				m_MaxEnginePower = aircraftMaxEnginePower;
+			}
+
+			return m_MaxEnginePower;
+		}
+
+		public float AircraftAerodynamicEffect() {
+
+			return m_AerodynamicEffect;
+		}
+
+		public float SetAircraftAerodynamicEffect(float aircraftAerodynamicEffect=0) {
+			if (aircraftAerodynamicEffect>=0) {
+				m_AerodynamicEffect = aircraftAerodynamicEffect;
+			}
+			
+			return m_AerodynamicEffect;
+		}
     }
 }

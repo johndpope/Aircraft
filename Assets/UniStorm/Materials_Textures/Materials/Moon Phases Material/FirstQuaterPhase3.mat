@@ -106,10 +106,6 @@ Material:
         second: 1
       data:
         first:
-          name: _Blend
-        second: 0
-      data:
-        first:
           name: _InvFade
         second: .626250029
       data:
@@ -119,7 +115,7 @@ Material:
       data:
         first:
           name: _FogAmountMax
-        second: 100004.289
+        second: 22847.748
       data:
         first:
           name: _FloatMin
@@ -127,7 +123,11 @@ Material:
       data:
         first:
           name: _FloatMax
-        second: 2.00008583
+        second: .456954956
+      data:
+        first:
+          name: _Blend
+        second: 0
       data:
         first:
           name: _SliceAmount
@@ -200,7 +200,7 @@ Material:
       data:
         first:
           name: _MoonColor
-        second: {r: 0, g: 0, b: 0, a: 0}
+        second: {r: .598954201, g: .598954201, b: .598954201, a: .598954201}
       data:
         first:
           name: _FogColor2
