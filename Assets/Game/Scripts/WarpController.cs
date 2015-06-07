@@ -13,6 +13,12 @@ public class WarpController : MonoBehaviour {
 
 	public bool inWarp=false;
 
+	public AudioSource warpSE1;
+	public AudioSource warpSE2;
+
+	public WarpSpark warpSpark;
+	public GameObject sparkTransform;
+
 	private MotionBlur motionBlurScript;
 	private Bloom bloomScript;
 	private AeroplaneController aircraftController;
@@ -52,6 +58,8 @@ public class WarpController : MonoBehaviour {
 				warpTimer += Time.deltaTime;
 			}
 			else {
+				Object spark = Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
+				warpSE1.Play();
 				Reset();
 			}
 		}
@@ -108,6 +116,12 @@ public class WarpController : MonoBehaviour {
 			
 			aircraftController.AircraftMaxEnginePower(200);
 			aircraftController.SetAircraftAerodynamicEffect(0);
+
+			Object spark = Instantiate(warpSpark,transform.position,transform.rotation);
+
+
+			warpSE1.Play();
+			warpSE2.Play();
 		}
 	}
 }
