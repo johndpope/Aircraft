@@ -156,11 +156,11 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .992647052, g: .0145977642, b: .318130165, a: 1}
+        second: {r: .95588237, g: .140570953, b: .494809568, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: .5, g: .5, b: .5, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _EmissionColorUI

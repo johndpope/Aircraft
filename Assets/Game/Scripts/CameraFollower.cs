@@ -19,7 +19,7 @@ public class CameraFollower : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		cameraModeChangeTimer=0;
+		cameraModeChangeTimer=cameraModeChangeTime;
 	}
 	
 	// Update is called once per frame
