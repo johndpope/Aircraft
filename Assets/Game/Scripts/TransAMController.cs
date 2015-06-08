@@ -15,7 +15,10 @@ public class TransAMController : MonoBehaviour {
 	
 	public bool inTransAM=false;
 	
-	public AudioSource transAmSE;
+	public AudioSource transAmStartSE;
+	public AudioSource transAmEndSE;
+
+	public ParticleSystem gnParticle;
 
 	private Material bodyNomalMaterial;
 	private Material wingsNomalMaterial;
@@ -54,6 +57,7 @@ public class TransAMController : MonoBehaviour {
 				transAmTimer+=Time.deltaTime;
 			}
 			else {
+				transAmEndSE.Play();
 				Reset();
 			}
 		}
@@ -76,6 +80,8 @@ public class TransAMController : MonoBehaviour {
 		}
 
 		aircraftController.AircraftMaxEnginePower(normalMaxEnginePower);
+
+		gnParticle.enableEmission = false;
 	}
 
 	public void TransAM() {
@@ -91,7 +97,9 @@ public class TransAMController : MonoBehaviour {
 			
 			aircraftController.AircraftMaxEnginePower(50);
 
-			transAmSE.Play();
+			gnParticle.enableEmission = true;
+
+			transAmStartSE.Play();
 		}
 	}
 }

@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6413b4631534ddfa23be4b7da46d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeTime: .200000003
+  lifeTime: .150000006
   aircraftParts:
   - {fileID: 157390}
   - {fileID: 141884}
