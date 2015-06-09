@@ -11,11 +11,15 @@ public class CameraFollower : MonoBehaviour {
 	public bool longRangeMode=false;
 	public float longRangeSlerpSpeed=1f;
 
+	public Vector3 normalPos=new Vector3(0,8,-20);
+	public Vector3 longRangePos=new Vector3(0,8,-30);
+
 	private float cameraModeChangeTime=0.5f;
+	private float cameraModeChangeTimer;
 
 	// Use this for initialization
 	void Start () {
-		
+		cameraModeChangeTimer=cameraModeChangeTime;
 	}
 	
 	// Update is called once per frame
@@ -41,25 +45,29 @@ public class CameraFollower : MonoBehaviour {
 
 			if (camera!=null) {
 
-				if (longRangeMode) {
-					if (camera.transform.localPosition.z > -30) {
-						camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z-(30-20)/cameraModeChangeTime*Time.deltaTime);
+				if (cameraModeChangeTimer<cameraModeChangeTime) {
+
+					if (longRangeMode) {
+
+						camera.transform.localPosition=Vector3.Lerp(normalPos,longRangePos,cameraModeChangeTimer/cameraModeChangeTime);
 						
 					}
-					
-				}
-				else {
-					if (camera.transform.localPosition.z < -20) {
-						camera.transform.localPosition=new Vector3(0,6,camera.transform.localPosition.z+(30-20)/cameraModeChangeTime*Time.deltaTime);
+					else {
+
+						camera.transform.localPosition=Vector3.Lerp(longRangePos,normalPos,cameraModeChangeTimer/cameraModeChangeTime);
 					}
+
+					cameraModeChangeTimer+=Time.deltaTime;
 				}
+
 			}
 
-
-			
-			
 			transform.position=target.TransformPoint(offset);
 		}
 	}
 
+	public void ChangeCameraMode(bool _longRangeMode=false) {
+		longRangeMode=_longRangeMode;
+		cameraModeChangeTimer=0;
+	}
 }

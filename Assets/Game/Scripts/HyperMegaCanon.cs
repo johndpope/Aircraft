@@ -131,7 +131,7 @@ public class HyperMegaCanon : Entity {
 		bulletBody.gameObject.SetActive(false);
 		//this.gameObject.SetActive(false);
 
-		cameraFollower.longRangeMode=false;
+		cameraFollower.ChangeCameraMode(false);
 		bulletCollider.enabled=false;
 	}
 
@@ -148,7 +148,7 @@ public class HyperMegaCanon : Entity {
 			headParticle.enableEmission=true;
 			launchAudio.Play();
 
-			cameraFollower.longRangeMode=true;
+			cameraFollower.ChangeCameraMode(true);
 		}
 
 	}
