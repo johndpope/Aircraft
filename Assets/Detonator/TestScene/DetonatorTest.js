@@ -94,7 +94,7 @@ function Update()
 
 function SpawnExplosion()
 {
-	/*
+	
 		var ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 
 var hit : RaycastHit;
@@ -106,5 +106,5 @@ var hit : RaycastHit;
 				exp.GetComponent("Detonator").detail = detailLevel;
 			}
 			Destroy(exp, explosionLife); 
-	*/
+	
 }

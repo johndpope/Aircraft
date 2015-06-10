@@ -12,6 +12,9 @@ public class DetonatorSound : DetonatorComponent {
 	public float minVolume = .4f;
 	public float maxVolume = 1f;
 	public float rolloffFactor = 0.5f;
+	public float minDistance=50;
+	public float maxDistance=1000;
+	public float spatialBlend=1;
 	
 	private AudioSource _soundComponent;
 	private bool _delayedExplosionStarted = false;
@@ -47,10 +50,14 @@ public class DetonatorSound : DetonatorComponent {
 		}		
 		if (_explodeDelay <= 0) 
 		{
-	//		_soundComponent.minVolume = minVolume;
-	//		_soundComponent.maxVolume = maxVolume;
-	//		_soundComponent.rolloffFactor = rolloffFactor;
-			
+			//_soundComponent.minVolume = minVolume;
+			//_soundComponent.maxVolume = maxVolume;
+			//_soundComponent.rolloffFactor = rolloffFactor;
+			_soundComponent.spatialBlend=spatialBlend;
+			_soundComponent.minDistance=minDistance;
+			_soundComponent.maxDistance=maxDistance;
+			_soundComponent.volume=maxVolume;
+
 			if (Vector3.Distance(Camera.main.transform.position, this.transform.position) < distanceThreshold)
 			{
 				_idx = (int)(Random.value * nearSounds.Length);
