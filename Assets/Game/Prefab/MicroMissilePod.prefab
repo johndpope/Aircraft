@@ -880,7 +880,7 @@ BoxCollider:
   m_GameObject: {fileID: 106478}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -892,7 +892,7 @@ BoxCollider:
   m_GameObject: {fileID: 147648}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -904,7 +904,7 @@ BoxCollider:
   m_GameObject: {fileID: 164798}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -916,7 +916,7 @@ BoxCollider:
   m_GameObject: {fileID: 177796}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -928,7 +928,7 @@ BoxCollider:
   m_GameObject: {fileID: 140246}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -940,7 +940,7 @@ BoxCollider:
   m_GameObject: {fileID: 115692}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1012,11 +1012,11 @@ MonoBehaviour:
   damage: 500
   launchDuration: 5
   launchDelay: .200000003
-  microMissileSpeed: 40
-  minMissileSpeed: 30
-  maxMissileSpeed: 60
-  moveSpeed: 160
-  launchingMoveSpeed: 100
+  microMissileSpeed: 80
+  minMissileSpeed: 50
+  maxMissileSpeed: 140
+  moveSpeed: 180
+  launchingMoveSpeed: 120
   maxMoveTime: 6
   maxSelfDestroyingTime: 6
   fireBall: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 2}
@@ -1051,7 +1051,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 132130}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: .5
   m_Height: 2
   m_Direction: 1

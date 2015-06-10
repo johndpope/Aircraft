@@ -212,8 +212,8 @@ MonoBehaviour:
   autoCreateSparks: 0
   autoCreateShockwave: 0
   autoCreateSmoke: 0
-  autoCreateGlow: 1
-  autoCreateLight: 1
+  autoCreateGlow: 0
+  autoCreateLight: 0
   autoCreateForce: 0
   autoCreateHeatwave: 0
 --- !u!114 &11430044
@@ -253,7 +253,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4df044b37e661422da1e0bbeba884f4a, type: 3}
   distanceThreshold: 50
   minVolume: .100000001
-  maxVolume: .300000012
+  maxVolume: .200000003
   rolloffFactor: .5
 --- !u!114 &11457368
 MonoBehaviour:

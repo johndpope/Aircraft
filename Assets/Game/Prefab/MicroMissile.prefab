@@ -131,11 +131,11 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: .100000001
   m_Drag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!82 &8286330
 AudioSource:
@@ -266,9 +266,9 @@ MonoBehaviour:
   maxHP: 100
   player: {fileID: 0}
   alive: 1
-  lifeTime: 1
-  maxLifeTime: 2
-  minLifeTime: 1
+  lifeTime: .400000006
+  maxLifeTime: 1
+  minLifeTime: .5
   disappearTime: .5
   missileBody: {fileID: 111346}
   missileFireBall: {fileID: 145820, guid: f2eb4a104284043aabb7ea876a9649d3, type: 2}

@@ -2,9 +2,9 @@
 using System.Collections;
 
 public class MicroMissile : Entity {
-	public float lifeTime=1;
-	public float maxLifeTime=2;
-	public float minLifeTime=1f;
+	public float lifeTime=0.5f;
+	public float maxLifeTime=1;
+	public float minLifeTime=0.5f;
 	public float disappearTime=0.5f;
 	public GameObject missileBody;
 	public GameObject missileFireBall;
@@ -55,6 +55,7 @@ public class MicroMissile : Entity {
 		}
 		else{
 			if (!_collider.CompareTag("MicroMissilePod") ){
+				//Debug.Log ("hit "+_collider.name);
 				Explode();
 			}
 		}

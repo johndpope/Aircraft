@@ -30,7 +30,7 @@ public class MicroMissilePod : Entity {
 	private float maxPosX=1.3f;
 	private float minPosY=-0.3f;
 	private float maxPosY=0.3f;
-	private float maxRotation=60;
+	private float maxRotation=50;
 	private bool missileLaunching=false;
 	private bool selfDestroying=false;
 
