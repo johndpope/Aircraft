@@ -1015,10 +1015,10 @@ MonoBehaviour:
   microMissileSpeed: 40
   minMissileSpeed: 30
   maxMissileSpeed: 60
-  moveSpeed: 180
-  launchingMoveSpeed: 120
-  maxMoveTime: 8
-  maxSelfDestroyingTime: 10
+  moveSpeed: 160
+  launchingMoveSpeed: 100
+  maxMoveTime: 6
+  maxSelfDestroyingTime: 6
   fireBall: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 2}
   microMissilePodController: {fileID: 0}
 --- !u!114 &11453418
@@ -1272,7 +1272,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 1.10000002
+      scalar: 1.39999998
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1287,7 +1287,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .909090877
+          value: .857142925
           inSlope: 0
           outSlope: 0
           tangentMode: 0

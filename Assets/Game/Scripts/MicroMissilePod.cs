@@ -25,12 +25,12 @@ public class MicroMissilePod : Entity {
 	private float launchTimer;
 	private float launchDelayTimer;
 	private float moveTimer;
-	private float selfDestoryingTimer;
+	private float selfDestroyingTimer;
 	private float minPosX=-1.3f;
 	private float maxPosX=1.3f;
 	private float minPosY=-0.3f;
 	private float maxPosY=0.3f;
-	private float maxRotation=80;
+	private float maxRotation=60;
 	private bool missileLaunching=false;
 	private bool selfDestroying=false;
 
@@ -44,9 +44,15 @@ public class MicroMissilePod : Entity {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.B) && moveTimer > 0.5){
+		if (Input.GetKeyUp(KeyCode.B)){
+			if (!missileLaunching && moveTimer > 0.5) {
+				StartLaunchMissile();
+			}
+			else if (!selfDestroying && launchTimer >0.5) {
+				launchTimer=launchDuration;
+			}
 
-			StartLaunchMissile();
+
 		}
 
 		if (!missileLaunching && !selfDestroying) {
@@ -83,10 +89,10 @@ public class MicroMissilePod : Entity {
 		}
 
 		if (selfDestroying) {
-			if (selfDestoryingTimer < maxSelfDestroyingTime) {
-				selfDestoryingTimer+=Time.deltaTime;
+			if (selfDestroyingTimer < maxSelfDestroyingTime) {
+				selfDestroyingTimer+=Time.deltaTime;
 
-				if (this.transform.position.y < 0 && selfDestoryingTimer>0.5) {
+				if (this.transform.position.y < 0 && selfDestroyingTimer>0.5) {
 					Explode();
 				}
 			}
@@ -127,7 +133,7 @@ public class MicroMissilePod : Entity {
 
 	void Explode () {
 		if (fireBall!=null){
-			Object fireball = Instantiate(fireBall,this.transform.position,Quaternion.Euler(0,0,0));
+			Object fireball = Instantiate(fireBall,this.transform.position,Quaternion.identity);
 		}
 		Destroy(this.gameObject);
 	}
