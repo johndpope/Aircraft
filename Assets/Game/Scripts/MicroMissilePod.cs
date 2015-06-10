@@ -150,7 +150,7 @@ public class MicroMissilePod : Entity {
 			}
 			else{
 				if (!_collider.CompareTag("MicroMissilePod") ){
-
+					//Debug.Log ("hit "+_collider.name);
 					Explode();
 				}
 			}

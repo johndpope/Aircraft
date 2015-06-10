@@ -30,6 +30,10 @@ public class WarpController : MonoBehaviour {
 	private float normalAerodynamicEffect;
 	private float normalIntensity;
 	private float normalFieldOfView;
+
+	private float readyToWarpTime=0.2f;
+	private float readyToWarpTimer;
+	private bool readyToWarp=false;
 	// Use this for initialization
 	void Start () {
 		motionBlurScript=mainCamera.GetComponent<MotionBlur>();
@@ -71,8 +75,29 @@ public class WarpController : MonoBehaviour {
 		}
 
 
-		if (Input.GetKey(KeyCode.Q)){
-			Warp();
+		if (Input.GetKeyUp(KeyCode.Q)){
+			//Warp();
+			ReadyToWarp();
+		}
+
+		if (readyToWarp) {
+			if (readyToWarpTimer<readyToWarpTime) {
+				readyToWarpTimer+=Time.deltaTime;
+			}
+			else {
+				readyToWarp=false;
+				Warp();
+			}
+		}
+	}
+
+	void ReadyToWarp() {
+		if (!readyToWarp && !inWarp) {
+			readyToWarp=true;
+			Object spark = Instantiate(warpSpark,transform.position,transform.rotation);
+			
+			Time.timeScale=0.2f;
+			warpSE1.Play();
 		}
 	}
 
@@ -81,6 +106,8 @@ public class WarpController : MonoBehaviour {
 
 		warpTimer=0;
 		warpFadeTimer=0;
+
+		readyToWarpTimer=0;
 
 		warpAircraft.SetActive(false);
 		foreach (GameObject singlePart in AircraftParts) {
@@ -117,10 +144,7 @@ public class WarpController : MonoBehaviour {
 			aircraftController.AircraftMaxEnginePower(200);
 			aircraftController.SetAircraftAerodynamicEffect(0);
 
-			Object spark = Instantiate(warpSpark,transform.position,transform.rotation);
 
-
-			warpSE1.Play();
 
 		}
 	}
