@@ -149,7 +149,10 @@ public class MicroMissilePod : Entity {
 				}
 			}
 			else{
-				Explode();
+				if (!_collider.CompareTag("MicroMissilePod") ){
+
+					Explode();
+				}
 			}
 		}
 

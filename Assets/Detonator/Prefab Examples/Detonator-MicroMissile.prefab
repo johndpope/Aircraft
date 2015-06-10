@@ -253,8 +253,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4df044b37e661422da1e0bbeba884f4a, type: 3}
   distanceThreshold: 50
   minVolume: .100000001
-  maxVolume: .200000003
+  maxVolume: .699999988
   rolloffFactor: .5
+  minDistance: 200
+  maxDistance: 1000
+  spatialBlend: .600000024
 --- !u!114 &11457368
 MonoBehaviour:
   m_ObjectHideFlags: 1

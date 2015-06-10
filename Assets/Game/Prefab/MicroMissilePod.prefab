@@ -1015,8 +1015,8 @@ MonoBehaviour:
   microMissileSpeed: 80
   minMissileSpeed: 50
   maxMissileSpeed: 140
-  moveSpeed: 180
-  launchingMoveSpeed: 120
+  moveSpeed: 190
+  launchingMoveSpeed: 100
   maxMoveTime: 6
   maxSelfDestroyingTime: 6
   fireBall: {fileID: 100000, guid: dc533b4ca16d3cd4d94b4d9e8b3376f0, type: 2}

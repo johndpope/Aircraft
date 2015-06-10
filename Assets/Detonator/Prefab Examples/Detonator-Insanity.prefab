@@ -384,8 +384,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4a9d89b590883433cbd33ad162c74645, type: 3}
   distanceThreshold: 800
   minVolume: 1
-  maxVolume: 2
+  maxVolume: 1
   rolloffFactor: .5
+  minDistance: 200
+  maxDistance: 2000
+  spatialBlend: .200000003
 --- !u!1002 &11400017
 EditorExtensionImpl:
   serializedVersion: 6

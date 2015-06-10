@@ -536,6 +536,9 @@ MonoBehaviour:
   minVolume: .400000006
   maxVolume: 1
   rolloffFactor: .5
+  minDistance: 200
+  maxDistance: 1000
+  spatialBlend: .200000003
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
