@@ -72,7 +72,7 @@ Material:
       data:
         first:
           name: _FogAmountMin
-        second: -49967.4336
+        second: -22447.9434
       data:
         first:
           name: _FogAmountMax
@@ -80,7 +80,7 @@ Material:
       data:
         first:
           name: _FloatMin
-        second: .99934864
+        second: .448958874
       data:
         first:
           name: _FloatMax
@@ -113,7 +113,7 @@ Material:
       data:
         first:
           name: _MoonColor
-        second: {r: 0, g: 0, b: 0, a: 0}
+        second: {r: .275520563, g: .275520563, b: .275520563, a: .244186848}
       data:
         first:
           name: _FogColor2

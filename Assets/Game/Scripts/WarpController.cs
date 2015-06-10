@@ -59,7 +59,7 @@ public class WarpController : MonoBehaviour {
 			}
 			else {
 				Object spark = Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
-				warpSE1.Play();
+				warpSE2.Play();
 				Reset();
 			}
 		}
@@ -121,7 +121,7 @@ public class WarpController : MonoBehaviour {
 
 
 			warpSE1.Play();
-			warpSE2.Play();
+
 		}
 	}
 }
