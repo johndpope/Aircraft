@@ -17,9 +17,13 @@ public class CameraFollower : MonoBehaviour {
 	private float cameraModeChangeTime=0.5f;
 	private float cameraModeChangeTimer;
 
+	private int longRangeRequestNum=0;
+
 	// Use this for initialization
 	void Start () {
 		cameraModeChangeTimer=cameraModeChangeTime;
+
+		longRangeRequestNum=0;
 	}
 	
 	// Update is called once per frame
@@ -67,7 +71,26 @@ public class CameraFollower : MonoBehaviour {
 	}
 
 	public void ChangeCameraMode(bool _longRangeMode=false) {
-		longRangeMode=_longRangeMode;
-		cameraModeChangeTimer=0;
+		if (_longRangeMode){
+			longRangeRequestNum++;
+		}
+		else {
+			longRangeRequestNum--;
+		}
+
+		if (longRangeRequestNum>0){
+			if (!longRangeMode){
+				cameraModeChangeTimer=0;
+			}
+			longRangeMode=true;
+		}
+		else {
+			if (longRangeMode){
+				cameraModeChangeTimer=0;
+			}
+			longRangeMode=false;
+		}
+
+
 	}
 }
