@@ -5,6 +5,8 @@ public class MicroMissilePodController : WeaponObject {
 
 	public MicroMissilePod microMissilePodPrefab;
 
+	public CameraFollower cameraFollower;
+
 	private MicroMissilePod microMissilePod;
 	// Use this for initialization
 	void Start () {
@@ -21,6 +23,8 @@ public class MicroMissilePodController : WeaponObject {
 
 	public void Reload () {
 		microMissilePod=null;
+		cameraFollower.ChangeCameraMode(false);
+
 	}
 
 	void LaunchMicroMissilePod () {
@@ -32,6 +36,9 @@ public class MicroMissilePodController : WeaponObject {
 			microMissilePod.microMissilePodController=this;
 
 			this.GetComponent<AudioSource>().Play();
+
+			cameraFollower.ChangeCameraMode(true);
+
 		}
 	}
 }

@@ -7817,6 +7817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1633353499}
+  cameraFollower: {fileID: 1479173782}
   aircraft: {fileID: 472049716}
   aircraftBody: {fileID: 1316402269}
   aircraftWings: {fileID: 2070348407}
@@ -29329,6 +29330,7 @@ MonoBehaviour:
   bulletTransform: {fileID: 1777274970}
   microMissilePodPrefab: {fileID: 11414070, guid: b362fb0dfbeea44bf90703ad1d88a22f,
     type: 2}
+  cameraFollower: {fileID: 1479173782}
 --- !u!82 &2075253195
 AudioSource:
   m_ObjectHideFlags: 0

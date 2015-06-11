@@ -4,6 +4,7 @@ using UnityStandardAssets.Vehicles.Aeroplane;
 
 public class TransAMController : MonoBehaviour {
 	public Camera mainCamera;
+	public CameraFollower cameraFollower;
 	public GameObject aircraft;
 	public GameObject aircraftBody;
 	public GameObject aircraftWings;
@@ -82,6 +83,8 @@ public class TransAMController : MonoBehaviour {
 		aircraftController.AircraftMaxEnginePower(normalMaxEnginePower);
 
 		gnParticle.enableEmission = false;
+
+		cameraFollower.ChangeCameraMode(false);
 	}
 
 	public void TransAM() {
@@ -100,6 +103,8 @@ public class TransAMController : MonoBehaviour {
 			gnParticle.enableEmission = true;
 
 			transAmStartSE.Play();
+
+			cameraFollower.ChangeCameraMode(true);
 		}
 	}
 }

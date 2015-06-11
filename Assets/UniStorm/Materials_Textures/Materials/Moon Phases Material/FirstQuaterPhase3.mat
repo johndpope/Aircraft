@@ -115,7 +115,7 @@ Material:
       data:
         first:
           name: _FogAmountMax
-        second: 100000.477
+        second: 100013.258
       data:
         first:
           name: _FloatMin
@@ -123,7 +123,7 @@ Material:
       data:
         first:
           name: _FloatMax
-        second: 2.00000954
+        second: 2.00026512
       data:
         first:
           name: _Blend
