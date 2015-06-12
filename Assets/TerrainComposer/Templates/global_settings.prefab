@@ -1,0 +1,1977 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: global_settings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4d10d332bc69bb42959155631b7c514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tc_script_id: 16088
+  tc_installed: 1
+  check_image: {fileID: 0}
+  layer_count: 0
+  placed_count: 1
+  display_project: 1
+  tabs: 1
+  color_scheme: 1
+  color_layout:
+    backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+    backgroundActive: 1
+    color_description: {r: 1, g: .449999988, b: 0, a: 1}
+    color_layer: {r: 1, g: .920318723, b: 0, a: 1}
+    color_filter: {r: 0, g: 1, b: 1, a: 1}
+    color_subfilter: {r: 0, g: 1, b: 0, a: 1}
+    color_colormap: {r: 1, g: 1, b: 1, a: 1}
+    color_splat: {r: 1, g: 1, b: 1, a: 1}
+    color_tree: {r: 1, g: .699999988, b: .400000006, a: 1}
+    color_tree_precolor_range: {r: 1, g: .839999974, b: .639999986, a: 1}
+    color_tree_filter: {r: .5, g: 1, b: 1, a: 1}
+    color_tree_subfilter: {r: .5, g: 1, b: .5, a: 1}
+    color_grass: {r: 1, g: 1, b: 1, a: 1}
+    color_object: {r: 1, g: 1, b: 1, a: 1}
+    color_terrain: {r: 1, g: 1, b: 1, a: 1}
+  color_layout_converted: 1
+  box_scheme: 0
+  display_color_curves: 0
+  display_mix_curves: 0
+  filter_select_text: 1
+  install_path: 4173736574732f5465727261696e436f6d706f736572
+  install_path_full: 
+  object_fast: 1
+  preview_texture: 1
+  preview_texture_buffer: 100
+  preview_colors: 1
+  preview_texture_resolution: 128
+  preview_texture_resolution1: 128
+  preview_quick_resolution_min: 32
+  preview_splat_brightness: 1
+  preview_texture_dock: 1
+  preview_target_frame: 20
+  splat_colors:
+  - {r: 1, g: .779563725, b: .0149253607, a: 1}
+  - {r: 1, g: .608391643, b: 0, a: 1}
+  - {r: .392823458, g: .656716406, b: .11762087, a: 1}
+  - {r: .226288185, g: .365671635, b: .139173523, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  - {r: 0, g: 0, b: 0, a: 0}
+  splat_custom_texture_resolution: 256
+  splat_custom_texture_resolution1: 128
+  tree_colors:
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 0, g: .656716406, b: 0, a: 1}
+  - {r: .00300734886, g: .402985096, b: .03377489, a: 1}
+  - {r: .337254912, g: .482352942, b: 0, a: 1}
+  - {r: .286274523, g: .309803933, b: 0, a: 1}
+  - {r: .4627451, g: .266666681, b: 0, a: 1}
+  - {r: .4627451, g: .172549024, b: 0, a: 1}
+  - {r: .725490212, g: .376470596, b: 0, a: 1}
+  - {r: .788235307, g: .592156887, b: .0235294122, a: 1}
+  - {r: .890196085, g: .796078444, b: .0352941193, a: 1}
+  - {r: 1, g: .792156875, b: .0470588244, a: 1}
+  - {r: .992156863, g: 1, b: .0666666701, a: 1}
+  grass_colors:
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 0, g: .656716406, b: 0, a: 1}
+  - {r: .00300734886, g: .402985096, b: .03377489, a: 1}
+  - {r: .337254912, g: .482352942, b: 0, a: 1}
+  - {r: .286274523, g: .309803933, b: 0, a: 1}
+  - {r: .4627451, g: .266666681, b: 0, a: 1}
+  - {r: .4627451, g: .172549024, b: 0, a: 1}
+  - {r: .725490212, g: .376470596, b: 0, a: 1}
+  - {r: .788235307, g: .592156887, b: .0235294122, a: 1}
+  - {r: .890196085, g: .796078444, b: .0352941193, a: 1}
+  - {r: 1, g: .792156875, b: .0470588244, a: 1}
+  - {r: .992156863, g: 1, b: .0666666701, a: 1}
+  object_colors:
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 0, g: .656716406, b: 0, a: 1}
+  - {r: .00300734886, g: .402985096, b: .03377489, a: 1}
+  - {r: .337254912, g: .482352942, b: 0, a: 1}
+  - {r: .286274523, g: .309803933, b: 0, a: 1}
+  - {r: .4627451, g: .266666681, b: 0, a: 1}
+  - {r: .4627451, g: .172549024, b: 0, a: 1}
+  - {r: .725490212, g: .376470596, b: 0, a: 1}
+  - {r: .788235307, g: .592156887, b: .0235294122, a: 1}
+  - {r: .890196085, g: .796078444, b: .0352941193, a: 1}
+  - {r: 1, g: .792156875, b: .0470588244, a: 1}
+  - {r: .992156863, g: 1, b: .0666666701, a: 1}
+  toggle_text_no: 0
+  toggle_text_short: 1
+  toggle_text_long: 0
+  tooltip_text_no: 1
+  tooltip_text_short: 0
+  tooltip_text_long: 0
+  tooltip_mode: 0
+  video_help: 0
+  run_in_background: 0
+  display_bar_auto_generate: 1
+  unload_textures: 0
+  clean_memory: 0
+  auto_speed: 1
+  target_frame: 40
+  auto_save: 0
+  auto_save_tc_instances: 4
+  auto_save_scene_instances: 4
+  auto_save_tc: 1
+  auto_save_tc_list:
+  - 453a2f556e6974792f446576656c6f702f4173736574732f4261636b75702054432f6e65775f73657475702031332d30362d313720542030352d32362d30302e707265666162
+  - 453a2f556e6974792f446576656c6f702f4173736574732f4261636b75702054432f6e65775f73657475702031332d30362d313720542030352d33362d30302e707265666162
+  - 453a2f556e6974792f446576656c6f702f4173736574732f4261636b75702054432f6e65775f73657475702031332d30362d313720542030362d31342d33362e707265666162
+  - 453a2f556e6974792f446576656c6f702f4173736574732f4261636b75702054432f6e65775f73657475702031332d30372d323320542030302d33352d33392e707265666162
+  auto_save_scene: 1
+  auto_save_scene_list:
+  - 4173736574732f4261636b75702054432f556e7469746c65642031332d30362d313620542032332d35332d35342e756e6974792031332d30362d313720542030352d32362d30302e756e697479
+  - 4173736574732f4261636b75702054432f556e7469746c65642031332d30362d313620542032332d35332d35342e756e6974792031332d30362d313720542030352d33362d30302e756e697479
+  - 4173736574732f4261636b75702054432f556e7469746c65642031332d30362d313720542030362d31342d33362e756e697479
+  - 453a2f556e6974792f446576656c6f702f4173736574732f4261636b75702054432f746573742e756e6974792031332d30372d323320542030302d33352d33392e756e697479
+  auto_save_timer: 10
+  auto_save_time_start: 4775.63818
+  auto_save_on_play: 1
+  auto_save_path: 
+  terrain_tiles_max: 32
+  auto_search_list:
+  - path_full: 
+    path: 
+    foldout: 0
+    custom: 0
+    digits: 1
+    format: 5f7825785f792579
+    filename: 74696c65
+    fullname: 
+    name: 
+    extension: 2e726177
+    start_x: 0
+    start_y: 0
+    start_n: 1
+    count_x: 1
+    count_y: 1
+    display: 0
+    select_index: 0
+    menu_rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    output_format: 5f78305f7930
+  - path_full: 
+    path: 
+    foldout: 0
+    custom: 0
+    digits: 1
+    format: 256e5f4325785f522579
+    filename: 74696c65
+    fullname: 
+    name: 
+    extension: 2e726177
+    start_x: 1
+    start_y: 1
+    start_n: 1
+    count_x: 1
+    count_y: 1
+    display: 0
+    select_index: 0
+    menu_rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    output_format: 315f43315f5231
+  - path_full: 
+    path: 
+    foldout: 0
+    custom: 0
+    digits: 1
+    format: 256e
+    filename: 74696c65
+    fullname: 
+    name: 
+    extension: 2e726177
+    start_x: 0
+    start_y: 0
+    start_n: 1
+    count_x: 1
+    count_y: 1
+    display: 0
+    select_index: 0
+    menu_rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    output_format: 31
+  map:
+    type: 1
+    active: 1
+    button_parameters: 1
+    button_image_editor: 0
+    button_region: 0
+    button_image_export: 0
+    button_heightmap_export: 0
+    button_converter: 1
+    button_settings: 0
+    button_create_terrain: 0
+    button_help: 0
+    button_update: 1
+    alpha: .901785731
+    backgroundColor: {r: .634328365, g: .634328365, b: .634328365, a: .541176498}
+    titleColor: {r: .331501901, g: .299398512, b: .955223858, a: .764705896}
+    region_popup_edit: 0
+    area_popup_edit: 0
+    disable_region_popup_edit: 0
+    disable_area_popup_edit: 0
+    region:
+    - name: 552e532e412e
+      area:
+      - name: 4d6f756e7461696e
+        upper_left:
+          latitude: 46.05291461239247
+          longitude: -110.52980488943501
+        lower_right:
+          latitude: 45.93078741833655
+          longitude: -110.35402363943501
+        center:
+          latitude: 45.991886873856657
+          longitude: -110.44191426443501
+        center_height: 2048
+        size:
+          x: 13594.984885213198
+          y: 13595.551308739656
+        created: 1
+        resize: 0
+        resize_left: 0
+        resize_right: 0
+        resize_top: 0
+        resize_bottom: 0
+        resize_topLeft: 0
+        resize_topRight: 0
+        resize_bottomLeft: 0
+        resize_bottomRight: 0
+        resize_center: 0
+        manual_area: 0
+        heightmap_offset: {x: 0, y: 0}
+        select: 0
+        smooth_strength: 0
+        width: 0
+        height: 0
+        heightmap_resolution: {x: 2048, y: 2048}
+        heightmap_scale: 6.6381762134830069
+        heightmap_zoom: 14
+        elevation_zoom: 14
+        area_resolution: 0
+        resolution: 4096
+        image_zoom: 16
+        image_changed: 0
+        start_tile_enabled: 0
+        start_tile:
+          x: 0
+          y: 0
+        tiles:
+          x: 2
+          y: 2
+        export_heightmap_active: 0
+        export_heightmap_call: 0
+        export_heightmap_path: 
+        export_heightmap_filename: 6d6f756e7461696e
+        export_heightmap_changed: 0
+        export_heightmap_not_fit: 0
+        export_heightmap_bres: {x: 0, y: 0}
+        export_image_active: 0
+        export_image_call: 0
+        export_image_path: 
+        export_image_filename: 6d6f756e7461696e
+        export_image_changed: 0
+        export_image_import_settings: 0
+        export_image_world_file: 0
+        export_terrain_path: 
+        export_terrain_changed: 0
+        export_to_terraincomposer: 0
+        import_heightmap_path_full: 
+        import_heightmap: 0
+        filter_perlin: 1
+        converter_source_path_full: 
+        converter_destination_path_full: 
+        converter_resolution: {x: 0, y: 0}
+        converter_height: 0
+        converter_import_heightmap: 0
+        terrain_asset_name: 5f6d6f756e7461696e
+        terrain_scene_name: 6d6f756e7461696e
+        terrain_name_changed: 0
+        terrain_height: 5000
+        terrain_scale: 0
+        terrain_curve:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+          - time: .889999986
+            value: .889999986
+            inSlope: 1
+            outSlope: -8.09090805
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: -8.09090805
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        do_heightmap: 1
+        do_image: 1
+        terrain_heightmap_resolution_select: 5
+        terrain_heightmap_resolution: 1025
+        terrain_heightmap_resolution_changed: 0
+        mipmapEnabled: 1
+        terrain_done: 0
+        filterMode: 2
+        anisoLevel: 9
+        maxTextureSize: 4096
+        maxTextureSize_select: 7
+        maxTextureSize_changed: 0
+        auto_import_settings_apply: 0
+        textureFormat: -1
+        preimage_export_active: 0
+        preimage_apply: 0
+        preimage_save_new: 0
+        preimage_path: 
+        preimage_path_changed: 0
+        preimage_filename: 
+        preimage_count: 0
+      - name: 4561676c655065616b
+        upper_left:
+          latitude: 44.358173971743511
+          longitude: -110.13153707011881
+        lower_right:
+          latitude: 44.232358475638421
+          longitude: -109.95575582011881
+        center:
+          latitude: 44.295302082183113
+          longitude: -110.04364644511881
+        center_height: 2711
+        size:
+          x: 14005.710314547177
+          y: 14005.749642113286
+        created: 1
+        resize: 0
+        resize_left: 0
+        resize_right: 0
+        resize_top: 0
+        resize_bottom: 0
+        resize_topLeft: 0
+        resize_topRight: 0
+        resize_bottomLeft: 0
+        resize_bottomRight: 0
+        resize_center: 0
+        manual_area: 0
+        heightmap_offset: {x: 0, y: 0}
+        select: 0
+        smooth_strength: 0
+        width: 0
+        height: 0
+        heightmap_resolution: {x: 2048, y: 2048}
+        heightmap_scale: 6.838725739524989
+        heightmap_zoom: 14
+        elevation_zoom: 14
+        area_resolution: 0
+        resolution: 2048
+        image_zoom: 18
+        image_changed: 0
+        start_tile_enabled: 0
+        start_tile:
+          x: 0
+          y: 0
+        tiles:
+          x: 16
+          y: 16
+        export_heightmap_active: 0
+        export_heightmap_call: 0
+        export_heightmap_path: 
+        export_heightmap_filename: 4561676c655065616b
+        export_heightmap_changed: 0
+        export_heightmap_not_fit: 0
+        export_heightmap_bres: {x: 0, y: 0}
+        export_image_active: 0
+        export_image_call: 0
+        export_image_path: 
+        export_image_filename: 4561676c655065616b
+        export_image_changed: 0
+        export_image_import_settings: 1
+        export_image_world_file: 0
+        export_terrain_path: 
+        export_terrain_changed: 0
+        export_to_terraincomposer: 0
+        import_heightmap_path_full: 
+        import_heightmap: 0
+        filter_perlin: 1
+        converter_source_path_full: 
+        converter_destination_path_full: 
+        converter_resolution: {x: 0, y: 0}
+        converter_height: 0
+        converter_import_heightmap: 0
+        terrain_asset_name: 5f4561676c655065616b
+        terrain_scene_name: 4561676c655065616b
+        terrain_name_changed: 0
+        terrain_height: 4000
+        terrain_scale: 0
+        terrain_curve:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+          - time: .889999986
+            value: .889999986
+            inSlope: 1
+            outSlope: -8.09090805
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: -8.09090805
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        do_heightmap: 1
+        do_image: 1
+        terrain_heightmap_resolution_select: 2
+        terrain_heightmap_resolution: 129
+        terrain_heightmap_resolution_changed: 0
+        mipmapEnabled: 1
+        terrain_done: 0
+        filterMode: 2
+        anisoLevel: 9
+        maxTextureSize: 1024
+        maxTextureSize_select: 5
+        maxTextureSize_changed: 1
+        auto_import_settings_apply: 0
+        textureFormat: -1
+        preimage_export_active: 0
+        preimage_apply: 0
+        preimage_save_new: 0
+        preimage_path: 
+        preimage_path_changed: 0
+        preimage_filename: 
+        preimage_count: 0
+      - name: 4672616e63735065616b
+        upper_left:
+          latitude: 44.023380279541016
+          longitude: -109.39545440673828
+        lower_right:
+          latitude: 43.8968505859375
+          longitude: -109.21967315673828
+        center:
+          latitude: 43.960151539126166
+          longitude: -109.30756378173828
+        center_height: 3270
+        size:
+          x: 14085.40609357995
+          y: 14085.171992348445
+        created: 1
+        resize: 0
+        resize_left: 0
+        resize_right: 0
+        resize_top: 0
+        resize_bottom: 0
+        resize_topLeft: 0
+        resize_topRight: 0
+        resize_bottomLeft: 0
+        resize_bottomRight: 0
+        resize_center: 0
+        manual_area: 0
+        heightmap_offset: {x: 0, y: 0}
+        select: 0
+        smooth_strength: 1
+        width: 0
+        height: 0
+        heightmap_resolution: {x: 2048, y: 2048}
+        heightmap_scale: 6.8776396941308349
+        heightmap_zoom: 14
+        elevation_zoom: 14
+        area_resolution: 0
+        resolution: 2048
+        image_zoom: 18
+        image_changed: 0
+        start_tile_enabled: 0
+        start_tile:
+          x: 0
+          y: 0
+        tiles:
+          x: 16
+          y: 16
+        export_heightmap_active: 0
+        export_heightmap_call: 0
+        export_heightmap_path: 
+        export_heightmap_filename: 4672616e63735065616b
+        export_heightmap_changed: 0
+        export_heightmap_not_fit: 0
+        export_heightmap_bres: {x: 0, y: 0}
+        export_image_active: 0
+        export_image_call: 0
+        export_image_path: 
+        export_image_filename: 4672616e63735065616b
+        export_image_changed: 0
+        export_image_import_settings: 1
+        export_image_world_file: 0
+        export_terrain_path: 
+        export_terrain_changed: 0
+        export_to_terraincomposer: 0
+        import_heightmap_path_full: 
+        import_heightmap: 0
+        filter_perlin: 0
+        converter_source_path_full: 
+        converter_destination_path_full: 
+        converter_resolution: {x: 0, y: 0}
+        converter_height: 0
+        converter_import_heightmap: 0
+        terrain_asset_name: 5f4672616e63735065616b
+        terrain_scene_name: 4672616e63735065616b
+        terrain_name_changed: 0
+        terrain_height: 5000
+        terrain_scale: 0
+        terrain_curve:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+          - time: .889999986
+            value: .889999986
+            inSlope: 1
+            outSlope: -8.09090805
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: -8.09090805
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        do_heightmap: 1
+        do_image: 1
+        terrain_heightmap_resolution_select: 2
+        terrain_heightmap_resolution: 129
+        terrain_heightmap_resolution_changed: 0
+        mipmapEnabled: 1
+        terrain_done: 0
+        filterMode: 2
+        anisoLevel: 9
+        maxTextureSize: 2048
+        maxTextureSize_select: 6
+        maxTextureSize_changed: 0
+        auto_import_settings_apply: 0
+        textureFormat: -1
+        preimage_export_active: 0
+        preimage_apply: 0
+        preimage_save_new: 0
+        preimage_path: 453a2f556e6974792f5465727261696e436f6d706f7365722f4173736574732f576f726c642f4672616e63735065616b
+        preimage_path_changed: 0
+        preimage_filename: 
+        preimage_count: 0
+      - name: 506c6174656175
+        upper_left:
+          latitude: 36.551073307279957
+          longitude: -113.27662805447531
+        lower_right:
+          latitude: 36.409736206717945
+          longitude: -113.10084680447531
+        center:
+          latitude: 36.480438907943849
+          longitude: -113.18873742947531
+        center_height: 1836
+        size:
+          x: 15733.747604760574
+          y: 15733.180431169796
+        created: 1
+        resize: 0
+        resize_left: 0
+        resize_right: 0
+        resize_top: 0
+        resize_bottom: 0
+        resize_topLeft: 0
+        resize_topRight: 0
+        resize_bottomLeft: 0
+        resize_bottomRight: 0
+        resize_center: 0
+        manual_area: 0
+        heightmap_offset: {x: 0, y: 0}
+        select: 0
+        smooth_strength: 0
+        width: 0
+        height: 0
+        heightmap_resolution: {x: 2048, y: 2048}
+        heightmap_scale: 7.6824939476369991
+        heightmap_zoom: 14
+        elevation_zoom: 14
+        area_resolution: 0
+        resolution: 2048
+        image_zoom: 18
+        image_changed: 0
+        start_tile_enabled: 0
+        start_tile:
+          x: 0
+          y: 0
+        tiles:
+          x: 16
+          y: 16
+        export_heightmap_active: 0
+        export_heightmap_call: 0
+        export_heightmap_path: /Users/yibojiang/Documents/GameDevelop/AircraftProject/Aircraft/Assets
+        export_heightmap_filename: 506c6174656175
+        export_heightmap_changed: 0
+        export_heightmap_not_fit: 0
+        export_heightmap_bres: {x: 0, y: 0}
+        export_image_active: 0
+        export_image_call: 0
+        export_image_path: /Users/yibojiang/Documents/GameDevelop/AircraftProject/Aircraft/Assets
+        export_image_filename: 506c6174656175
+        export_image_changed: 0
+        export_image_import_settings: 1
+        export_image_world_file: 0
+        export_terrain_path: /Users/yibojiang/Documents/GameDevelop/AircraftProject/Aircraft/Assets/Terrains
+        export_terrain_changed: 0
+        export_to_terraincomposer: 0
+        import_heightmap_path_full: 
+        import_heightmap: 0
+        filter_perlin: 0
+        converter_source_path_full: 
+        converter_destination_path_full: 
+        converter_resolution: {x: 0, y: 0}
+        converter_height: 0
+        converter_import_heightmap: 0
+        terrain_asset_name: 5f506c6174656175
+        terrain_scene_name: 506c6174656175
+        terrain_name_changed: 0
+        terrain_height: 5000
+        terrain_scale: 0
+        terrain_curve:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+          - time: .889999986
+            value: .889999986
+            inSlope: 1
+            outSlope: -8.09090805
+            tangentMode: 0
+          - time: 1
+            value: 0
+            inSlope: -8.09090805
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        do_heightmap: 1
+        do_image: 1
+        terrain_heightmap_resolution_select: 2
+        terrain_heightmap_resolution: 129
+        terrain_heightmap_resolution_changed: 0
+        mipmapEnabled: 1
+        terrain_done: 0
+        filterMode: 2
+        anisoLevel: 9
+        maxTextureSize: 0
+        maxTextureSize_select: 6
+        maxTextureSize_changed: 0
+        auto_import_settings_apply: 0
+        textureFormat: -1
+        preimage_export_active: 0
+        preimage_apply: 0
+        preimage_save_new: 0
+        preimage_path: 453a2f556e6974792f5465727261696e436f6d706f7365722f417373657473
+        preimage_path_changed: 0
+        preimage_filename: 
+        preimage_count: 0
+      area_popup:
+      - 4d6f756e7461696e
+      - 4561676c655065616b
+      - 4672616e63735065616b
+      - 506c6174656175
+      area_select: 3
+      center:
+        latitude: 35.381604935039213
+        longitude: 138.62791299052887
+    region_popup:
+    - 552e532e412e
+    region_select: 0
+    manual_edit: 0
+    region_rect:
+      serializedVersion: 2
+      x: -1
+      y: 289
+      width: 0
+      height: 3
+    area_rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    preimage_edit:
+      edit_color:
+      - color1_start: {r: 0, g: 0, b: 0, a: 1}
+        color1_end: {r: .223880589, g: .223880589, b: .223880589, a: 1}
+        curve1:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 10
+          - time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 10
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        color2_start: {r: .835820913, g: .835820913, b: .835820913, a: 1}
+        color2_end: {r: .679104447, g: .679104447, b: .679104447, a: 1}
+        curve2:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+          - time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        strength: 2
+        output: 3
+        active: 1
+        solid_color: 0
+      - color1_start: {r: 0, g: 0, b: 0, a: 1}
+        color1_end: {r: .26119405, g: .26119405, b: .26119405, a: 1}
+        curve1:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+          - time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        color2_start: {r: 1, g: 1, b: 1, a: 1}
+        color2_end: {r: 1, g: 1, b: 1, a: 1}
+        curve2:
+          serializedVersion: 2
+          m_Curve:
+          - time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 1
+            tangentMode: 0
+          - time: 1
+            value: 1
+            inSlope: 1
+            outSlope: 0
+            tangentMode: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+        strength: .100000001
+        output: 0
+        active: 1
+        solid_color: 0
+      y1: 727
+      x1: 0
+      x: 800
+      y: 768
+      frames: 0
+      auto_speed_time: 403.073944
+      target_frame: 50
+      generate: 0
+      loop: 0
+      generate_call: 0
+      active: 1
+      loop_active: 1
+      import_settings: 0
+    color_fault: {r: .913725495, g: .90196079, b: .827450991, a: 0}
+    tex1: {fileID: 0}
+    tex2: {fileID: 0}
+    tex3: {fileID: 0}
+    tex_swapped: 1
+    tex2_tile:
+      x: 0
+      y: 3
+    tex3_tile:
+      x: 1
+      y: 3
+    elExt_check_loaded: 1
+    elExt_check_assign: 1
+    elExt:
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 16
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.4033279418945446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.4086494445800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e34303333323739343138393435342c34332e313736363430303730363639372c352e343038363439343434353830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 17
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.4088211059570446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4141426086425914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34303838323131303539353730342c34332e313732363334313634383332392c352e343134313432363038363432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 19
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.4198074340820446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4251289367675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34313938303734333430383230342c34332e313732363334313634383332392c352e343235313238393336373637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 8
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3593826293945446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3647041320800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33353933383236323933393435342c34332e313732363334313634383332392c352e333634373034313332303830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 14
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3923416137695446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3976631164550914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33393233343136313337363935342c34332e313732363334313634383332392c352e333937363633313136343535303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 17
+        y: 1
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.212682977916863
+          longitude: 5.4088211059570446
+        latlong2:
+          latitude: 43.208803430576253
+          longitude: 5.4141426086425914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e323038383033343330353736332c352e34303838323131303539353730342c34332e323132363832393737393136392c352e343134313432363038363432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 15
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3978347778320446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4031562805175914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33393738333437373738333230342c34332e313732363334313634383332392c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 9
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3648757934570446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3701972961425914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33363438373537393334353730342c34332e313732363334313634383332392c352e333730313937323936313432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 8
+        y: 0
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.21681182715524
+          longitude: 5.3593826293945446
+        latlong2:
+          latitude: 43.212809336412988
+          longitude: 5.3647041320800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3231323830393333363431332c352e33353933383236323933393435342c34332e323136383131383237313535322c352e333634373034313332303830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 18
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.4143142700195446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4196357727050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34313433313432373030313935342c34332e313732363334313634383332392c352e343139363335373732373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 4
+        y: 7
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.188654373085413
+          longitude: 5.3374099731445446
+        latlong2:
+          latitude: 43.184774825744803
+          longitude: 5.3427314758300914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313834373734383235373434382c352e33333734303939373331343435342c34332e313838363534333733303835342c352e333432373331343735383330303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 0
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3152656555175914
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3207588195800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33313532363536353535313735392c34332e313732363334313634383332392c352e333230373538383139353830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 13
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3868484497070446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3921699523925914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33383638343834343937303730342c34332e313732363334313634383332392c352e333932313639393532333932353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 13
+        y: 0
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.21681182715524
+          longitude: 5.3868484497070446
+        latlong2:
+          latitude: 43.212809336412988
+          longitude: 5.3921699523925914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3231323830393333363431332c352e33383638343834343937303730342c34332e323136383131383237313535322c352e333932313639393532333932353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 4
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3374099731445446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.3427314758300914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33333734303939373331343435342c34332e313736363430303730363639372c352e333432373331343735383330303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 5
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3429031372070446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.3482246398925914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33343239303331333732303730342c34332e313736363430303730363639372c352e333438323234363339383932353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 10
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3703689575195446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3756904602050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33373033363839353735313935342c34332e313732363334313634383332392c352e333735363930343630323035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 15
+        y: 9
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.180645976506426
+          longitude: 5.3978347778320446
+        latlong2:
+          latitude: 43.176766429165816
+          longitude: 5.4031562805175914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313736373636343239313635382c352e33393738333437373738333230342c34332e313830363435393736353036342c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 18
+        y: 4
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.200668675501134
+          longitude: 5.4143142700195446
+        latlong2:
+          latitude: 43.196792543255015
+          longitude: 5.4196357727050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3139363739323534333235352c352e34313433313432373030313935342c34332e323030363638363735353031312c352e343139363335373732373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 8
+        y: 7
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.188654373085413
+          longitude: 5.3593826293945446
+        latlong2:
+          latitude: 43.184774825744803
+          longitude: 5.3647041320800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313834373734383235373434382c352e33353933383236323933393435342c34332e313838363534333733303835342c352e333634373034313332303830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 1
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3209304809570446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.3262519836425914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33323039333034383039353730342c34332e313736363430303730363639372c352e333236323531393833363432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 16
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.4033279418945446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4086494445800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34303333323739343138393435342c34332e313732363334313634383332392c352e343038363439343434353830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 2
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3264236450195446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3317451477050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33323634323336343530313935342c34332e313732363334313634383332392c352e333331373435313437373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 6
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3483963012695446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3537178039550914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33343833393633303132363935342c34332e313732363334313634383332392c352e333533373137383033393535303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 15
+        y: 3
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.204674581337876
+          longitude: 5.3978347778320446
+        latlong2:
+          latitude: 43.200795033997267
+          longitude: 5.4031562805175914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e323030373935303333393937332c352e33393738333437373738333230342c34332e323034363734353831333337392c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 11
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3758621215820446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3811836242675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33373538363231323135383230342c34332e313732363334313634383332392c352e333831313833363234323637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 3
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3319168090820446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3372383117675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33333139313638303930383230342c34332e313732363334313634383332392c352e333337323338333131373637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 9
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3648757934570446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.3701972961425914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33363438373537393334353730342c34332e313736363430303730363639372c352e333730313937323936313432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 18
+        y: 6
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.192660278922148
+          longitude: 5.4143142700195446
+        latlong2:
+          latitude: 43.188780731581545
+          longitude: 5.4196357727050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313838373830373331353831352c352e34313433313432373030313935342c34332e313932363630323738393232312c352e343139363335373732373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 11
+        y: 4
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.200668675501134
+          longitude: 5.3758621215820446
+        latlong2:
+          latitude: 43.196792543255015
+          longitude: 5.3811836242675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3139363739323534333235352c352e33373538363231323135383230342c34332e323030363638363735353031312c352e333831313833363234323637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 15
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3978347778320446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.4031562805175914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33393738333437373738333230342c34332e313736363430303730363639372c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 19
+        y: 8
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.184651882343168
+          longitude: 5.4198074340820446
+        latlong2:
+          latitude: 43.180772335002558
+          longitude: 5.4251289367675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313830373732333335303032362c352e34313938303734333430383230342c34332e313834363531383832333433322c352e343235313238393336373637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    texExt:
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 2
+        y: 2
+      latlong_area:
+        latlong1:
+          latitude: 43.176766429165816
+          longitude: 5.4141426086425914
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.4196357727050914
+      latlong_center:
+        latitude: 43.17476518379469
+        longitude: 5.4168891906738414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313734373635313833373934372c352e34313638383931393036373338342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 2
+        y: 3
+      latlong_area:
+        latlong1:
+          latitude: 43.172760523329082
+          longitude: 5.4141426086425914
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4196357727050914
+      latlong_center:
+        latitude: 43.170755862863466
+        longitude: 5.4168891906738414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313730373535383632383633352c352e34313638383931393036373338342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 0
+        y: 3
+      latlong_area:
+        latlong1:
+          latitude: 43.172760523329082
+          longitude: 5.4031562805175914
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4086494445800914
+      latlong_center:
+        latitude: 43.170755862863466
+        longitude: 5.4059028625488414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313730373535383632383633352c352e34303539303238363235343838342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 3
+        y: 3
+      latlong_area:
+        latlong1:
+          latitude: 43.172760523329082
+          longitude: 5.4196357727050914
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4251289367675914
+      latlong_center:
+        latitude: 43.170755862863466
+        longitude: 5.4223823547363414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313730373535383632383633352c352e34323233383233353437333633342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 2
+        y: 1
+      latlong_area:
+        latlong1:
+          latitude: 43.180772335002558
+          longitude: 5.4141426086425914
+        latlong2:
+          latitude: 43.176766429165816
+          longitude: 5.4196357727050914
+      latlong_center:
+        latitude: 43.178767674536942
+        longitude: 5.4168891906738414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313738373637363734353336392c352e34313638383931393036373338342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 3
+        y: 1
+      latlong_area:
+        latlong1:
+          latitude: 43.180772335002558
+          longitude: 5.4196357727050914
+        latlong2:
+          latitude: 43.176766429165816
+          longitude: 5.4251289367675914
+      latlong_center:
+        latitude: 43.178767674536942
+        longitude: 5.4223823547363414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313738373637363734353336392c352e34323233383233353437333633342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 0
+        y: 2
+      latlong_area:
+        latlong1:
+          latitude: 43.176766429165816
+          longitude: 5.4031562805175914
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.4086494445800914
+      latlong_center:
+        latitude: 43.17476518379469
+        longitude: 5.4059028625488414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313734373635313833373934372c352e34303539303238363235343838342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    - loaded: 1
+      converted: 1
+      error: 0
+      tile:
+        x: 4
+        y: 2
+      subtile:
+        x: 1
+        y: 2
+      latlong_area:
+        latlong1:
+          latitude: 43.176766429165816
+          longitude: 5.4086494445800914
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.4141426086425914
+      latlong_center:
+        latitude: 43.17476518379469
+        longitude: 5.4113960266113414
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f496d61676572792f4d61702f41657269616c2f34332e313734373635313833373934372c352e34313133393630323636313133342f31373f266d617053697a653d3531322c353434266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 0, y: 0}
+      zero_error: 0
+    time_start_elExt:
+    - 1182.91614
+    - 1183.08044
+    - 1183.0968
+    - 1183.02026
+    - 1183.03284
+    - 1182.05359
+    - 1183.03296
+    - 1183.02039
+    - 1181.89734
+    - 1183.08594
+    - 1182.46582
+    - 1182.79675
+    - 1183.02808
+    - 1181.89771
+    - 1182.89551
+    - 1183.0282
+    - 1183.02124
+    - 1183.04248
+    - 1182.27039
+    - 1182.47595
+    - 1182.70496
+    - 1183.05249
+    - 1182.79785
+    - 1182.93457
+    - 1182.17639
+    - 1183.02124
+    - 1182.79785
+    - 1182.73608
+    - 1182.42029
+    - 1182.24817
+    - 1182.98486
+    - 1182.59412
+    time_start_texExt:
+    - 1227.49915
+    - 1227.65479
+    - 1227.49939
+    - 1227.90063
+    - 1227.49353
+    - 1227.49365
+    - 1227.49377
+    - 1227.4939
+    export_texExt: 8
+    export_elExt: 32
+    mode: 0
+    export_tex3: 0
+    export_heightmap_area:
+      latlong1:
+        latitude: 43.216808319091797
+        longitude: 5.3152656555175781
+      latlong2:
+        latitude: 43.168754577636719
+        longitude: 5.4251289367675781
+    export_image_area:
+      latlong1:
+        latitude: 43.216808319091797
+        longitude: 5.3152656555175781
+      latlong2:
+        latitude: 43.168754577636719
+        longitude: 5.4251289367675781
+    export_pullIndex:
+      x: 0
+      y: 0
+    export_pulled: 0
+    export_image_active: 0
+    export_heightmap_active: 0
+    export_heightmap_zoom: 13
+    export_heightmap_timeStart: 1181.89612
+    export_heightmap_timeEnd: 1187.61133
+    export_heightmap_timePause: 1181.89612
+    export_heightmap_continue: 1
+    export_heightmap:
+      last_tile: 1
+      tiles:
+        x: 20
+        y: 12
+      tile:
+        x: 0
+        y: 12
+      subtiles:
+        x: 0
+        y: 0
+      subtile:
+        x: 0
+        y: 0
+      subtiles_total: 0
+      subtile_total: 0
+      subtile2_total: 0
+    export_image:
+      last_tile: 1
+      tiles:
+        x: 5
+        y: 3
+      tile:
+        x: 0
+        y: 3
+      subtiles:
+        x: 4
+        y: 4
+      subtile:
+        x: 0
+        y: 0
+      subtiles_total: 16
+      subtile_total: 0
+      subtile2_total: 0
+    export_image_zoom: 17
+    export_image_timeStart: 1186.1582
+    export_image_timeEnd: 1228.83728
+    export_image_timePause: 1186.1582
+    export_image_continue: 1
+    export_jpg_quality: 100
+    export_jpg: 1
+    export_png: 0
+    export_raw: 0
+    color: {r: 0, g: 0, b: 0, a: 1}
+    key_edit: 1
+    bingKey:
+    - pulls_startDay: 12
+      pulls_startHour: 1
+      pulls_startMinute: 43
+      pulls: 6
+      key: 
+    bingKey_selected: 0
+    mouse_sensivity: 2
+    path_display: 0
+  tex1: {fileID: 0}
+  tex2: {fileID: 0}
+  tex3: {fileID: 0}
+  tex4: {fileID: 0}
+  select_window:
+    active: 0
+    button_colormap: 0
+    button_node: 1
+    button_terrain: 0
+    button_heightmap: 1
+    terrain_zoom: 53.4966316
+    terrain_zoom2: 40
+    terrain_pos: {x: 0, y: 0}
+    node_zoom: 47.9220352
+    node_zoom2: 40
+    node_pos: {x: 0, y: 0}
+    node_grid: 0
+    node_grid_center: 0
+    mode: 0
+    terrain_offset: {x: -.656861722, y: 1.37632418}
+    node_offset: {x: 36.1736717, y: 17.0965271}
+  preview_window: 
+  PI: 3.14159274
+  map0: {fileID: 0}
+  map1: {fileID: 0}
+  map2: {fileID: 0}
+  map3: {fileID: 0}
+  map4: {fileID: 0}
+  map5: {fileID: 0}
+  map_combine: 1
+  map_load: 1
+  map_load2: 1
+  map_load3: 0
+  map_load4: 0
+  map_zoom1: 0
+  map_zoom2: 0
+  map_zoom3: 19
+  map_zoom4: 0
+  map_latlong:
+    latitude: 39.175621234146845
+    longitude: -165.35717024569681
+  map_latlong_center:
+    latitude: 39.175621234146845
+    longitude: -86.607170245696807
+  map_zoom: 1
+  map_zoom_old: 1
+  settings:
+    restrict_resolutions: 1
+    rtp: 0
+    video_help: 1
+    view_only_output: 1
+    save_global_timer: 5
+    downloading: 0
+    download_foldout: 1
+    download_display: 1
+    downloading2: 0
+    download_foldout2: 1
+    download_display2: 1
+    wc_loading: 2
+    old_version: 1.00999999
+    new_version: 1.45000005
+    update_display: 1
+    update_display2: 0
+    update_version: 0
+    update_version2: 0
+    update:
+    - 446f6e277420636865636b
+    - 4e6f74696679
+    - 446f776e6c6f616420616e64206e6f74696679
+    - 446f776e6c6f61642c696d706f727420616e64206e6f74696679
+    - 446f776e6c6f616420616e6420696d706f7274206175746f6d61746963616c6c79
+    time_out: 0
+    button_export: 1
+    button_measure: 1
+    button_capture: 1
+    button_tools: 1
+    button_tiles: 1
+    button_node: 1
+    button_world: 1
+    example_display: 1
+    example_resolution: 3
+    example_tiles: 2
+    example_terrain: 0
+    example_terrain_old: -1
+    example_tree_active: 1
+    example_grass_active: 1
+    example_object_active: 1
+    example_buttons: 1
+  minLatitude: -85.051132202148438
+  maxLatitude: 85.051132202148438
+  minLongitude: -180
+  maxLongitude: 180
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
