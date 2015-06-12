@@ -106,6 +106,10 @@ Material:
         second: 1
       data:
         first:
+          name: _Blend
+        second: 0
+      data:
+        first:
           name: _InvFade
         second: .626250029
       data:
@@ -124,10 +128,6 @@ Material:
         first:
           name: _FloatMax
         second: 2.00020313
-      data:
-        first:
-          name: _Blend
-        second: 0
       data:
         first:
           name: _SliceAmount
@@ -183,12 +183,12 @@ Material:
         second: {r: 1, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _EmisColor
-        second: {r: .470149279, g: .470149279, b: .470149279, a: 0}
-      data:
-        first:
           name: _Emission
         second: {r: .404411793, g: .404411793, b: .404411793, a: 1}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: .470149279, g: .470149279, b: .470149279, a: 0}
       data:
         first:
           name: _TintColor
@@ -200,7 +200,7 @@ Material:
       data:
         first:
           name: _MoonColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _FogColor2

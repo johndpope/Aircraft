@@ -23,16 +23,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SkyBox
+          name: _FresnelLookUp
         second:
-          m_Texture: {fileID: 8900000, guid: db7d862e7ac194442b14435b109001bf, type: 2}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _FresnelLookUp
+          name: _SkyBox
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 8900000, guid: db7d862e7ac194442b14435b109001bf, type: 2}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -144,29 +144,25 @@ Material:
         second: {r: 1, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _SunColor
-        second: {r: .925783813, g: .869633019, b: .754479408, a: 1}
-      data:
-        first:
           name: _ReflectColor
         second: {r: 1, g: 1, b: 1, a: .5}
       data:
         first:
-          name: _SampleScale
-        second: {r: .5, g: 1, b: 0, a: 0}
+          name: _SunColor
+        second: {r: .919869661, g: .882101476, b: .798206449, a: 1}
+      data:
+        first:
+          name: _SunDir
+        second: {r: 1.86264515e-09, g: .449058175, b: -.893502533, a: 0}
       data:
         first:
           name: _SeaColor
         second: {r: .00278902473, g: 0, b: .0808823705, a: 1}
       data:
         first:
-          name: _GridSizes
-        second: {r: 5488, g: 392, b: 28, a: 2}
+          name: _SampleScale
+        second: {r: .5, g: 1, b: 0, a: 0}
       data:
         first:
-          name: _SunDir
-<<<<<<< HEAD
-        second: {r: -3.7252903e-09, g: .967509806, b: -.252834231, a: 0}
-=======
-        second: {r: -0, g: .410926849, b: -.911668301, a: 0}
->>>>>>> 11cd59148ec720703cd5c1cac8f99cef548d3cc8
+          name: _GridSizes
+        second: {r: 5488, g: 392, b: 28, a: 2}
