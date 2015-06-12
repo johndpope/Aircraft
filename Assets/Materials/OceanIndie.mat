@@ -165,4 +165,4 @@ Material:
       data:
         first:
           name: _SunDir
-        second: {r: 3.7252903e-09, g: .998454034, b: .0555885583, a: 0}
+        second: {r: -3.7252903e-09, g: .967509806, b: -.252834231, a: 0}

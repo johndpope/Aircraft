@@ -20194,7 +20194,7 @@ MonoBehaviour:
   longRangeMode: 0
   longRangeSlerpSpeed: 1
   normalPos: {x: 0, y: 8, z: -20}
-  longRangePos: {x: 0, y: 8, z: -30}
+  longRangePos: {x: 0, y: 10, z: -30}
 --- !u!4 &1479173783
 Transform:
   m_ObjectHideFlags: 0
