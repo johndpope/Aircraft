@@ -149,11 +149,11 @@ Material:
       data:
         first:
           name: _SunColor
-        second: {r: .919869661, g: .882101476, b: .798206449, a: 1}
+        second: {r: .911764681, g: .899188638, b: .858131468, a: 1}
       data:
         first:
           name: _SunDir
-        second: {r: 1.86264515e-09, g: .449058175, b: -.893502533, a: 0}
+        second: {r: 3.7252903e-09, g: .577241242, b: .816573977, a: 0}
       data:
         first:
           name: _SeaColor
