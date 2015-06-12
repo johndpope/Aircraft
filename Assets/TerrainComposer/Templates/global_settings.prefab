@@ -250,14 +250,14 @@ MonoBehaviour:
     active: 1
     button_parameters: 1
     button_image_editor: 0
-    button_region: 1
-    button_image_export: 1
-    button_heightmap_export: 1
+    button_region: 0
+    button_image_export: 0
+    button_heightmap_export: 0
     button_converter: 1
-    button_settings: 1
+    button_settings: 0
     button_create_terrain: 0
-    button_help: 1
-    button_update: 0
+    button_help: 0
+    button_update: 1
     alpha: .901785731
     backgroundColor: {r: .634328365, g: .634328365, b: .634328365, a: .541176498}
     titleColor: {r: .331501901, g: .299398512, b: .955223858, a: .764705896}
@@ -745,140 +745,14 @@ MonoBehaviour:
       center:
         latitude: 35.381604935039213
         longitude: 138.62791299052887
-    - name: Untitled2
-      area:
-      - name: Untitled0
-        upper_left:
-          latitude: 0
-          longitude: 0
-        lower_right:
-          latitude: 0
-          longitude: 0
-        center:
-          latitude: 35.381604935039213
-          longitude: 138.62791299052887
-        center_height: 0
-        size:
-          x: 0
-          y: 0
-        created: 0
-        resize: 0
-        resize_left: 0
-        resize_right: 0
-        resize_top: 0
-        resize_bottom: 0
-        resize_topLeft: 0
-        resize_topRight: 0
-        resize_bottomLeft: 0
-        resize_bottomRight: 0
-        resize_center: 0
-        manual_area: 0
-        heightmap_offset: {x: 0, y: 0}
-        select: 0
-        smooth_strength: 1
-        width: 0
-        height: 0
-        heightmap_resolution: {x: 0, y: 0}
-        heightmap_scale: 0
-        heightmap_zoom: 0
-        elevation_zoom: 0
-        area_resolution: 0
-        resolution: 2048
-        image_zoom: 18
-        image_changed: 0
-        start_tile_enabled: 0
-        start_tile:
-          x: 0
-          y: 0
-        tiles:
-          x: 0
-          y: 0
-        export_heightmap_active: 0
-        export_heightmap_call: 0
-        export_heightmap_path: /Users/yibojiang/Documents/GameDevelop/AircraftProject/Aircraft/Assets
-        export_heightmap_filename: Untitled0
-        export_heightmap_changed: 0
-        export_heightmap_not_fit: 0
-        export_heightmap_bres: {x: 0, y: 0}
-        export_image_active: 0
-        export_image_call: 0
-        export_image_path: /Users/yibojiang/Documents/GameDevelop/AircraftProject/Aircraft/Assets
-        export_image_filename: Untitled0
-        export_image_changed: 0
-        export_image_import_settings: 0
-        export_image_world_file: 0
-        export_terrain_path: /Users/yibojiang/Documents/GameDevelop/AircraftProject/Aircraft/Assets/Terrains
-        export_terrain_changed: 0
-        export_to_terraincomposer: 1
-        import_heightmap_path_full: 
-        import_heightmap: 0
-        filter_perlin: 0
-        converter_source_path_full: 
-        converter_destination_path_full: 
-        converter_resolution: {x: 0, y: 0}
-        converter_height: 9000
-        converter_import_heightmap: 0
-        terrain_asset_name: _Untitled0
-        terrain_scene_name: Untitled0
-        terrain_name_changed: 0
-        terrain_height: 9000
-        terrain_scale: 1
-        terrain_curve:
-          serializedVersion: 2
-          m_Curve:
-          - time: 0
-            value: 0
-            inSlope: 0
-            outSlope: 1
-            tangentMode: 0
-          - time: .889999986
-            value: .889999986
-            inSlope: 1
-            outSlope: -8.09090805
-            tangentMode: 0
-          - time: 1
-            value: 0
-            inSlope: -8.09090805
-            outSlope: 0
-            tangentMode: 0
-          m_PreInfinity: 2
-          m_PostInfinity: 2
-        do_heightmap: 1
-        do_image: 1
-        terrain_heightmap_resolution_select: 0
-        terrain_heightmap_resolution: 0
-        terrain_heightmap_resolution_changed: 0
-        mipmapEnabled: 1
-        terrain_done: 0
-        filterMode: 2
-        anisoLevel: 9
-        maxTextureSize: 0
-        maxTextureSize_select: 6
-        maxTextureSize_changed: 0
-        auto_import_settings_apply: 1
-        textureFormat: -1
-        preimage_export_active: 0
-        preimage_apply: 0
-        preimage_save_new: 1
-        preimage_path: 
-        preimage_path_changed: 0
-        preimage_filename: 
-        preimage_count: 0
-      area_popup:
-      - Untitled0
-      area_select: 0
-      center:
-        latitude: 35.381604935039213
-        longitude: 138.62791299052887
     region_popup:
     - 552e532e412e
-    - Untitled2
     region_select: 0
     manual_edit: 0
     region_rect:
       serializedVersion: 2
       x: -1
-      y: 205
+      y: 289
       width: 0
       height: 3
     area_rect:
@@ -992,183 +866,183 @@ MonoBehaviour:
     elExt_check_loaded: 1
     elExt_check_assign: 1
     elExt:
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 0
-        y: 0
+        x: 16
+        y: 10
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.27662805447531
+          latitude: 43.176640070669691
+          longitude: 5.4033279418945446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.27388147244406
+          latitude: 43.172760523329082
+          longitude: 5.4086494445800914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.276628054475,36.55107330728,-113.273881472444&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e34303333323739343138393435342c34332e313736363430303730363639372c352e343038363439343434353830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 1
-        y: 0
+        x: 17
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.27379564175558
+          latitude: 43.172634164832949
+          longitude: 5.4088211059570446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.27113489041281
+          latitude: 43.16875461749234
+          longitude: 5.4141426086425914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.273795641756,36.55107330728,-113.271134890413&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34303838323131303539353730342c34332e313732363334313634383332392c352e343134313432363038363432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 2
-        y: 0
+        x: 19
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.27104905972433
+          latitude: 43.172634164832949
+          longitude: 5.4198074340820446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.26838830838156
+          latitude: 43.16875461749234
+          longitude: 5.4251289367675914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.271049059724,36.55107330728,-113.268388308382&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34313938303734333430383230342c34332e313732363334313634383332392c352e343235313238393336373637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 3
-        y: 0
+        x: 8
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.26830247769308
+          latitude: 43.172634164832949
+          longitude: 5.3593826293945446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.26564172635031
+          latitude: 43.16875461749234
+          longitude: 5.3647041320800914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.268302477693,36.55107330728,-113.26564172635&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33353933383236323933393435342c34332e313732363334313634383332392c352e333634373034313332303830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 4
-        y: 0
+        x: 14
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.26555589566183
+          latitude: 43.172634164832949
+          longitude: 5.3923416137695446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.26289514431906
+          latitude: 43.16875461749234
+          longitude: 5.3976631164550914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.265555895662,36.55107330728,-113.262895144319&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33393233343136313337363935342c34332e313732363334313634383332392c352e333937363633313136343535303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 5
-        y: 0
+        x: 17
+        y: 1
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.26280931363058
+          latitude: 43.212682977916863
+          longitude: 5.4088211059570446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.26014856228781
+          latitude: 43.208803430576253
+          longitude: 5.4141426086425914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.262809313631,36.55107330728,-113.260148562288&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e323038383033343330353736332c352e34303838323131303539353730342c34332e323132363832393737393136392c352e343134313432363038363432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 6
-        y: 0
+        x: 15
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.26006273159933
+          latitude: 43.172634164832949
+          longitude: 5.3978347778320446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.25740198025656
+          latitude: 43.16875461749234
+          longitude: 5.4031562805175914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.260062731599,36.55107330728,-113.257401980257&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33393738333437373738333230342c34332e313732363334313634383332392c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 7
-        y: 0
+        x: 9
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.25731614956808
+          latitude: 43.172634164832949
+          longitude: 5.3648757934570446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.25465539822531
+          latitude: 43.16875461749234
+          longitude: 5.3701972961425914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.257316149568,36.55107330728,-113.254655398225&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33363438373537393334353730342c34332e313732363334313634383332392c352e333730313937323936313432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
@@ -1179,106 +1053,106 @@ MonoBehaviour:
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.25456956753683
+          latitude: 43.21681182715524
+          longitude: 5.3593826293945446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.25190881619406
+          latitude: 43.212809336412988
+          longitude: 5.3647041320800914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.254569567537,36.55107330728,-113.251908816194&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3231323830393333363431332c352e33353933383236323933393435342c34332e323136383131383237313535322c352e333634373034313332303830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 9
-        y: 0
+        x: 18
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.25182298550558
+          latitude: 43.172634164832949
+          longitude: 5.4143142700195446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.24916223416281
+          latitude: 43.16875461749234
+          longitude: 5.4196357727050914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.251822985506,36.55107330728,-113.249162234163&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34313433313432373030313935342c34332e313732363334313634383332392c352e343139363335373732373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 10
-        y: 0
+        x: 4
+        y: 7
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.24907640347433
+          latitude: 43.188654373085413
+          longitude: 5.3374099731445446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.24641565213156
+          latitude: 43.184774825744803
+          longitude: 5.3427314758300914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.249076403474,36.55107330728,-113.246415652132&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313834373734383235373434382c352e33333734303939373331343435342c34332e313838363534333733303835342c352e333432373331343735383330303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 11
-        y: 0
+        x: 0
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.24632982144308
+          latitude: 43.172634164832949
+          longitude: 5.3152656555175914
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.24366907010031
+          latitude: 43.16875461749234
+          longitude: 5.3207588195800914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.246329821443,36.55107330728,-113.2436690701&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33313532363536353535313735392c34332e313732363334313634383332392c352e333230373538383139353830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 12
-        y: 0
+        x: 13
+        y: 11
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.24358323941183
+          latitude: 43.172634164832949
+          longitude: 5.3868484497070446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.24092248806906
+          latitude: 43.16875461749234
+          longitude: 5.3921699523925914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.243583239412,36.55107330728,-113.240922488069&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33383638343834343937303730342c34332e313732363334313634383332392c352e333932313639393532333932353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
@@ -1289,411 +1163,411 @@ MonoBehaviour:
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.24083665738058
+          latitude: 43.21681182715524
+          longitude: 5.3868484497070446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.23817590603781
+          latitude: 43.212809336412988
+          longitude: 5.3921699523925914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.240836657381,36.55107330728,-113.238175906038&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3231323830393333363431332c352e33383638343834343937303730342c34332e323136383131383237313535322c352e333932313639393532333932353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
-        x: 14
-        y: 0
+        x: 4
+        y: 10
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.23809007534933
+          latitude: 43.176640070669691
+          longitude: 5.3374099731445446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.23542932400656
+          latitude: 43.172760523329082
+          longitude: 5.3427314758300914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.238090075349,36.55107330728,-113.235429324007&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33333734303939373331343435342c34332e313736363430303730363639372c352e333432373331343735383330303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 5
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3429031372070446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.3482246398925914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33343239303331333732303730342c34332e313736363430303730363639372c352e333438323234363339383932353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 10
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3703689575195446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3756904602050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33373033363839353735313935342c34332e313732363334313634383332392c352e333735363930343630323035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
         x: 15
-        y: 0
+        y: 9
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.23534349331808
+          latitude: 43.180645976506426
+          longitude: 5.3978347778320446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.23268274197531
+          latitude: 43.176766429165816
+          longitude: 5.4031562805175914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.235343493318,36.55107330728,-113.232682741975&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313736373636343239313635382c352e33393738333437373738333230342c34332e313830363435393736353036342c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 16
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.23259691128683
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.22993615994406
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.232596911287,36.55107330728,-113.229936159944&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 17
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.22985032925558
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.22718957791281
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.229850329256,36.55107330728,-113.227189577913&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
         x: 18
-        y: 0
+        y: 4
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.22710374722433
+          latitude: 43.200668675501134
+          longitude: 5.4143142700195446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.22444299588156
+          latitude: 43.196792543255015
+          longitude: 5.4196357727050914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.227103747224,36.55107330728,-113.224442995882&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3139363739323534333235352c352e34313433313432373030313935342c34332e323030363638363735353031312c352e343139363335373732373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
-    - loaded: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 8
+        y: 7
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.188654373085413
+          longitude: 5.3593826293945446
+        latlong2:
+          latitude: 43.184774825744803
+          longitude: 5.3647041320800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313834373734383235373434382c352e33353933383236323933393435342c34332e313838363534333733303835342c352e333634373034313332303830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 1
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3209304809570446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.3262519836425914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33323039333034383039353730342c34332e313736363430303730363639372c352e333236323531393833363432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 16
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.4033279418945446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.4086494445800914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e34303333323739343138393435342c34332e313732363334313634383332392c352e343038363439343434353830303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 2
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3264236450195446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3317451477050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33323634323336343530313935342c34332e313732363334313634383332392c352e333331373435313437373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 6
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3483963012695446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3537178039550914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33343833393633303132363935342c34332e313732363334313634383332392c352e333533373137383033393535303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 15
+        y: 3
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.204674581337876
+          longitude: 5.3978347778320446
+        latlong2:
+          latitude: 43.200795033997267
+          longitude: 5.4031562805175914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e323030373935303333393937332c352e33393738333437373738333230342c34332e323034363734353831333337392c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 11
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3758621215820446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3811836242675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33373538363231323135383230342c34332e313732363334313634383332392c352e333831313833363234323637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 3
+        y: 11
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.172634164832949
+          longitude: 5.3319168090820446
+        latlong2:
+          latitude: 43.16875461749234
+          longitude: 5.3372383117675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313638373534363137343932332c352e33333139313638303930383230342c34332e313732363334313634383332392c352e333337323338333131373637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 9
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3648757934570446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.3701972961425914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33363438373537393334353730342c34332e313736363430303730363639372c352e333730313937323936313432353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 18
+        y: 6
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.192660278922148
+          longitude: 5.4143142700195446
+        latlong2:
+          latitude: 43.188780731581545
+          longitude: 5.4196357727050914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313838373830373331353831352c352e34313433313432373030313935342c34332e313932363630323738393232312c352e343139363335373732373035303926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 11
+        y: 4
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.200668675501134
+          longitude: 5.3758621215820446
+        latlong2:
+          latitude: 43.196792543255015
+          longitude: 5.3811836242675914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e3139363739323534333235352c352e33373538363231323135383230342c34332e323030363638363735353031312c352e333831313833363234323637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
+      converted: 0
+      error: 0
+      tile:
+        x: 15
+        y: 10
+      subtile:
+        x: 0
+        y: 0
+      latlong_area:
+        latlong1:
+          latitude: 43.176640070669691
+          longitude: 5.3978347778320446
+        latlong2:
+          latitude: 43.172760523329082
+          longitude: 5.4031562805175914
+      latlong_center:
+        latitude: 0
+        longitude: 0
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313732373630353233333239312c352e33393738333437373738333230342c34332e313736363430303730363639372c352e343033313536323830353137353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
+      bres: {x: 32, y: 32}
+      zero_error: 0
+    - loaded: 1
       converted: 0
       error: 0
       tile:
         x: 19
-        y: 0
+        y: 8
       subtile:
         x: 0
         y: 0
       latlong_area:
         latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.22435716519308
+          latitude: 43.184651882343168
+          longitude: 5.4198074340820446
         latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.22169641385031
+          latitude: 43.180772335002558
+          longitude: 5.4251289367675914
       latlong_center:
         latitude: 0
         longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.224357165193,36.55107330728,-113.22169641385&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 20
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.22161058316183
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.21894983181906
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.221610583162,36.55107330728,-113.218949831819&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 21
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.21886400113058
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.21620324978781
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.218864001131,36.55107330728,-113.216203249788&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 22
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.21611741909933
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.21345666775656
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.216117419099,36.55107330728,-113.213456667757&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 23
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.21337083706808
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.21071008572531
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.213370837068,36.55107330728,-113.210710085725&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 24
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.21062425503683
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.20796350369406
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.210624255037,36.55107330728,-113.207963503694&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 25
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.20787767300558
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.20521692166281
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.207877673006,36.55107330728,-113.205216921663&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 26
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.20513109097433
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.20247033963156
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.205131090974,36.55107330728,-113.202470339632&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 27
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.20238450894308
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.19972375760031
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.202384508943,36.55107330728,-113.1997237576&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 28
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.19963792691183
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.19697717556906
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.199637926912,36.55107330728,-113.196977175569&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 29
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.19689134488058
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.19423059353781
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.196891344881,36.55107330728,-113.194230593538&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 30
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.19414476284933
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.19148401150656
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.194144762849,36.55107330728,-113.191484011507&rows=32&cols=32&heights=ellipsoid&key=
-      bres: {x: 32, y: 32}
-      zero_error: 0
-    - loaded: 0
-      converted: 0
-      error: 0
-      tile:
-        x: 31
-        y: 0
-      subtile:
-        x: 0
-        y: 0
-      latlong_area:
-        latlong1:
-          latitude: 36.551073307279957
-          longitude: -113.19139818081808
-        latlong2:
-          latitude: 36.548867156239432
-          longitude: -113.18873742947531
-      latlong_center:
-        latitude: 0
-        longitude: 0
-      url: http://dev.virtualearth.net/REST/v1/Elevation/Bounds?bounds=36.5488671562394,-113.191398180818,36.55107330728,-113.188737429475&rows=32&cols=32&heights=ellipsoid&key=
+      url: 687474703a2f2f6465762e7669727475616c65617274682e6e65742f524553542f76312f456c65766174696f6e2f426f756e64733f626f756e64733d34332e313830373732333335303032362c352e34313938303734333430383230342c34332e313834363531383832333433322c352e343235313238393336373637353926726f77733d333226636f6c733d333226686569676874733d656c6c6970736f6964266b65793d41726c33344d74677243475f434e39646a4a33504663366c6a61676a4a62414249667868746c384f5a6c2d3037414d48346d78716b483666334972726c623375
       bres: {x: 32, y: 32}
       zero_error: 0
     texExt:
@@ -1874,38 +1748,38 @@ MonoBehaviour:
       bres: {x: 0, y: 0}
       zero_error: 0
     time_start_elExt:
-    - 260.083466
-    - 259.426514
-    - 254.558441
-    - 259.963135
-    - 258.718781
-    - 259.999054
-    - 259.382904
-    - 251.371414
-    - 258.639526
-    - 259.399475
-    - 259.082825
-    - 259.147064
-    - 260.334778
-    - 259.963196
-    - 257.162689
-    - 259.91922
-    - 257.975159
-    - 258.887299
-    - 258.866882
-    - 258.03891
-    - 251.960007
-    - 259.999115
-    - 259.999207
-    - 259.714996
-    - 258.099487
-    - 257.262634
-    - 260.083862
-    - 257.698547
-    - 251.96167
-    - 259.470795
-    - 260.174774
-    - 258.846741
+    - 1182.91614
+    - 1183.08044
+    - 1183.0968
+    - 1183.02026
+    - 1183.03284
+    - 1182.05359
+    - 1183.03296
+    - 1183.02039
+    - 1181.89734
+    - 1183.08594
+    - 1182.46582
+    - 1182.79675
+    - 1183.02808
+    - 1181.89771
+    - 1182.89551
+    - 1183.0282
+    - 1183.02124
+    - 1183.04248
+    - 1182.27039
+    - 1182.47595
+    - 1182.70496
+    - 1183.05249
+    - 1182.79785
+    - 1182.93457
+    - 1182.17639
+    - 1183.02124
+    - 1182.79785
+    - 1182.73608
+    - 1182.42029
+    - 1182.24817
+    - 1182.98486
+    - 1182.59412
     time_start_texExt:
     - 1227.49915
     - 1227.65479
@@ -1921,11 +1795,11 @@ MonoBehaviour:
     export_tex3: 0
     export_heightmap_area:
       latlong1:
-        latitude: 36.551073307279957
-        longitude: -113.27662805447531
+        latitude: 43.216808319091797
+        longitude: 5.3152656555175781
       latlong2:
-        latitude: 36.409736206717945
-        longitude: -113.10084680447531
+        latitude: 43.168754577636719
+        longitude: 5.4251289367675781
     export_image_area:
       latlong1:
         latitude: 43.216808319091797
@@ -1939,19 +1813,19 @@ MonoBehaviour:
     export_pulled: 0
     export_image_active: 0
     export_heightmap_active: 0
-    export_heightmap_zoom: 14
-    export_heightmap_timeStart: 251.368073
-    export_heightmap_timeEnd: 260.39856
-    export_heightmap_timePause: 251.368073
+    export_heightmap_zoom: 13
+    export_heightmap_timeStart: 1181.89612
+    export_heightmap_timeEnd: 1187.61133
+    export_heightmap_timePause: 1181.89612
     export_heightmap_continue: 1
     export_heightmap:
-      last_tile: 0
+      last_tile: 1
       tiles:
-        x: 64
-        y: 64
+        x: 20
+        y: 12
       tile:
-        x: 32
-        y: 0
+        x: 0
+        y: 12
       subtiles:
         x: 0
         y: 0
@@ -1990,14 +1864,14 @@ MonoBehaviour:
     color: {r: 0, g: 0, b: 0, a: 1}
     key_edit: 1
     bingKey:
-    - pulls_startDay: 9
-      pulls_startHour: 23
-      pulls_startMinute: 58
-      pulls: 289
+    - pulls_startDay: 12
+      pulls_startHour: 1
+      pulls_startMinute: 43
+      pulls: 6
       key: 
     bingKey_selected: 0
     mouse_sensivity: 2
-    path_display: 1
+    path_display: 0
   tex1: {fileID: 0}
   tex2: {fileID: 0}
   tex3: {fileID: 0}
@@ -2034,14 +1908,14 @@ MonoBehaviour:
   map_load4: 0
   map_zoom1: 0
   map_zoom2: 0
-  map_zoom3: 4
+  map_zoom3: 19
   map_zoom4: 0
   map_latlong:
-    latitude: -6.8918314354894363
-    longitude: -169.82423544697122
+    latitude: 39.175621234146845
+    longitude: -165.35717024569681
   map_latlong_center:
-    latitude: -6.8918314354894363
-    longitude: -91.074235446971159
+    latitude: 39.175621234146845
+    longitude: -86.607170245696807
   map_zoom: 1
   map_zoom_old: 1
   settings:
@@ -2056,10 +1930,10 @@ MonoBehaviour:
     downloading2: 0
     download_foldout2: 1
     download_display2: 1
-    wc_loading: 0
-    old_version: .949999988
-    new_version: .939999998
-    update_display: 0
+    wc_loading: 2
+    old_version: 1.00999999
+    new_version: 1.45000005
+    update_display: 1
     update_display2: 0
     update_version: 0
     update_version2: 0
