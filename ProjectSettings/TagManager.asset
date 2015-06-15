@@ -8,6 +8,7 @@ TagManager:
   - AttackTarget
   - Enemy
   - MicroMissilePod
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - UI
   - 
   - 
-  - transparent
+  - 
   - TPS
   - FPS
   - 
