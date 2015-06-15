@@ -106,10 +106,6 @@ Material:
         second: 1
       data:
         first:
-          name: _Blend
-        second: 0
-      data:
-        first:
           name: _InvFade
         second: .626250029
       data:
@@ -119,7 +115,7 @@ Material:
       data:
         first:
           name: _FogAmountMax
-        second: 8907.69922
+        second: 50000
       data:
         first:
           name: _FloatMin
@@ -127,7 +123,11 @@ Material:
       data:
         first:
           name: _FloatMax
-        second: .178153992
+        second: 1.38777256
+      data:
+        first:
+          name: _Blend
+        second: 0
       data:
         first:
           name: _SliceAmount

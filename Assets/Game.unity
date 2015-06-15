@@ -168,7 +168,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &6828110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,7 +394,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -528,7 +529,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -598,7 +599,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -723,7 +724,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!1 &69666187
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,7 +902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_LocalScale.x
@@ -1052,7 +1054,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &95189451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,7 +1577,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!4 &162813284
 Transform:
   m_ObjectHideFlags: 0
@@ -1941,7 +1945,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &200026229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2004,7 +2009,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 4294967294
   m_IsActive: 0
 --- !u!4 &212805090
 Transform:
@@ -2302,7 +2307,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &246656665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3141,7 +3147,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &312742068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3374,7 +3381,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &330818859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6565,7 +6573,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!4 &470683201
 Transform:
   m_ObjectHideFlags: 0
@@ -6898,7 +6907,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!4 &475062268
 Transform:
   m_ObjectHideFlags: 0
@@ -7116,7 +7126,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!4 &510407578 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
@@ -7240,7 +7251,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -8702,7 +8713,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_LocalScale.x
@@ -8780,7 +8791,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &613892406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9436,7 +9448,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &708454807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10864,7 +10877,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_LocalScale.y
@@ -10930,7 +10943,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_LocalScale.x
@@ -11132,7 +11145,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &778083090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11428,7 +11442,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &792989275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11947,7 +11962,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &884635884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13313,7 +13329,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &939147337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13517,7 +13534,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -15502,7 +15519,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -15722,7 +15739,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1085828675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15831,7 +15849,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1102446788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15940,7 +15959,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1113273762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17455,7 +17475,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!1 &1160346595
 GameObject:
   m_ObjectHideFlags: 0
@@ -17804,7 +17825,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!4 &1200291083
 Transform:
   m_ObjectHideFlags: 0
@@ -18143,7 +18165,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1225401742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20759,7 +20782,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1334775277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20995,7 +21019,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -23110,7 +23134,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!1 &1554120315
 GameObject:
   m_ObjectHideFlags: 0
@@ -23239,7 +23264,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1559326767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23535,7 +23561,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
       propertyPath: m_LocalScale.x
@@ -23613,7 +23639,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1586705515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23954,7 +23981,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1627681774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24402,7 +24430,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1664105011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24558,7 +24587,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!1 &1671414850
 GameObject:
   m_ObjectHideFlags: 0
@@ -24795,7 +24825,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!4 &1678173133
 Transform:
   m_ObjectHideFlags: 0
@@ -25109,7 +25140,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1702286967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25218,7 +25250,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1715433120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25389,7 +25422,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1726773098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26792,7 +26826,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1774503690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26928,7 +26963,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1777300104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27258,7 +27294,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1805932124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27506,7 +27543,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -28809,7 +28846,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1869184698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30095,7 +30133,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1886722430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30192,7 +30231,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!4 &1891845563
 Transform:
   m_ObjectHideFlags: 0
@@ -30313,7 +30353,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1915477889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30516,7 +30557,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a51d6678c0d5f194a8f354a23dba4c88, type: 2}
       propertyPath: m_LocalScale.x
@@ -32065,7 +32106,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1975406399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32174,7 +32216,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1978378667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32283,7 +32326,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &1990881131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34077,7 +34121,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &2038797816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34591,7 +34636,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &2085794515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34747,7 +34793,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!1 &2094101410
 GameObject:
   m_ObjectHideFlags: 0
@@ -34930,7 +34977,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!114 &2105557640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35086,7 +35134,8 @@ Terrain:
   m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 1
   m_ScaleInLightmap: 1
-  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightmapParameters: {fileID: 111300000, guid: ea74b047102a9489790825cf5871f965,
+    type: 2}
 --- !u!1 &2123319111
 GameObject:
   m_ObjectHideFlags: 0
