@@ -92,7 +92,7 @@ public class MicroMissilePod : Entity {
 			if (selfDestroyingTimer < maxSelfDestroyingTime) {
 				selfDestroyingTimer+=Time.deltaTime;
 
-				if (this.transform.position.y < 0 && selfDestroyingTimer>0.5) {
+				if (this.transform.position.y < -1000 && selfDestroyingTimer>0.5) {
 					Explode();
 				}
 			}
