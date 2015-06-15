@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityStandardAssets.ImageEffects;
 using UnityStandardAssets.Vehicles.Aeroplane;
+using UnityStandardAssets.ImageEffects;
 
 public class WarpController : MonoBehaviour {
 
@@ -23,129 +24,216 @@ public class WarpController : MonoBehaviour {
 	private Bloom bloomScript;
 	private AeroplaneController aircraftController;
 	private float warpFadeTime=0.5f;
-	private float warpFadeTimer;
-	private float warpTimer;
 
-	private float normalMaxEnginePower;
-	private float normalAerodynamicEffect;
-	private float normalIntensity;
-	private float normalFieldOfView;
 
-	private float readyToWarpTime=0.2f;
-	private float readyToWarpTimer;
-	private bool readyToWarp=false;
-	// Use this for initialization
-	void Start () {
+	public Material warpMat;
+
+
+	public float readyToWarpTime=0.2f;
+
+
+	void Awake(){
 		motionBlurScript=mainCamera.GetComponent<MotionBlur>();
 		bloomScript=mainCamera.GetComponent<Bloom>();
 		aircraftController=aircraft.GetComponent<AeroplaneController>();
 
-		normalFieldOfView = mainCamera.fieldOfView;
-		normalIntensity = bloomScript.bloomIntensity;
+	}
 
-		normalMaxEnginePower = aircraftController.MaxEnginePower;
-		normalAerodynamicEffect = aircraftController.AircraftAerodynamicEffect();
+	// Use this for initialization
+	void Start () {
 
-		Reset();
+
+
+
+
+
+
+//		ResetWarp();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (inWarp) {
-
-			if (mainCamera.fieldOfView < 100) {
-
-				mainCamera.fieldOfView+=(100-normalFieldOfView)/warpFadeTime*Time.deltaTime;
-			}
-
-			if (warpTimer < warpTime) {
-				warpTimer += Time.deltaTime;
-			}
-			else {
-				Object spark = Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
-				warpSE2.Play();
-				Reset();
-			}
-		}
-		else {
-			if (mainCamera.fieldOfView > normalFieldOfView) {
-				
-				mainCamera.fieldOfView-=(100-normalFieldOfView)/warpFadeTime*Time.deltaTime;
-			}
-		}
-
-
 		if (Input.GetKeyUp(KeyCode.Q)){
-			//Warp();
-			ReadyToWarp();
-		}
-
-		if (readyToWarp) {
-			if (readyToWarpTimer<readyToWarpTime) {
-				readyToWarpTimer+=Time.deltaTime;
-			}
-			else {
-				readyToWarp=false;
-				Warp();
-			}
+			Warp();
 		}
 	}
 
-	void ReadyToWarp() {
-		if (!readyToWarp && !inWarp) {
-			readyToWarp=true;
-			Object spark = Instantiate(warpSpark,transform.position,transform.rotation);
-			
-			Time.timeScale=0.2f;
-			warpSE1.Play();
-		}
-	}
+//	void ReadyToWarp() {
+//		if (!readyToWarp && !inWarp) {
+//			readyToWarp=true;
+//			Object spark = Instantiate(warpSpark,transform.position,transform.rotation);
+//			warpSE1.Play();
+//			Time.timeScale=0.2f;
+//
+//		}
+//	}
 
-	void Reset () {
-		inWarp = false;
-
-		warpTimer=0;
-		warpFadeTimer=0;
-
-		readyToWarpTimer=0;
-
-		warpAircraft.SetActive(false);
-		foreach (GameObject singlePart in AircraftParts) {
-
-			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
-				singleMeshRenderer.enabled=true;
-			}
-		}
-		Time.timeScale=1;
-		//mainCamera.fieldOfView=normalFieldOfView;
-		bloomScript.bloomIntensity=normalIntensity;
-		motionBlurScript.enabled=false;
-
-		aircraftController.AircraftMaxEnginePower(normalMaxEnginePower);
-		aircraftController.SetAircraftAerodynamicEffect(normalAerodynamicEffect);
-	}
+//	void ResetWarp () {
+//		inWarp = false;
+//
+//		WarpSpark spark =(WarpSpark) Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
+//		spark.transform.SetParent(transform);
+//		warpSE2.Play();
+//
+//		warpAircraft.SetActive(false);
+//		foreach (GameObject singlePart in AircraftParts) {
+//
+//			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
+//				singleMeshRenderer.enabled=true;
+//			}
+//		}
+//
+//		bloomScript.bloomIntensity=normalIntensity;
+//		motionBlurScript.enabled=false;
+//
+//		aircraftController.AircraftMaxEnginePower(normalMaxEnginePower);
+//		aircraftController.SetAircraftAerodynamicEffect(normalAerodynamicEffect);
+//	}
 
 	public void Warp () {
 		if (!inWarp) {
 			inWarp = true;
-
-			foreach (GameObject singlePart in AircraftParts) {
-				foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
-					singleMeshRenderer.enabled=false;
-				}
-			}
-			Time.timeScale=0.5f;
-
-			warpAircraft.SetActive(true);
-
-			bloomScript.bloomIntensity=1;
-			motionBlurScript.enabled=true;
-			
-			aircraftController.AircraftMaxEnginePower(200);
-			aircraftController.SetAircraftAerodynamicEffect(0);
-
-
-
+			StartCoroutine(DoWarp() );
 		}
+		else{
+			inWarp = false;
+		}
+	}
+
+	public IEnumerator DoWarp(){
+//		Fisheye eye=CameraController.Instance().tpsCam.GetComponent<Fisheye>();
+//		eye.enabled=true;
+//		eye.strengthX=0.0f;
+//		eye.strengthY=eye.strengthX;
+
+		float normalMaxEnginePower = aircraftController.MaxEnginePower;
+		float normalAerodynamicEffect = aircraftController.AircraftAerodynamicEffect();
+		float normalFieldOfView = mainCamera.fieldOfView;
+		float normalIntensity = bloomScript.bloomIntensity;
+
+		foreach (GameObject singlePart in AircraftParts) {
+			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
+				singleMeshRenderer.enabled=false;
+//				singleMeshRenderer.material.shader.
+//				Material tmpMat=singleMeshRenderer.material;
+
+//				singleMeshRenderer.material.SetFloat("_Mode", 3);
+//				singleMeshRenderer.material.SetColor("_Color", new Color(0,0,0,0) );
+//				singleMeshRenderer.material.SetTexture("_MainTex",null);
+//				singleMeshRenderer.material.SetTexture("_SpecGlossMap",null);
+//				singleMeshRenderer.material.SetTexture("_BumpMap",null);
+//				singleMeshRenderer.material.SetTexture("_OcclusionMap",null);
+
+//				tmpMat.SetColor("_EmissionColor", new Color(0,1,0) );
+//				tmpMat.EnableKeyword("_ALPHABLEND_ON");
+//				singleMeshRenderer.material=tmpMat;
+
+//				singleMeshRenderer.material=warpMat;
+//				singleMeshRenderer.materials=new Material[1];
+//				singleMeshRenderer.materials[0]=warpMat;
+//				singleMeshRenderer.materials[1]=warpMat;
+			}
+		}
+		warpAircraft.SetActive(true);
+		bloomScript.bloomIntensity=1;
+		motionBlurScript.enabled=true;
+		
+
+
+
+		float interval=0.5f;
+		Camera cam=CameraController.Instance().tpsCam;
+
+		WarpSpark spark = (WarpSpark)Instantiate(warpSpark,transform.position,transform.rotation);
+		warpSE1.Play();
+
+		//WARP Ready
+		float toggle=0;
+		float originTimeScale=Time.timeScale;
+		float targetTimeScale=0.2f;
+
+
+		interval=readyToWarpTime;
+		while (toggle<interval){
+			toggle+=TimerController.realDeltaTime;
+//			Time.timeScale=Mathf.Lerp (originTimeScale,targetTimeScale,toggle/interval);
+			yield return new WaitForEndOfFrame();
+		}
+		Time.timeScale=targetTimeScale;
+
+		aircraftController.AircraftMaxEnginePower(200);
+		aircraftController.SetAircraftAerodynamicEffect(0);
+
+		//WARP
+		toggle=0;
+		originTimeScale=0.2f;
+		targetTimeScale=0.5f;
+		interval=0.5f;
+		float orginFov=cam.fieldOfView;
+		float targetFov=100;
+//		Time.timeScale=targetTimeScale;
+		while (toggle<interval){
+			toggle+=TimerController.realDeltaTime;
+			cam.fieldOfView=Mathf.Lerp (orginFov,targetFov,toggle/interval);
+			Time.timeScale=Mathf.Lerp (originTimeScale,targetTimeScale,toggle/interval);
+			yield return new WaitForEndOfFrame();
+		}
+
+		cam.fieldOfView=targetFov;
+		Time.timeScale=targetTimeScale;
+
+		//Warp mode
+//		yield return new WaitForSeconds(warpTime);
+		while(inWarp){
+
+//			if (eye.strengthX<0.5f){
+//				eye.strengthX+=0.2f*TimerController.realDeltaTime;
+//				eye.strengthY=eye.strengthX;
+//			}
+			yield return new WaitForEndOfFrame();
+		}
+
+
+		//WARP Finished
+		toggle=0;
+		interval=0.5f;
+		originTimeScale=1;
+		while (toggle<interval){
+			toggle+=TimerController.realDeltaTime;
+			cam.fieldOfView=Mathf.Lerp (targetFov,orginFov,toggle/interval);
+			Time.timeScale=Mathf.Lerp (targetTimeScale,originTimeScale,toggle/interval);
+			yield return new WaitForEndOfFrame();
+		}
+		cam.fieldOfView=orginFov;
+		Time.timeScale=originTimeScale;
+
+
+
+		spark =(WarpSpark) Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
+//		spark.transform.SetParent(transform);
+		warpSE2.Play();
+		
+		warpAircraft.SetActive(false);
+		foreach (GameObject singlePart in AircraftParts) {
+			
+			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
+				singleMeshRenderer.enabled=true;
+			}
+		}
+		
+		bloomScript.bloomIntensity=normalIntensity;
+		motionBlurScript.enabled=false;
+		
+		aircraftController.AircraftMaxEnginePower(normalMaxEnginePower);
+		aircraftController.SetAircraftAerodynamicEffect(normalAerodynamicEffect);
+
+//		while (eye.strengthX>0){
+//			eye.strengthX-=TimerController.realDeltaTime;
+//			eye.strengthY=eye.strengthX;
+//			yield return new WaitForEndOfFrame();
+//		}
+//		eye.enabled=false;
+
+		inWarp=false;
 	}
 }

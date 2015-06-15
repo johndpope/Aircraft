@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -11,6 +11,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -23,16 +24,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _FresnelLookUp
+          name: _SkyBox
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 8900000, guid: db7d862e7ac194442b14435b109001bf, type: 2}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SkyBox
+          name: _FresnelLookUp
         second:
-          m_Texture: {fileID: 8900000, guid: db7d862e7ac194442b14435b109001bf, type: 2}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -144,8 +145,8 @@ Material:
         second: {r: 1, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _SunColor
-        second: {r: .911764681, g: .899188638, b: .858131468, a: 1}
+          name: _SeaColor
+        second: {r: .00278902473, g: 0, b: .0808823705, a: 1}
       data:
         first:
           name: _ReflectColor
@@ -156,12 +157,12 @@ Material:
         second: {r: .5, g: 1, b: 0, a: 0}
       data:
         first:
-          name: _SunDir
-        second: {r: 7.4505806e-09, g: .790693521, b: -.6122123, a: 0}
+          name: _SunColor
+        second: {r: .911764681, g: .899188638, b: .858131468, a: 1}
       data:
         first:
-          name: _SeaColor
-        second: {r: .00278902473, g: 0, b: .0808823705, a: 1}
+          name: _SunDir
+        second: {r: -0, g: .777914762, b: -.628370047, a: 0}
       data:
         first:
           name: _GridSizes

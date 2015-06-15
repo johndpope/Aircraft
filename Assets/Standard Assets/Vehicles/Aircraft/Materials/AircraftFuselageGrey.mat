@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -12,6 +12,7 @@ Material:
     _UVSEC_UV1
   m_LightmapFlags: 0
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -45,23 +46,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Occlusion
-        second:
-          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _SpecGlossMap
-        second:
-          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -80,20 +74,19 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _OcclusionMap
+          name: _Occlusion
+        second:
+          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
         second:
           m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
-      data:
-        first:
-          name: _Cutoff
-        second: .5
-      data:
-        first:
-          name: _AlphaTestRef
-        second: .5
       data:
         first:
           name: _SrcBlend
@@ -104,12 +97,16 @@ Material:
         second: 0
       data:
         first:
-          name: _Parallax
-        second: .0199999996
+          name: _Cutoff
+        second: .5
       data:
         first:
-          name: _Lightmapping
-        second: 0
+          name: _AlphaTestRef
+        second: .5
+      data:
+        first:
+          name: _Parallax
+        second: .0199999996
       data:
         first:
           name: _ZWrite
@@ -136,11 +133,15 @@ Material:
         second: 0
       data:
         first:
+          name: _EmissionScaleUI
+        second: 0
+      data:
+        first:
           name: _Mode
         second: 0
       data:
         first:
-          name: _EmissionScaleUI
+          name: _Lightmapping
         second: 0
       data:
         first:
@@ -173,13 +174,13 @@ Material:
         second: {r: .0980392173, g: .0980392173, b: .0980392173, a: 1}
       data:
         first:
-          name: _SpecularColor
-        second: {r: .235294119, g: .235294119, b: .235294119, a: 1}
-      data:
-        first:
           name: _EmissionColorUI
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _EmissionColorWithMapUI
         second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: .235294119, g: .235294119, b: .235294119, a: 1}

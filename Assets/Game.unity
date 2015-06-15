@@ -1324,6 +1324,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1001 &125378562
 Prefab:
   m_ObjectHideFlags: 0
@@ -2674,6 +2675,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &274255167 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 60fce481034b3e9418f88625036d7bf5, type: 2}
@@ -4670,6 +4672,8 @@ MonoBehaviour:
   warpSE2: {fileID: 1277510219}
   warpSpark: {fileID: 11440550, guid: f85f31a554615469a83db9ce7a393a25, type: 2}
   sparkTransform: {fileID: 786537847}
+  warpMat: {fileID: 2100000, guid: 36cf490c24bc2449681a9c1aeefb312a, type: 2}
+  readyToWarpTime: .5
 --- !u!1 &376539789
 GameObject:
   m_ObjectHideFlags: 0
@@ -8887,6 +8891,7 @@ MonoBehaviour:
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
   m_AllowActivationOnMobileDevice: 0
 --- !u!114 &616625534
 MonoBehaviour:
@@ -9149,7 +9154,7 @@ MonoBehaviour:
   transAmAircraftShadow: {fileID: 193226, guid: 50de975718e8f4b5e875228e43e163a4,
     type: 2}
   transAmTime: 10
-  transAmShadowDelayTime: .0199999996
+  transAmShadowDelayTime: .200000003
   inTransAM: 0
   transAmStartSE: {fileID: 1546231185}
   transAmEndSE: {fileID: 347931279}
@@ -11630,6 +11635,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 818292268}
   - 114: {fileID: 818292269}
+  - 114: {fileID: 818292270}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11661,6 +11667,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtInfo: {fileID: 1132405250}
+--- !u!114 &818292270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 818292267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baaedac5b3e134321b803547aeaaf606, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &829701685
 GameObject:
   m_ObjectHideFlags: 0
@@ -18109,6 +18126,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1225401739
 GameObject:
   m_ObjectHideFlags: 0
@@ -24052,6 +24070,8 @@ GameObject:
   - 114: {fileID: 1633353492}
   - 114: {fileID: 1633353491}
   - 114: {fileID: 1633353490}
+  - 114: {fileID: 1633353496}
+  - 114: {fileID: 1633353500}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -24202,6 +24222,20 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1633353488}
   m_Enabled: 1
+--- !u!114 &1633353496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633353488}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4739c22ef73ad62488fe344c8fe9addd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strengthX: .0500000007
+  strengthY: .0500000007
+  fishEyeShader: {fileID: 4800000, guid: 874ceab4425f64bccb1d14032f4452b1, type: 3}
 --- !u!124 &1633353497
 Behaviour:
   m_ObjectHideFlags: 0
@@ -24251,6 +24285,22 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
+--- !u!114 &1633353500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633353488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdda781cad112c75d0008dfa8d76c639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 641b781cad112c75d0008dfa8d76c639, type: 3}
+  radius: {x: 1, y: 1}
+  angle: 0
+  center: {x: .5, y: .5}
 --- !u!1 &1637302892
 GameObject:
   m_ObjectHideFlags: 0
@@ -27468,6 +27518,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!1 &1805932121
 GameObject:
   m_ObjectHideFlags: 0
@@ -32821,6 +32872,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &2001277541
 Transform:
   m_ObjectHideFlags: 0

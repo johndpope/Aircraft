@@ -105,6 +105,32 @@ public class TransAMController : MonoBehaviour {
 			transAmStartSE.Play();
 
 			cameraFollower.ChangeCameraMode(true);
+			StartCoroutine(DoLerpFov() );
 		}
+	}
+
+	public IEnumerator DoLerpFov(){
+		float toggle=0;
+		float interval=0.5f;
+		Camera cam=CameraController.Instance().tpsCam;
+
+		float orginFov=cam.fieldOfView;
+		float targetFov=100;
+		while (toggle<interval){
+			toggle+=Time.deltaTime;
+			cam.fieldOfView=Mathf.Lerp (orginFov,targetFov,toggle/interval);
+			yield return new WaitForEndOfFrame();
+		}
+		cam.fieldOfView=targetFov;
+
+		yield return new WaitForSeconds(transAmTime);
+
+		toggle=0;
+		while (toggle<interval){
+			toggle+=Time.deltaTime;
+			cam.fieldOfView=Mathf.Lerp (targetFov,orginFov,toggle/interval);
+			yield return new WaitForEndOfFrame();
+		}
+		cam.fieldOfView=orginFov;
 	}
 }
