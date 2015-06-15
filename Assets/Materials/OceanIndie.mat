@@ -23,16 +23,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SkyBox
+          name: _FresnelLookUp
         second:
-          m_Texture: {fileID: 8900000, guid: db7d862e7ac194442b14435b109001bf, type: 2}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _FresnelLookUp
+          name: _SkyBox
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 8900000, guid: db7d862e7ac194442b14435b109001bf, type: 2}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -145,7 +145,7 @@ Material:
       data:
         first:
           name: _SunColor
-        second: {r: .95097208, g: .816530228, b: .568247199, a: 1}
+        second: {r: .911764681, g: .899188638, b: .858131468, a: 1}
       data:
         first:
           name: _ReflectColor
@@ -156,13 +156,13 @@ Material:
         second: {r: .5, g: 1, b: 0, a: 0}
       data:
         first:
+          name: _SunDir
+        second: {r: -0, g: .80584985, b: -.592119992, a: 0}
+      data:
+        first:
           name: _SeaColor
         second: {r: .00278902473, g: 0, b: .0808823705, a: 1}
       data:
         first:
           name: _GridSizes
         second: {r: 5488, g: 392, b: 28, a: 2}
-      data:
-        first:
-          name: _SunDir
-        second: {r: 2.79396772e-09, g: .241168112, b: .970483601, a: 0}

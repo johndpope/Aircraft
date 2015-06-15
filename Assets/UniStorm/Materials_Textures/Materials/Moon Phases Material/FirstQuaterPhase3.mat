@@ -115,7 +115,7 @@ Material:
       data:
         first:
           name: _FogAmountMax
-        second: 60984.9922
+        second: 100005.008
       data:
         first:
           name: _FloatMin
@@ -123,7 +123,7 @@ Material:
       data:
         first:
           name: _FloatMax
-        second: 1.21969986
+        second: 2.00010014
       data:
         first:
           name: _Blend
@@ -183,16 +183,16 @@ Material:
         second: {r: 1, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _TintColor
-        second: {r: .286764681, g: .286764681, b: .286764681, a: 1}
-      data:
-        first:
           name: _EmisColor
         second: {r: .470149279, g: .470149279, b: .470149279, a: 0}
       data:
         first:
           name: _Emission
         second: {r: .404411793, g: .404411793, b: .404411793, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .286764681, g: .286764681, b: .286764681, a: 1}
       data:
         first:
           name: _AlphaColor

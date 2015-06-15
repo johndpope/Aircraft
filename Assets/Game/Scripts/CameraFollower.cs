@@ -14,6 +14,8 @@ public class CameraFollower : MonoBehaviour {
 	public Vector3 normalPos=new Vector3(0,8,-20);
 	public Vector3 longRangePos=new Vector3(0,8,-30);
 
+	public GameObject weatherSystemObject;
+
 	private float cameraModeChangeTime=0.5f;
 	private float cameraModeChangeTimer;
 
@@ -67,6 +69,10 @@ public class CameraFollower : MonoBehaviour {
 			}
 
 			transform.position=target.TransformPoint(offset);
+		}
+
+		if (weatherSystemObject!=null) {
+			weatherSystemObject.transform.position=this.gameObject.transform.position + new Vector3(0,-900,0);
 		}
 	}
 
