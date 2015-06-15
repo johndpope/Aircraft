@@ -2810,7 +2810,7 @@ GameObject:
   - 4: {fileID: 289633956}
   - 33: {fileID: 289633958}
   - 23: {fileID: 289633957}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetDoorRightFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2972,7 +2972,7 @@ GameObject:
   - 4: {fileID: 297922326}
   - 33: {fileID: 297922328}
   - 23: {fileID: 297922327}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetDoorRightRear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4894,7 +4894,7 @@ MonoBehaviour:
   startTime: .400000006
   startTimeNumber: 1
   moonPhaseChangeTime: 0
-  weatherForecaster: 7
+  weatherForecaster: 3
   SnowAmount: 0
   sunIntensity: 2
   maxSunIntensity: 2
@@ -5377,7 +5377,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423756038}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Trails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7280,7 +7280,7 @@ GameObject:
   - 199: {fileID: 575623117}
   - 198: {fileID: 575623116}
   - 114: {fileID: 575623115}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: AfterburnerLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8605,7 +8605,7 @@ GameObject:
   - 4: {fileID: 603883120}
   - 33: {fileID: 603883122}
   - 23: {fileID: 603883121}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftFuselageBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9270,7 +9270,7 @@ GameObject:
   - 4: {fileID: 699281016}
   - 33: {fileID: 699281018}
   - 23: {fileID: 699281017}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11671,7 +11671,7 @@ GameObject:
   - 4: {fileID: 829701686}
   - 33: {fileID: 829701688}
   - 23: {fileID: 829701687}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetFlapRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11733,7 +11733,7 @@ GameObject:
   - 4: {fileID: 879397285}
   - 33: {fileID: 879397287}
   - 23: {fileID: 879397286}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftFuselageGearDoorLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12085,7 +12085,7 @@ GameObject:
   - 198: {fileID: 912589376}
   - 199: {fileID: 912589375}
   - 114: {fileID: 912589374}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: VapourTrailSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13213,7 +13213,7 @@ GameObject:
   - 4: {fileID: 932670899}
   - 33: {fileID: 932670901}
   - 23: {fileID: 932670900}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetDoorLeftRear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13595,6 +13595,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 173878, guid: ec23e9062ee4c4bb687e9ebbde459502, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ec23e9062ee4c4bb687e9ebbde459502, type: 2}
   m_IsPrefabParent: 0
@@ -13609,7 +13613,7 @@ GameObject:
   - 199: {fileID: 987241371}
   - 198: {fileID: 987241370}
   - 114: {fileID: 987241369}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: AfterburnerRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15010,7 +15014,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1200291083}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftFuselage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15152,7 +15156,7 @@ GameObject:
   - 4: {fileID: 1018566801}
   - 33: {fileID: 1018566803}
   - 23: {fileID: 1018566802}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftFuselageRudderRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15214,7 +15218,7 @@ GameObject:
   - 4: {fileID: 1025746639}
   - 33: {fileID: 1025746641}
   - 23: {fileID: 1025746640}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetDoorLeftFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15415,7 +15419,7 @@ GameObject:
   - 4: {fileID: 1038869187}
   - 33: {fileID: 1038869189}
   - 23: {fileID: 1038869188}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetSlatLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17147,7 +17151,7 @@ GameObject:
   - 4: {fileID: 1123876435}
   - 33: {fileID: 1123876437}
   - 23: {fileID: 1123876436}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftFuselageRudderLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17275,7 +17279,7 @@ GameObject:
   - 4: {fileID: 1136204830}
   - 33: {fileID: 1136204832}
   - 23: {fileID: 1136204831}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftFuselageGearDoorRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17620,7 +17624,7 @@ GameObject:
   - 4: {fileID: 1178333194}
   - 33: {fileID: 1178333196}
   - 23: {fileID: 1178333195}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetSlatRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18227,7 +18231,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1251662528}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AirCraftJetWarp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20572,7 +20576,7 @@ GameObject:
   - 4: {fileID: 1301013033}
   - 33: {fileID: 1301013035}
   - 23: {fileID: 1301013034}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetFlapLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21658,7 +21662,7 @@ GameObject:
   - 199: {fileID: 1473859801}
   - 198: {fileID: 1473859800}
   - 114: {fileID: 1473859799}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24239,7 +24243,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 4294966271
   m_RenderingPath: 1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -24723,7 +24727,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478591513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25203,7 +25207,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25243,135 +25247,135 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100064, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100058, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100062, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100054, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100060, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100050, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100056, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100052, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100030, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100044, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100012, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100014, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100038, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100046, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100040, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100042, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100020, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100018, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100036, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100048, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100022, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100028, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100024, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100034, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100032, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400024, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_LocalPosition.y
@@ -25540,7 +25544,7 @@ GameObject:
   - 4: {fileID: 1716922548}
   - 33: {fileID: 1716922550}
   - 23: {fileID: 1716922549}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetAileronRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25813,7 +25817,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1744063194}
   - 96: {fileID: 1744063195}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Trail Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29210,7 +29214,7 @@ GameObject:
   - 199: {fileID: 1886334387}
   - 198: {fileID: 1886334386}
   - 114: {fileID: 1886334385}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30670,7 +30674,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1930916060}
   - 96: {fileID: 1930916061}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Trail Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32643,7 +32647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   target: {fileID: 472049717}
-  offset: {x: 0, y: 2.5, z: 7.5}
+  offset: {x: 0, y: 3.5, z: 7.5}
   useSlerp: 0
   slerpSpeed: .0500000007
   longRangeMode: 0
@@ -35034,7 +35038,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2094101411}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35522,7 +35526,7 @@ GameObject:
   - 4: {fileID: 2138322157}
   - 33: {fileID: 2138322159}
   - 23: {fileID: 2138322158}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AircraftWingsJetAileronLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
