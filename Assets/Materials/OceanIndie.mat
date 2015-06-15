@@ -157,7 +157,7 @@ Material:
       data:
         first:
           name: _SunDir
-        second: {r: -7.4505806e-09, g: .646918058, b: -.762559593, a: 0}
+        second: {r: 7.4505806e-09, g: .790693521, b: -.6122123, a: 0}
       data:
         first:
           name: _SeaColor

@@ -77,7 +77,7 @@ GameObject:
   - 4: {fileID: 487458}
   - 199: {fileID: 19982666}
   - 198: {fileID: 19807118}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: BulletParticle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - 4: {fileID: 422236}
   - 199: {fileID: 19980516}
   - 198: {fileID: 19865188}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
