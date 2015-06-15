@@ -25257,11 +25257,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.4000001
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.34000015
+      value: 6.34000015
       objectReference: {fileID: 0}
     - target: {fileID: 400032, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_LocalRotation.x
@@ -25466,6 +25466,10 @@ Prefab:
     - target: {fileID: 2300000, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100048, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32d5cc4f2a04342ecb7d9ce16d7f3c91, type: 3}
@@ -29192,7 +29196,7 @@ GameObject:
   - 33: {fileID: 1872878696}
   - 64: {fileID: 1872878695}
   - 23: {fileID: 1872878694}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MagnumFireBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32698,7 +32702,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   target: {fileID: 472049717}
-  offset: {x: 0, y: 3.5, z: 7.5}
+  offset: {x: 0, y: 3.9000001, z: 6.5}
   useSlerp: 0
   slerpSpeed: .0500000007
   longRangeMode: 0
@@ -32858,7 +32862,7 @@ Camera:
     height: 1
   near clip plane: .100000001
   far clip plane: 18200
-  field of view: 90
+  field of view: 70
   orthographic: 0
   orthographic size: 100
   m_Depth: 0
