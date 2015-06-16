@@ -154,12 +154,13 @@ public class WarpController : MonoBehaviour {
 
 
 		interval=readyToWarpTime;
+		Time.timeScale=targetTimeScale;
 		while (toggle<interval){
 			toggle+=TimerController.realDeltaTime;
 //			Time.timeScale=Mathf.Lerp (originTimeScale,targetTimeScale,toggle/interval);
 			yield return new WaitForEndOfFrame();
 		}
-		Time.timeScale=targetTimeScale;
+		
 
 		aircraftController.AircraftMaxEnginePower(200);
 		aircraftController.SetAircraftAerodynamicEffect(0);
