@@ -4673,7 +4673,7 @@ MonoBehaviour:
   warpSpark: {fileID: 11440550, guid: f85f31a554615469a83db9ce7a393a25, type: 2}
   sparkTransform: {fileID: 786537847}
   warpMat: {fileID: 2100000, guid: 36cf490c24bc2449681a9c1aeefb312a, type: 2}
-  readyToWarpTime: .5
+  readyToWarpTime: .800000012
 --- !u!1 &376539789
 GameObject:
   m_ObjectHideFlags: 0
@@ -9154,7 +9154,7 @@ MonoBehaviour:
   transAmAircraftShadow: {fileID: 193226, guid: 50de975718e8f4b5e875228e43e163a4,
     type: 2}
   transAmTime: 10
-  transAmShadowDelayTime: .200000003
+  transAmShadowDelayTime: .0599999987
   inTransAM: 0
   transAmStartSE: {fileID: 1546231185}
   transAmEndSE: {fileID: 347931279}
