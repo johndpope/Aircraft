@@ -63,7 +63,7 @@ public class TransAMController : MonoBehaviour {
 			}
 		}
 
-		if (Input.GetKey(KeyCode.T)){
+		if (Input.GetKey(KeyCode.T) || GameInputController.Instance().GetButtonDown("Button4") ){
 			TransAM();
 		}
 	}

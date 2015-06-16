@@ -4,7 +4,8 @@ using System.Collections;
 public class MissileLauncher : WeaponObject {
 
 	public Missile missilePrefab;
-	public void Fire(){
+	public override void Fire(){
+		base.Fire();
 		
 		if (missilePrefab!=null){
 			Missile missile=Instantiate(missilePrefab);
@@ -21,8 +22,8 @@ public class MissileLauncher : WeaponObject {
 
 	protected override void Update(){
 		base.Update();
-		if (Input.GetKeyDown(KeyCode.C)){
-			Fire ();
-		}
+//		if (Input.GetKeyDown(KeyCode.C) || GameInputController.Instance().GetButtonDown("Button1") ){
+//			Fire ();
+//		}
 	}
 }

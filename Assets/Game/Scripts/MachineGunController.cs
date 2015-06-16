@@ -9,7 +9,8 @@ public class MachineGunController : WeaponObject {
 	public GameObject soundEffect;
 	private float fireToggle;
 
-	public void Fire(){
+	public override void Fire(){
+		base.Fire();
 		if (fireToggle<fireInterval){
 			return;
 		}
@@ -39,18 +40,8 @@ public class MachineGunController : WeaponObject {
 
 
 
-		if (Input.GetKey(KeyCode.Z)){
-			Fire ();
-			if (soundEffect!=null) {
-				//soundEffect.GetComponent<LoopSE>().PlaySE();
-			}
-
-		}
-		else {
-			if (soundEffect!=null) {
-				//soundEffect.GetComponent<LoopSE>().StopSE();
-
-			}
-		}
+//		if (Input.GetKey(KeyCode.Z) || GameInputController.Instance().GetButton("Button0") ){
+//			Fire ();
+//		}
 	}
 }

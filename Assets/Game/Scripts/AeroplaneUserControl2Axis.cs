@@ -25,12 +25,55 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         private void FixedUpdate()
         {
             // Read input for the pitch, yaw, roll and throttle of the aeroplane.
-            float roll = CrossPlatformInputManager.GetAxis("Horizontal");
-            float pitch = CrossPlatformInputManager.GetAxis("Vertical");
-            bool airBrakes = CrossPlatformInputManager.GetButton("Fire1");
+
+
+			float roll=0;
+			float pitch=0; 
+			bool airBrakes=false; 
+			float throttle=0;
+//			roll= CrossPlatformInputManager.GetAxis("Horizontal");
+//			pitch= CrossPlatformInputManager.GetAxis("Vertical");
+//			airBrakes = CrossPlatformInputManager.GetButton("Fire1");
+//			roll=Input.GetAxis("joystick 1 analog 0");
+
+			if (GameInputController.Instance().GetDevice()!=null ){
+				roll=GameInputController.Instance().GetAxis("Analog0");
+				pitch=-GameInputController.Instance().GetAxis("Analog1");
+			}
+			else{
+
+				if (Input.GetKey(KeyCode.UpArrow) ){
+					pitch=1;
+				}
+
+				if (Input.GetKey(KeyCode.DownArrow) ){
+					pitch=-1;
+				}
+
+				if (Input.GetKey(KeyCode.LeftArrow) ){
+					roll=-1;
+				}
+
+				if (Input.GetKey(KeyCode.RightArrow) ){
+					roll=1;
+				}
+//				roll=CrossPlatformInputManager.GetAxis("Horizontal");
+//				pitch= CrossPlatformInputManager.GetAxis("Vertical");
+			}
 
             // auto throttle up, or down if braking.
-            float throttle = airBrakes ? -1 : 1;
+//			Debug.Log(GameInputController.Instance().GetDevice());
+			if (GameInputController.Instance().GetDevice()!=null ){
+				airBrakes=false;
+				throttle=-GameInputController.Instance().GetAxis("Analog2");
+			}
+			else{
+				airBrakes=Input.GetKey(KeyCode.LeftShift);
+				throttle= airBrakes ? -1 : 1;
+			}
+
+			
+//			Debug.Log(throttle);
 #if MOBILE_INPUT
             AdjustInputForMobileControls(ref roll, ref pitch, ref throttle);
 #endif
