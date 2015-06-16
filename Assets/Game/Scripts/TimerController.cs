@@ -27,8 +27,10 @@ public class TimerController : MonoBehaviour {
 	
 	}
 	
+
 	// Update is called once per frame
 	void Update () {
+
 		realDeltaTime=Time.realtimeSinceStartup - lastRealTime;
 		lastRealTime=Time.realtimeSinceStartup;
 		realDeltaTime=Mathf.Clamp(realDeltaTime,0,0.05f);

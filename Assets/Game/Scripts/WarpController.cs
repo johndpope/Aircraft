@@ -53,6 +53,7 @@ public class WarpController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (Input.GetKeyUp(KeyCode.Q)){
 			Warp();
 		}
@@ -111,35 +112,6 @@ public class WarpController : MonoBehaviour {
 		float normalFieldOfView = mainCamera.fieldOfView;
 		float normalIntensity = bloomScript.bloomIntensity;
 
-		foreach (GameObject singlePart in AircraftParts) {
-			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
-				singleMeshRenderer.enabled=false;
-//				singleMeshRenderer.material.shader.
-//				Material tmpMat=singleMeshRenderer.material;
-
-//				singleMeshRenderer.material.SetFloat("_Mode", 3);
-//				singleMeshRenderer.material.SetColor("_Color", new Color(0,0,0,0) );
-//				singleMeshRenderer.material.SetTexture("_MainTex",null);
-//				singleMeshRenderer.material.SetTexture("_SpecGlossMap",null);
-//				singleMeshRenderer.material.SetTexture("_BumpMap",null);
-//				singleMeshRenderer.material.SetTexture("_OcclusionMap",null);
-
-//				tmpMat.SetColor("_EmissionColor", new Color(0,1,0) );
-//				tmpMat.EnableKeyword("_ALPHABLEND_ON");
-//				singleMeshRenderer.material=tmpMat;
-
-//				singleMeshRenderer.material=warpMat;
-//				singleMeshRenderer.materials=new Material[1];
-//				singleMeshRenderer.materials[0]=warpMat;
-//				singleMeshRenderer.materials[1]=warpMat;
-			}
-		}
-		warpAircraft.SetActive(true);
-		bloomScript.bloomIntensity=1;
-		motionBlurScript.enabled=true;
-		
-
-
 
 		float interval=0.5f;
 		Camera cam=CameraController.Instance().tpsCam;
@@ -153,15 +125,41 @@ public class WarpController : MonoBehaviour {
 		float targetTimeScale=0.2f;
 
 
-		interval=readyToWarpTime;
 		Time.timeScale=targetTimeScale;
+		interval=readyToWarpTime;
 		while (toggle<interval){
 			toggle+=TimerController.realDeltaTime;
 //			Time.timeScale=Mathf.Lerp (originTimeScale,targetTimeScale,toggle/interval);
 			yield return new WaitForEndOfFrame();
 		}
-		
 
+		foreach (GameObject singlePart in AircraftParts) {
+			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
+				singleMeshRenderer.enabled=false;
+				//				singleMeshRenderer.material.shader.
+				//				Material tmpMat=singleMeshRenderer.material;
+				
+				//				singleMeshRenderer.material.SetFloat("_Mode", 3);
+				//				singleMeshRenderer.material.SetColor("_Color", new Color(0,0,0,0) );
+				//				singleMeshRenderer.material.SetTexture("_MainTex",null);
+				//				singleMeshRenderer.material.SetTexture("_SpecGlossMap",null);
+				//				singleMeshRenderer.material.SetTexture("_BumpMap",null);
+				//				singleMeshRenderer.material.SetTexture("_OcclusionMap",null);
+				
+				//				tmpMat.SetColor("_EmissionColor", new Color(0,1,0) );
+				//				tmpMat.EnableKeyword("_ALPHABLEND_ON");
+				//				singleMeshRenderer.material=tmpMat;
+				
+				//				singleMeshRenderer.material=warpMat;
+				//				singleMeshRenderer.materials=new Material[1];
+				//				singleMeshRenderer.materials[0]=warpMat;
+				//				singleMeshRenderer.materials[1]=warpMat;
+			}
+		}
+
+		warpAircraft.SetActive(true);
+		bloomScript.bloomIntensity=1;
+		motionBlurScript.enabled=true;
 		aircraftController.AircraftMaxEnginePower(200);
 		aircraftController.SetAircraftAerodynamicEffect(0);
 
@@ -196,23 +194,23 @@ public class WarpController : MonoBehaviour {
 
 
 		//WARP Finished
+		spark =(WarpSpark) Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
+		//		spark.transform.SetParent(transform);
+		warpSE2.Play();
+
+
 		toggle=0;
-		interval=0.5f;
+		interval=0.3f;
 		originTimeScale=1;
 		while (toggle<interval){
 			toggle+=TimerController.realDeltaTime;
 			cam.fieldOfView=Mathf.Lerp (targetFov,orginFov,toggle/interval);
-			Time.timeScale=Mathf.Lerp (targetTimeScale,originTimeScale,toggle/interval);
+			//Time.timeScale=Mathf.Lerp (targetTimeScale,originTimeScale,toggle/interval);
 			yield return new WaitForEndOfFrame();
 		}
 		cam.fieldOfView=orginFov;
 		Time.timeScale=originTimeScale;
 
-
-
-		spark =(WarpSpark) Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
-//		spark.transform.SetParent(transform);
-		warpSE2.Play();
 		
 		warpAircraft.SetActive(false);
 		foreach (GameObject singlePart in AircraftParts) {
