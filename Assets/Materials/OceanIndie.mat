@@ -158,11 +158,11 @@ Material:
       data:
         first:
           name: _SunColor
-        second: {r: .945544302, g: .827973187, b: .608377934, a: 1}
+        second: {r: .911764681, g: .899188638, b: .858131468, a: 1}
       data:
         first:
           name: _SunDir
-        second: {r: -1.86264515e-09, g: .278599769, b: -.960407317, a: 0}
+        second: {r: 3.7252903e-09, g: .833788335, b: -.552084327, a: 0}
       data:
         first:
           name: _GridSizes
