@@ -8,6 +8,34 @@ public class Aircraft : Entity {
 	public AeroplaneController plane;
 	private Rigidbody body;
 
+	public WeaponObject[] mainWeapons;
+	public WeaponObject[] secondaryWeapons;
+	public int mainWeaponIndex;
+	public int secondaryIndex;
+
+	public void SwitchMainWeapon(){
+		mainWeaponIndex++;
+		if (mainWeaponIndex>=mainWeapons.Length){
+			mainWeaponIndex=0;
+		}
+	}
+
+
+	public void SwitchSecondaryWeapon(){
+		secondaryIndex++;
+		if (secondaryIndex>=secondaryWeapons.Length){
+			secondaryIndex=0;
+		}
+	}
+
+	public WeaponObject GetMainWeapon(){
+		return mainWeapons[mainWeaponIndex];
+	}
+
+	public WeaponObject GetSecondaryWeapon(){
+		return secondaryWeapons[secondaryIndex];
+	}
+
 	void Awake(){
 		aiController=GetComponent<AeroplaneAiControl>();
 		plane=GetComponent<AeroplaneController>();

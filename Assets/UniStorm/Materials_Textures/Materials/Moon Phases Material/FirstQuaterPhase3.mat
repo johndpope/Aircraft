@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -11,6 +11,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -115,7 +116,7 @@ Material:
       data:
         first:
           name: _FogAmountMax
-        second: 50000
+        second: 100017.641
       data:
         first:
           name: _FloatMin
@@ -123,7 +124,7 @@ Material:
       data:
         first:
           name: _FloatMax
-        second: 1.38777256
+        second: 2.00035286
       data:
         first:
           name: _Blend

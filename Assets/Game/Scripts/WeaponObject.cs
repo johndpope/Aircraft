@@ -9,6 +9,10 @@ public class WeaponObject : MonoBehaviour {
 	public Entity target;
 	public Transform bulletTransform;
 
+	public virtual void Fire(){
+
+	}
+
 	public void Dectect(){
 		
 		Entity tmpTarget=target;

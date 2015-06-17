@@ -10,7 +10,8 @@ public class BeamMagnumController : WeaponObject {
 	public HyperMegaCanon hyperMegaCanon;
 	private float fireToggle;
 	
-	public void Fire(){
+	public override void Fire(){
+		base.Fire();
 		if (fireToggle<fireInterval){
 			return;
 		}
@@ -40,17 +41,7 @@ public class BeamMagnumController : WeaponObject {
 		if (fireToggle<fireInterval){
 			fireToggle+=Time.deltaTime;
 		}
-		
-		
-		
-		if (Input.GetKey(KeyCode.X)){
-			Fire ();
 
-			
-		}
-		else {
-
-		}
 
 		if (Input.GetKey(KeyCode.V)) {
 			HyperMegaCanonLaunch();

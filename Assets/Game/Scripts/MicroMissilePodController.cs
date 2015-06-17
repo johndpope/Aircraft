@@ -14,12 +14,12 @@ public class MicroMissilePodController : WeaponObject {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKey(KeyCode.B)) {
-
-			LaunchMicroMissilePod();
-		}
-	}
+//	void Update () {
+//		if (Input.GetKey(KeyCode.B) || GameInputController.Instance().GetButtonDown("Button3") ) {
+//
+//			LaunchMicroMissilePod();
+//		}
+//	}
 
 	public void Reload () {
 		microMissilePod=null;
@@ -27,8 +27,8 @@ public class MicroMissilePodController : WeaponObject {
 
 	}
 
-	void LaunchMicroMissilePod () {
-
+	public override void Fire () {
+		base.Fire();
 		if (microMissilePod==null) {
 			microMissilePod = (MicroMissilePod)Instantiate(microMissilePodPrefab,bulletTransform.transform.position,bulletTransform.transform.rotation);
 

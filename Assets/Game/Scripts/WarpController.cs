@@ -54,7 +54,7 @@ public class WarpController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyUp(KeyCode.Q)){
+		if (Input.GetKeyUp(KeyCode.Q) || GameInputController.Instance().GetButtonDown("Button5") ){
 			Warp();
 		}
 	}
