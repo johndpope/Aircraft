@@ -9,7 +9,9 @@ public class BeamMagnumController : WeaponObject {
 	public MagnumLaunchSpark launchSpark;
 	public HyperMegaCanon hyperMegaCanon;
 	public bool charging;
-	public float maxChargeTime=3f;
+	public float maxChargeTime=4f;
+	public AudioSource chargingSE;
+	public AudioSource chargedSE;
 	private float fireToggle;
 	private float chargeTimer;
 
@@ -41,6 +43,9 @@ public class BeamMagnumController : WeaponObject {
 
 
 	public override void FireButtonDown() {
+		if (hyperMegaCanon.IsLaunching()) {
+			return;
+		}
 		base.FireButtonDown();
 		charging =true;
 		chargeTimer = 0;
@@ -48,8 +53,11 @@ public class BeamMagnumController : WeaponObject {
 
 
 	public override void FireButtonUp() {
+		if (hyperMegaCanon.IsLaunching()) {
+			return;
+		}
 		base.FireButtonUp();
-
+		chargingSE.Stop();
 		if (chargeTimer >= maxChargeTime) {
 			HyperMegaCanonLaunch();
 		}
@@ -69,12 +77,16 @@ public class BeamMagnumController : WeaponObject {
 		}
 		else {
 			if (charging && chargeTimer < maxChargeTime) {
-				if (chargeTimer == 0) {
+				if (chargeTimer > 0.5) {
+					if (!chargingSE.isPlaying) {
+						chargingSE.Play();
+					}
 
 				}
 				chargeTimer +=Time.deltaTime;
 				if (chargeTimer >= maxChargeTime) {
-
+					chargingSE.Stop();
+					chargedSE.Play();
 				}
 			}
 		}
