@@ -98,7 +98,7 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: .5
+        second: 0
       data:
         first:
           name: _AlphaTestRef
@@ -133,11 +133,11 @@ Material:
         second: 0
       data:
         first:
-          name: _EmissionScaleUI
+          name: _Mode
         second: 0
       data:
         first:
-          name: _Mode
+          name: _EmissionScaleUI
         second: 0
       data:
         first:

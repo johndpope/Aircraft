@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class WeaponObject : MonoBehaviour {
+	public string weaponName="Weapon";
 	public Entity owner;
 	public float detectRange=50;
 	public float detectAngle=180;
@@ -10,6 +11,18 @@ public class WeaponObject : MonoBehaviour {
 	public Transform bulletTransform;
 
 	public virtual void Fire(){
+
+	}
+
+	public virtual void FireButtonDown() {
+
+	}
+
+	public virtual void FireButtonUp() {
+
+	}
+
+	public virtual void FireButton(){
 
 	}
 

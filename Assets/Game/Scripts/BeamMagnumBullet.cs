@@ -52,7 +52,7 @@ public class BeamMagnumBullet : Entity {
 			bulletCollider.height = bulletCollider.height + 20*Time.deltaTime;
 		}
 		if (bulletLength<50) {
-			bulletLength = bulletLength +100*Time.deltaTime;
+			bulletLength = bulletLength +140*Time.deltaTime;
 			Vector3 pos = new Vector3(0,0,bulletLength);
 			bulletBody.SetPosition(1,pos);
 		}

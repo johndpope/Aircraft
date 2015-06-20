@@ -154,4 +154,8 @@ public class HyperMegaCanon : Entity {
 
 	}
 
+	public bool IsLaunching () {
+		return launching;
+	}
+
 }

@@ -115,7 +115,7 @@ public class TransAMController : MonoBehaviour {
 		Camera cam=CameraController.Instance().tpsCam;
 
 		float orginFov=cam.fieldOfView;
-		float targetFov=100;
+		float targetFov=80;
 		while (toggle<interval){
 			toggle+=Time.deltaTime;
 			cam.fieldOfView=Mathf.Lerp (orginFov,targetFov,toggle/interval);

@@ -20,6 +20,11 @@ public class MissileLauncher : WeaponObject {
 		}
 	}
 
+	public override void FireButtonDown() {
+		base.FireButtonDown();
+		Fire();
+	}
+
 	protected override void Update(){
 		base.Update();
 //		if (Input.GetKeyDown(KeyCode.C) || GameInputController.Instance().GetButtonDown("Button1") ){

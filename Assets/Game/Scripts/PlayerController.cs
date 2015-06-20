@@ -35,24 +35,44 @@ public class PlayerController : BasePlayer {
 
 	void Update(){
 		if (GameInputController.Instance().GetButton("Button0") || Input.GetKey(KeyCode.Z) ){
-			player.GetMainWeapon().Fire();
+			player.GetMainWeapon().FireButton();
+		}
+
+		if (GameInputController.Instance().GetButtonDown("Button0") || Input.GetKeyDown(KeyCode.Z) ){
+			player.GetMainWeapon().FireButtonDown();
+		}
+
+		if (GameInputController.Instance().GetButtonUp("Button0") || Input.GetKeyUp(KeyCode.Z) ){
+			player.GetMainWeapon().FireButtonUp();
+		}
+
+
+
+		if (GameInputController.Instance().GetButton("Button1") || Input.GetKey(KeyCode.X) ){
+			player.GetSecondaryWeapon().FireButton();
 		}
 
 		if (GameInputController.Instance().GetButtonDown("Button1") || Input.GetKeyDown(KeyCode.X) ){
-			player.GetSecondaryWeapon().Fire();
+			player.GetSecondaryWeapon().FireButtonDown();
 		}
 
-		if (GameInputController.Instance().GetButtonDown("Button2") || Input.GetKeyDown(KeyCode.A) ){
+		if (GameInputController.Instance().GetButtonUp("Button1") || Input.GetKeyUp(KeyCode.X) ){
+			player.GetSecondaryWeapon().FireButtonUp();
+		}
+
+
+
+		if ((GameInputController.Instance().GetButtonDown("Button2") && !GameInputController.Instance().GetButton("Button0")) || (Input.GetKeyDown(KeyCode.A) && !Input.GetKey(KeyCode.Z)) ){
 			player.SwitchMainWeapon();
 			Debug.Log(player.GetMainWeapon().name);
 		}
 
-		if (GameInputController.Instance().GetButtonDown("Button3") || Input.GetKeyDown(KeyCode.S) ){
+		if ((GameInputController.Instance().GetButtonDown("Button3") && !GameInputController.Instance().GetButton("Button1")) || (Input.GetKeyDown(KeyCode.S) && !Input.GetKey(KeyCode.X)) ){
 			player.SwitchSecondaryWeapon();
 			Debug.Log(player.GetSecondaryWeapon().name);
 		}
 
-		txtWeapon.text=string.Format("W1: {0}\nW2: {1}",player.GetMainWeapon().name,player.GetSecondaryWeapon().name );
+		txtWeapon.text=string.Format("W1: {0}\nW2: {1}",player.GetMainWeapon().weaponName,player.GetSecondaryWeapon().weaponName );
 
 		Detect();
 	}

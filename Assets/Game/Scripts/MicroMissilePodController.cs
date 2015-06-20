@@ -21,6 +21,17 @@ public class MicroMissilePodController : WeaponObject {
 //		}
 //	}
 
+	public override void FireButtonUp() {
+		base.FireButtonUp();
+		if (microMissilePod==null){
+			Fire();
+		}
+		else {
+			microMissilePod.NextState();
+		}
+
+	}
+
 	public void Reload () {
 		microMissilePod=null;
 		cameraFollower.ChangeCameraMode(false);

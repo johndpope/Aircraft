@@ -21,7 +21,7 @@ Material:
         second:
           m_Texture: {fileID: 2800000, guid: 9c8c67c6bfb05654c8b87e02426f7ca0, type: 3}
           m_Scale: {x: 5, y: 5}
-          m_Offset: {x: .000200000009, y: .000200000009}
+          m_Offset: {x: 0, y: 0}
       data:
         first:
           name: _BumpMap
@@ -31,14 +31,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Detail
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _Detail
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -54,12 +54,12 @@ Material:
         second: .699999988
       data:
         first:
-          name: _Parallax
-        second: .0199999996
-      data:
-        first:
           name: _InvFade
         second: 1
+      data:
+        first:
+          name: _Parallax
+        second: .0199999996
     m_Colors:
       data:
         first:
@@ -71,12 +71,12 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _EmisColor
-        second: {r: .223880589, g: .223880589, b: .223880589, a: 0}
-      data:
-        first:
           name: _Emission
         second: {r: .90566361, g: .90566361, b: .90566361, a: 1.00296628}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: .223880589, g: .223880589, b: .223880589, a: 0}
       data:
         first:
           name: _TintColor

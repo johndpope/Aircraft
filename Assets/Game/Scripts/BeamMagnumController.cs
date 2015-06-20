@@ -8,7 +8,20 @@ public class BeamMagnumController : WeaponObject {
 	public float fireInterval=1.0f;
 	public MagnumLaunchSpark launchSpark;
 	public HyperMegaCanon hyperMegaCanon;
+	public bool charging;
+	public float maxChargeTime=4f;
+	public AudioSource chargingSE;
+	public AudioSource chargedSE;
+
+	public ParticleSystem chargeEnergyBall;
+	public ParticleSystem chargeEnergyParticle;
+	public ParticleSystem chargeFinishRing;
+	public Light chargeEnergyLight;
+
+
 	private float fireToggle;
+	private float chargeTimer;
+
 	
 	public override void Fire(){
 		base.Fire();
@@ -34,6 +47,40 @@ public class BeamMagnumController : WeaponObject {
 			launchSpark.PlayAnimation();
 		}
 	}
+
+
+	public override void FireButtonDown() {
+		if (hyperMegaCanon.IsLaunching()) {
+			return;
+		}
+		base.FireButtonDown();
+		charging =true;
+		chargeTimer = 0;
+	}
+
+
+	public override void FireButtonUp() {
+		if (hyperMegaCanon.IsLaunching()) {
+			return;
+		}
+		base.FireButtonUp();
+		chargingSE.Stop();
+		chargeEnergyBall.enableEmission=false;
+		chargeEnergyParticle.enableEmission=false;
+		chargeFinishRing.enableEmission=false;
+		chargeEnergyLight.enabled=false;
+		if (chargeTimer >= maxChargeTime) {
+			HyperMegaCanonLaunch();
+		}
+		else {
+			Fire();
+		}
+
+		charging =false;
+		chargeTimer = 0;
+
+		weaponName="Hyper Mega Launcher";
+	}
 	
 	protected override void Update(){
 		base.Update();
@@ -41,12 +88,38 @@ public class BeamMagnumController : WeaponObject {
 		if (fireToggle<fireInterval){
 			fireToggle+=Time.deltaTime;
 		}
+		else {
+			if (charging && chargeTimer < maxChargeTime) {
+				if (chargeTimer > 0.5) {
+					if (!chargingSE.isPlaying) {
+						chargeEnergyBall.enableEmission=true;
+						chargeEnergyParticle.enableEmission=true;
+						chargeEnergyLight.enabled=true;
+						chargingSE.Play();
+					}
+
+				}
+				chargeEnergyBall.startSize = Mathf.Lerp(1,6,chargeTimer/maxChargeTime);
+				chargeEnergyLight.intensity = Mathf.Lerp(0,0.5f,chargeTimer/maxChargeTime);
+				chargeTimer +=TimerController.realDeltaTime;
+				if (chargeTimer >= maxChargeTime) {
+					weaponName="Hyper Mega Canon";
+					chargeFinishRing.enableEmission=true;
+					chargeFinishRing.Emit(1);
+					chargeEnergyParticle.enableEmission=false;
+					chargingSE.Stop();
+					chargedSE.Play();
+				}
+			}
+		}
 
 
+		/*
 		if (Input.GetKey(KeyCode.V)) {
 			HyperMegaCanonLaunch();
 
 		}
+		*/
 	}
 
 	void HyperMegaCanonLaunch () {
