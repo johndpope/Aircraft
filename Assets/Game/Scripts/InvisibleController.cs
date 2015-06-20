@@ -14,7 +14,7 @@ public class InvisibleController : WeaponObject {
 	public AudioSource warpSE2;
 	public float fadeDuration=3;
 
-	public GameObject warpAircraft;
+	public GameObject invisibleAircraft;
 
 	private Material bodyNomalMaterial;
 	private Material wingsNomalMaterial;
@@ -32,7 +32,7 @@ public class InvisibleController : WeaponObject {
 		float toggle=0;
 		float interval=fadeDuration;
 
-		//warpAircraft.SetActive(true);
+		invisibleAircraft.SetActive(true);
 
 		while (toggle<interval){
 			toggle+=TimerController.deltaTime;
@@ -64,10 +64,10 @@ public class InvisibleController : WeaponObject {
 			yield return new WaitForEndOfFrame();
 		}
 
-		toggle=0;
+		toggle=fadeDuration;
 		interval=fadeDuration;
-		while (toggle<interval){
-			toggle+=TimerController.deltaTime;
+		while (toggle>0){
+			toggle-=TimerController.deltaTime;
 
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				//singleMeshRenderer.material=bodyInvisibleMaterial;
@@ -108,7 +108,7 @@ public class InvisibleController : WeaponObject {
 			singleMeshRenderer.material=wingsNomalMaterial;
 		}
 
-		//warpAircraft.SetActive(false);
+		invisibleAircraft.SetActive(false);
 	}
 
 
