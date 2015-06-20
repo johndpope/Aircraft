@@ -8700,7 +8700,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4294902011
+        rgba: 4294917884
       minMaxState: 0
     startSize:
       scalar: .400000006
@@ -10895,7 +10895,7 @@ Light:
   m_Enabled: 0
   serializedVersion: 6
   m_Type: 2
-  m_Color: {r: 1, g: .279411793, b: .980121851, a: 1}
+  m_Color: {r: 1, g: .278060138, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -38638,7 +38638,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4293656829
+        rgba: 4293996031
       minMaxState: 0
     startSize:
       scalar: 6
