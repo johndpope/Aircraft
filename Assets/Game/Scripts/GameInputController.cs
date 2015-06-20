@@ -26,16 +26,8 @@ public class GameInputController : MonoBehaviour {
 		if (inputDevice!=null){
 			return inputDevice.GetControlByName(_axis).Value;
 		}
-		else {
-			float direction=0;
-			if(Input.GetKey(KeyCode.LeftArrow) ){
-				direction=-1;
-			}
-
-			if(Input.GetKey(KeyCode.RightArrow) ){
-				direction=1;
-			}
-			return direction;
+		else{
+			return 0;
 		}
 	}
 

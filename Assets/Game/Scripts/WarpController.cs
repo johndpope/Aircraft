@@ -101,6 +101,8 @@ public class WarpController : MonoBehaviour {
 		}
 	}
 
+
+
 	public IEnumerator DoWarp(){
 //		Fisheye eye=CameraController.Instance().tpsCam.GetComponent<Fisheye>();
 //		eye.enabled=true;
@@ -129,13 +131,17 @@ public class WarpController : MonoBehaviour {
 		interval=readyToWarpTime;
 		while (toggle<interval){
 			toggle+=TimerController.realDeltaTime;
+
+
 //			Time.timeScale=Mathf.Lerp (originTimeScale,targetTimeScale,toggle/interval);
 			yield return new WaitForEndOfFrame();
 		}
 
+
 		foreach (GameObject singlePart in AircraftParts) {
 			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
-				singleMeshRenderer.enabled=false;
+									singleMeshRenderer.enabled=false;
+				
 				//				singleMeshRenderer.material.shader.
 				//				Material tmpMat=singleMeshRenderer.material;
 				
@@ -148,15 +154,15 @@ public class WarpController : MonoBehaviour {
 				
 				//				tmpMat.SetColor("_EmissionColor", new Color(0,1,0) );
 				//				tmpMat.EnableKeyword("_ALPHABLEND_ON");
-				//				singleMeshRenderer.material=tmpMat;
+				//								singleMeshRenderer.material=tmpMat;
 				
-				//				singleMeshRenderer.material=warpMat;
+//				singleMeshRenderer.material=warpMat;
+//				warpMat.SetFloat("_Cutoff",toggle/interval);
 				//				singleMeshRenderer.materials=new Material[1];
 				//				singleMeshRenderer.materials[0]=warpMat;
 				//				singleMeshRenderer.materials[1]=warpMat;
 			}
 		}
-
 		warpAircraft.SetActive(true);
 		bloomScript.bloomIntensity=1;
 		motionBlurScript.enabled=true;
