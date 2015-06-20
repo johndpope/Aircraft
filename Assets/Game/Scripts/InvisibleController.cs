@@ -10,8 +10,8 @@ public class InvisibleController : WeaponObject {
 	public Material bodyInvisibleMaterial;
 	public Material wingsInvisibleMaterial;
 	public bool isInvisible=false;
-	public AudioSource warpSE1;
-	public AudioSource warpSE2;
+	public AudioSource invisibleSE1;
+	public AudioSource invisibleSE2;
 	public float fadeDuration=3;
 
 	public GameObject invisibleAircraft;
@@ -27,7 +27,7 @@ public class InvisibleController : WeaponObject {
 	}
 
 	IEnumerator DoFire(){
-		//warpSE1.Play();
+		invisibleSE1.Play();
 		isInvisible=true;
 		float toggle=0;
 		float interval=fadeDuration;
@@ -126,7 +126,7 @@ public class InvisibleController : WeaponObject {
 			}
 			else{
 				isInvisible=false;
-				//warpSE2.Play();
+				invisibleSE2.Play();
 			}
 		}
 	}

@@ -12119,7 +12119,7 @@ GameObject:
   - 4: {fileID: 654846700}
   - 82: {fileID: 654846701}
   m_Layer: 0
-  m_Name: WarpSE1
+  m_Name: InvisibleSE1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12146,7 +12146,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4fad3207f89a14b0c9a9e66f56eaa31c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0fa40cb381be14b288ae7dccb44db3fc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14938,8 +14938,8 @@ MonoBehaviour:
   wingsInvisibleMaterial: {fileID: 2100000, guid: 46bf629c936a649969d2f48dcb1181ba,
     type: 2}
   isInvisible: 0
-  warpSE1: {fileID: 654846701}
-  warpSE2: {fileID: 1298595616}
+  invisibleSE1: {fileID: 654846701}
+  invisibleSE2: {fileID: 1298595616}
   fadeDuration: 1
   invisibleAircraft: {fileID: 1667044833}
 --- !u!1 &827231197
@@ -24182,7 +24182,7 @@ GameObject:
   - 4: {fileID: 1298595615}
   - 82: {fileID: 1298595616}
   m_Layer: 0
-  m_Name: WarpSE2
+  m_Name: InvisibleSE2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24209,7 +24209,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c24267fd2bb8448bb803c8fa172d270f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0fa40cb381be14b288ae7dccb44db3fc, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
