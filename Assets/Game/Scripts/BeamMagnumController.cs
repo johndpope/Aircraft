@@ -12,6 +12,13 @@ public class BeamMagnumController : WeaponObject {
 	public float maxChargeTime=4f;
 	public AudioSource chargingSE;
 	public AudioSource chargedSE;
+
+	public ParticleSystem chargeEnergyBall;
+	public ParticleSystem chargeEnergyParticle;
+	public ParticleSystem chargeFinishRing;
+	public Light chargeEnergyLight;
+
+
 	private float fireToggle;
 	private float chargeTimer;
 
@@ -58,6 +65,10 @@ public class BeamMagnumController : WeaponObject {
 		}
 		base.FireButtonUp();
 		chargingSE.Stop();
+		chargeEnergyBall.enableEmission=false;
+		chargeEnergyParticle.enableEmission=false;
+		chargeFinishRing.enableEmission=false;
+		chargeEnergyLight.enabled=false;
 		if (chargeTimer >= maxChargeTime) {
 			HyperMegaCanonLaunch();
 		}
@@ -79,12 +90,20 @@ public class BeamMagnumController : WeaponObject {
 			if (charging && chargeTimer < maxChargeTime) {
 				if (chargeTimer > 0.5) {
 					if (!chargingSE.isPlaying) {
+						chargeEnergyBall.enableEmission=true;
+						chargeEnergyParticle.enableEmission=true;
+						chargeEnergyLight.enabled=true;
 						chargingSE.Play();
 					}
 
 				}
-				chargeTimer +=Time.deltaTime;
+				chargeEnergyBall.startSize = Mathf.Lerp(1,6,chargeTimer/maxChargeTime);
+				chargeEnergyLight.intensity = Mathf.Lerp(0,0.5f,chargeTimer/maxChargeTime);
+				chargeTimer +=TimerController.realDeltaTime;
 				if (chargeTimer >= maxChargeTime) {
+					chargeFinishRing.enableEmission=true;
+					chargeFinishRing.Emit(1);
+					chargeEnergyParticle.enableEmission=false;
 					chargingSE.Stop();
 					chargedSE.Play();
 				}
