@@ -14398,6 +14398,7 @@ MonoBehaviour:
   warpSE1: {fileID: 654846701}
   warpSE2: {fileID: 1298595616}
   fadeDuration: 1
+  warpAircraft: {fileID: 1251662527}
 --- !u!1 &827231197
 GameObject:
   m_ObjectHideFlags: 0

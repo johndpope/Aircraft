@@ -10,6 +10,8 @@ public class InvisibleController : WeaponObject {
 	public AudioSource warpSE2;
 	public float fadeDuration=3;
 
+	public GameObject warpAircraft;
+
 	public override void Fire(){
 		base.Fire();
 
@@ -23,7 +25,7 @@ public class InvisibleController : WeaponObject {
 		float toggle=0;
 		float interval=fadeDuration;
 
-
+		warpAircraft.SetActive(true);
 		while (toggle<interval){
 			toggle+=TimerController.deltaTime;
 			foreach (Transform singlePart in invisibleTarget) {
@@ -61,6 +63,7 @@ public class InvisibleController : WeaponObject {
 			}
 		}
 
+		warpAircraft.SetActive(false);
 	}
 
 
