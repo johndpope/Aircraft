@@ -30,6 +30,11 @@ public class MachineGunController : WeaponObject {
 
 		}
 	}
+
+	public override void FireButton() {
+		base.FireButton();
+		Fire();
+	}
 	
 	protected override void Update(){
 		base.Update();

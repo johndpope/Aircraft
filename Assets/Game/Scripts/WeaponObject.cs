@@ -13,6 +13,18 @@ public class WeaponObject : MonoBehaviour {
 
 	}
 
+	public virtual void FireButtonDown() {
+
+	}
+
+	public virtual void FireButtonUp() {
+
+	}
+
+	public virtual void FireButton(){
+
+	}
+
 	public void Dectect(){
 		
 		Entity tmpTarget=target;
