@@ -72,7 +72,7 @@ public class PlayerController : BasePlayer {
 			Debug.Log(player.GetSecondaryWeapon().name);
 		}
 
-		txtWeapon.text=string.Format("W1: {0}\nW2: {1}",player.GetMainWeapon().name,player.GetSecondaryWeapon().name );
+		txtWeapon.text=string.Format("W1: {0}\nW2: {1}",player.GetMainWeapon().weaponName,player.GetSecondaryWeapon().weaponName );
 
 		Detect();
 	}

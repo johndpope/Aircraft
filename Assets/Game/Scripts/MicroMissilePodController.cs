@@ -23,7 +23,13 @@ public class MicroMissilePodController : WeaponObject {
 
 	public override void FireButtonUp() {
 		base.FireButtonUp();
-		Fire();
+		if (microMissilePod==null){
+			Fire();
+		}
+		else {
+			microMissilePod.NextState();
+		}
+
 	}
 
 	public void Reload () {

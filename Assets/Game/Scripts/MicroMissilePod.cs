@@ -41,9 +41,19 @@ public class MicroMissilePod : Entity {
 
 		this.GetComponent<Rigidbody>().velocity=this.transform.forward*moveSpeed;
 	}
+
+	public void NextState() {
+		if (!missileLaunching && moveTimer > 0.5) {
+			StartLaunchMissile();
+		}
+		else if (!selfDestroying && launchTimer >0.5) {
+			launchTimer=launchDuration;
+		}
+	}
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		if (Input.GetKeyUp(KeyCode.B)){
 			if (!missileLaunching && moveTimer > 0.5) {
 				StartLaunchMissile();
@@ -54,6 +64,7 @@ public class MicroMissilePod : Entity {
 
 
 		}
+		*/
 
 		if (!missileLaunching && !selfDestroying) {
 			if (moveTimer < maxMoveTime) {

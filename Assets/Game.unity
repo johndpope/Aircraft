@@ -403,7 +403,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_RenderMode: 0
-  m_MaxParticleSize: .5
+  m_MaxParticleSize: 2
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -794,10 +794,10 @@ ParticleSystem:
       maxGradient:
         key0:
           serializedVersion: 2
-          rgba: 4294967295
+          rgba: 4293354239
         key1:
           serializedVersion: 2
-          rgba: 16777215
+          rgba: 15230463
         key2:
           serializedVersion: 2
           rgba: 0
@@ -824,7 +824,7 @@ ParticleSystem:
         ctime5: 0
         ctime6: 0
         ctime7: 0
-        atime0: 32768
+        atime0: 16384
         atime1: 65535
         atime2: 0
         atime3: 0
@@ -1936,6 +1936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d9977f35be642ec8d620e6c88416b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: Machine Gun
   owner: {fileID: 4343722}
   detectRange: 50
   detectAngle: 180
@@ -2984,6 +2985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d9977f35be642ec8d620e6c88416b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: Weapon
   owner: {fileID: 4343722}
   detectRange: 50
   detectAngle: 180
@@ -6366,6 +6368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498bae61e8e5147b9b4becce92b45b8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: Hyper Mega Launcher
   owner: {fileID: 4343722}
   detectRange: 50
   detectAngle: 180
@@ -14441,6 +14444,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62add6ddc9c154886ad5ba6ad280d940, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: Missile Launcher
   owner: {fileID: 4343722}
   detectRange: 300
   detectAngle: 60
@@ -18633,7 +18637,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: bgmData.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 433526, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: m_LocalPosition.x
@@ -18717,7 +18721,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: bgmID
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: bgmData.Array.data[3].bgmClip
@@ -18734,6 +18738,18 @@ Prefab:
     - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
       propertyPath: random
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[4].bgmClip
+      value: 
+      objectReference: {fileID: 8300000, guid: df938e551fcab4c0abfc716330baa47b, type: 3}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[4].loopStartTime
+      value: 43.0929985
+      objectReference: {fileID: 0}
+    - target: {fileID: 11430282, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
+      propertyPath: bgmData.Array.data[4].loopEndTime
+      value: 102.744003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 425f9c6792fd04d1a82e7103f5f97cf6, type: 2}
@@ -37613,6 +37629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a0e40ca7ce446c6badf50f1a17c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponName: Micro Missile Pod
   owner: {fileID: 4343722}
   detectRange: 50
   detectAngle: 180
