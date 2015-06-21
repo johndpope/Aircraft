@@ -9,6 +9,7 @@ public class WeaponObject : MonoBehaviour {
 	public float detectAngle=180;
 	public Entity target;
 	public Transform bulletTransform;
+	public bool inSpecialState=false;
 
 	public virtual void Fire(){
 

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityStandardAssets.Vehicles.Aeroplane;
 
-public class TransAMController : MonoBehaviour {
+public class TransAMController : WeaponObject {
 	public Camera mainCamera;
 	public CameraFollower cameraFollower;
 	public GameObject aircraft;
@@ -63,9 +63,15 @@ public class TransAMController : MonoBehaviour {
 			}
 		}
 
+		/*
 		if (Input.GetKey(KeyCode.T) || GameInputController.Instance().GetButtonDown("Button4") ){
 			TransAM();
 		}
+		*/
+	}
+
+	public override void FireButtonDown() {
+		TransAM();
 	}
 
 	void Reset() {
@@ -85,10 +91,13 @@ public class TransAMController : MonoBehaviour {
 		gnParticle.enableEmission = false;
 
 		cameraFollower.ChangeCameraMode(false);
+
+		inSpecialState=false;
 	}
 
 	public void TransAM() {
 		if (!inTransAM) {
+			inSpecialState=true;
 			inTransAM=true;
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyTransAmMaterial;

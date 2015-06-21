@@ -4,7 +4,7 @@ using UnityStandardAssets.ImageEffects;
 using UnityStandardAssets.Vehicles.Aeroplane;
 using UnityStandardAssets.ImageEffects;
 
-public class WarpController : MonoBehaviour {
+public class WarpController : WeaponObject {
 
 	public Camera mainCamera;
 	public GameObject aircraft;
@@ -54,9 +54,10 @@ public class WarpController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		/*
 		if (Input.GetKeyUp(KeyCode.Q) || GameInputController.Instance().GetButtonDown("Button5") ){
 			Warp();
-		}
+		*/
 	}
 
 //	void ReadyToWarp() {
@@ -94,11 +95,16 @@ public class WarpController : MonoBehaviour {
 	public void Warp () {
 		if (!inWarp) {
 			inWarp = true;
+			inSpecialState=true;
 			StartCoroutine(DoWarp() );
 		}
 		else{
 			inWarp = false;
 		}
+	}
+
+	public override void FireButtonDown() {
+		Warp();
 	}
 
 
@@ -240,5 +246,6 @@ public class WarpController : MonoBehaviour {
 //		eye.enabled=false;
 
 		inWarp=false;
+		inSpecialState=false;
 	}
 }

@@ -17,14 +17,26 @@ public class InvisibleController : WeaponObject {
 
 	public GameObject invisibleAircraft;
 
+	public GameObject invisibleAircraftBody;
+	public GameObject invisibleAircraftWings;
+
 	private Material bodyNomalMaterial;
 	private Material wingsNomalMaterial;
 
 
+	public override void FireButtonDown() {
+		if (!isInvisible){
+			Fire ();
+		}
+		else{
+			isInvisible=false;
+			invisibleSE2.Play();
+		}
+	}
 
 	public override void Fire(){
 		base.Fire();
-
+		inSpecialState=true;
 
 		StartCoroutine(DoFire());
 	}
@@ -33,19 +45,23 @@ public class InvisibleController : WeaponObject {
 		float toggle=0;
 		float distort=0;
 		while(invisibleAircraft.gameObject.activeInHierarchy){
-			distort=Mathf.PingPong(toggle*5,128);
+			//distort=Mathf.PingPong(toggle*5,128);
 			foreach (MeshRenderer singleMeshRenderer in invisibleAircraft.transform.GetComponentsInChildren<MeshRenderer>()) {
-				singleMeshRenderer.material=invisibleMat2;
-				singleMeshRenderer.material.mainTextureOffset=new Vector2(toggle,0);
-				singleMeshRenderer.material.SetInt("Distortion",(int)distort);
+
+				//singleMeshRenderer.material=invisibleMat2;
+				//singleMeshRenderer.material.mainTextureOffset=new Vector2(toggle,0);
+				singleMeshRenderer.materials[1].mainTextureOffset=new Vector2(toggle,0);
+				//singleMeshRenderer.material.SetInt("_BumpAmt",(int)distort);
 				
 			}
-			
+
+			/*
 			foreach (MeshRenderer singleMeshRenderer in invisibleAircraft.transform.GetComponentsInChildren<MeshRenderer>()) {
-				singleMeshRenderer.material=invisibleMat2;
+				//singleMeshRenderer.material=invisibleMat2;
 				singleMeshRenderer.material.mainTextureOffset=new Vector2(toggle,0);
-				singleMeshRenderer.material.SetInt("Distortion",(int)distort);
+				singleMeshRenderer.material.SetInt("_BumpAmt",(int)distort);
 			}
+			*/
 			toggle+=TimerController.deltaTime;
 			yield return new WaitForEndOfFrame();
 		}
@@ -56,13 +72,14 @@ public class InvisibleController : WeaponObject {
 		isInvisible=true;
 		float toggle=0;
 		float interval=fadeDuration;
+		float distort=0;
 
 		invisibleAircraft.SetActive(true);
 
 		StartCoroutine(DoInvisible() );
 		while (toggle<interval){
 			toggle+=TimerController.deltaTime;
-
+			distort=Mathf.Lerp(0,50,toggle/interval);
 
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyInvisibleMaterial;
@@ -74,6 +91,13 @@ public class InvisibleController : WeaponObject {
 				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
 				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
+			}
+
+
+			foreach (MeshRenderer singleMeshRenderer in invisibleAircraft.transform.GetComponentsInChildren<MeshRenderer>()) {
+				//Debug.Log (singleMeshRenderer.material.GetInt("Distortion"));
+				singleMeshRenderer.material.SetInt("_BumpAmt",(int)distort);
+				
 			}
 
 			yield return new WaitForEndOfFrame();
@@ -92,8 +116,10 @@ public class InvisibleController : WeaponObject {
 
 		toggle=fadeDuration;
 		interval=fadeDuration;
+		distort=50;
 		while (toggle>0){
 			toggle-=TimerController.deltaTime;
+			distort=Mathf.Lerp(0,50,toggle/interval);
 
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyInvisibleMaterial;
@@ -105,6 +131,11 @@ public class InvisibleController : WeaponObject {
 				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
 				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
+			}
+
+
+			foreach (MeshRenderer singleMeshRenderer in invisibleAircraft.transform.GetComponentsInChildren<MeshRenderer>()) {
+				singleMeshRenderer.material.SetInt("_BumpAmt",(int)distort);
 			}
 
 			
@@ -121,6 +152,8 @@ public class InvisibleController : WeaponObject {
 			singleMeshRenderer.material=wingsNomalMaterial;
 		}
 		invisibleAircraft.SetActive(false);
+
+		inSpecialState=false;
 	}
 
 
@@ -128,10 +161,12 @@ public class InvisibleController : WeaponObject {
 	void Start () {
 		bodyNomalMaterial=aircraftBody.GetComponentInChildren<MeshRenderer>().material;
 		wingsNomalMaterial=aircraftWings.GetComponentInChildren<MeshRenderer>().material;
+		//Debug.Log (invisibleAircraft.GetComponentsInChildren<MeshRenderer>()[0].material.GetInt("_BumpAmt"));
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		if (Input.GetKeyDown(KeyCode.I) ){
 			if (!isInvisible){
 				Fire ();
@@ -141,5 +176,6 @@ public class InvisibleController : WeaponObject {
 				invisibleSE2.Play();
 			}
 		}
+		*/
 	}
 }

@@ -10,8 +10,10 @@ public class Aircraft : Entity {
 
 	public WeaponObject[] mainWeapons;
 	public WeaponObject[] secondaryWeapons;
+	public WeaponObject[] specialWeapons;
 	public int mainWeaponIndex;
 	public int secondaryIndex;
+	public int specialWeaponIndex;
 
 	public void SwitchMainWeapon(){
 		mainWeaponIndex++;
@@ -28,12 +30,23 @@ public class Aircraft : Entity {
 		}
 	}
 
+	public void SwitchSpecialWeapon(){
+		specialWeaponIndex++;
+		if (specialWeaponIndex>=specialWeapons.Length){
+			specialWeaponIndex=0;
+		}
+	}
+
 	public WeaponObject GetMainWeapon(){
 		return mainWeapons[mainWeaponIndex];
 	}
 
 	public WeaponObject GetSecondaryWeapon(){
 		return secondaryWeapons[secondaryIndex];
+	}
+
+	public WeaponObject GetSpecialWeapon(){
+		return specialWeapons[specialWeaponIndex];
 	}
 
 	void Awake(){
