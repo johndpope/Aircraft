@@ -169,15 +169,15 @@ Material:
       data:
         first:
           name: _PeakColor
-        second: {r: .100996993, g: .164660081, b: .186622038, a: 1}
+        second: {r: .130899087, g: .267983824, b: .321509928, a: 1}
       data:
         first:
           name: _Level3Color
-        second: {r: .213381067, g: .151644006, b: .0970432162, a: 1}
+        second: {r: .373632818, g: .247057527, b: .141240165, a: 1}
       data:
         first:
           name: _Level2Color
-        second: {r: .213381067, g: .151644006, b: .0970432162, a: 1}
+        second: {r: .373632818, g: .247057527, b: .141240165, a: 1}
       data:
         first:
           name: _Level1Color
@@ -185,4 +185,4 @@ Material:
       data:
         first:
           name: _WaterColor
-        second: {r: .213381067, g: .151644006, b: .0970432162, a: 1}
+        second: {r: .373632818, g: .247057527, b: .141240165, a: 1}
