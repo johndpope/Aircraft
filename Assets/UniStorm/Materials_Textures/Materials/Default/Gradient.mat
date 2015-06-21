@@ -160,24 +160,24 @@ Material:
         second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
-          name: _ReflectColor
-        second: {r: 1, g: 1, b: 1, a: .5}
-      data:
-        first:
           name: _Tint
         second: {r: .5, g: .5, b: .5, a: .5}
       data:
         first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: .5}
+      data:
+        first:
           name: _PeakColor
-        second: {r: .217421666, g: .214449525, b: .208921328, a: 1}
+        second: {r: .107168205, g: .18598409, b: .214460269, a: 1}
       data:
         first:
           name: _Level3Color
-        second: {r: .247458801, g: .1719338, b: .106441751, a: 1}
+        second: {r: .246453896, g: .171335489, b: .106164604, a: 1}
       data:
         first:
           name: _Level2Color
-        second: {r: .247458801, g: .1719338, b: .106441751, a: 1}
+        second: {r: .246453896, g: .171335489, b: .106164604, a: 1}
       data:
         first:
           name: _Level1Color
@@ -185,4 +185,4 @@ Material:
       data:
         first:
           name: _WaterColor
-        second: {r: .247458801, g: .1719338, b: .106441751, a: 1}
+        second: {r: .246453896, g: .171335489, b: .106164604, a: 1}

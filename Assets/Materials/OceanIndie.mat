@@ -145,16 +145,16 @@ Material:
         second: {r: 1, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _SampleScale
-        second: {r: .5, g: 1, b: 0, a: 0}
-      data:
-        first:
           name: _SunColor
-        second: {r: .92739743, g: .866231143, b: .742549121, a: 1}
+        second: {r: .927395225, g: .866235793, b: .742565393, a: 1}
       data:
         first:
           name: _ReflectColor
         second: {r: 1, g: 1, b: 1, a: .5}
+      data:
+        first:
+          name: _SampleScale
+        second: {r: .5, g: 1, b: 0, a: 0}
       data:
         first:
           name: _SeaColor
@@ -162,7 +162,7 @@ Material:
       data:
         first:
           name: _SunDir
-        second: {r: -1.86264515e-09, g: .400393069, b: .91634357, a: 0}
+        second: {r: -1.86264515e-09, g: .400407523, b: -.916337192, a: 0}
       data:
         first:
           name: _GridSizes
