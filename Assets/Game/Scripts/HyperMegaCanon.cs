@@ -29,9 +29,12 @@ public class HyperMegaCanon : Entity {
 	private float beamBodyWidth;
 	private float beamBodyCurrentWidth;
 	private Light beamLight;
+
+//	public ParticleSystem spark;
 	
-	public void OnTriggerEnter(Collider _collider){
-		
+	public void OnTriggerStay(Collider _collider){
+//		spark.transform.position=_collider.transform.position;
+
 		if (_collider.CompareTag("AttackTarget") ){
 			//Debug.Log ("mega hit "+_collider.name);
 			Entity ent=_collider.GetComponent<Entity>();
@@ -39,6 +42,7 @@ public class HyperMegaCanon : Entity {
 				ent.Hurt(damagePerHit);
 			}
 		}
+
 
 	}
 

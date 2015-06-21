@@ -31,6 +31,8 @@ public class TransAMController : WeaponObject {
 	
 	private float normalMaxEnginePower;
 	private float normalFieldOfView;
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -71,6 +73,8 @@ public class TransAMController : WeaponObject {
 	}
 
 	public override void FireButtonDown() {
+
+
 		TransAM();
 	}
 
@@ -96,6 +100,11 @@ public class TransAMController : WeaponObject {
 	}
 
 	public void TransAM() {
+
+		if (voiceClip!=null){
+			AudioManager.Instance().PlaySFX(voiceClip);
+		}
+
 		if (!inTransAM) {
 			inSpecialState=true;
 			inTransAM=true;

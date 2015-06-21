@@ -10,6 +10,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         // these max angles are only used on mobile, due to the way pitch and roll input are handled
         public float maxRollAngle = 80;
         public float maxPitchAngle = 80;
+		public float pow=-1;
 
         // reference to the aeroplane that we're controlling
         private AeroplaneController m_Aeroplane;
@@ -58,8 +59,18 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 				if (Input.GetKey(KeyCode.RightArrow) ){
 					roll=1;
 				}
+
+				if (Input.GetKey(KeyCode.Q) ){
+					pow+=Time.fixedDeltaTime;
+				}
+				
+				if (Input.GetKey(KeyCode.W) ){
+					pow-=Time.fixedDeltaTime;
+				}
+				pow=Mathf.Clamp(pow,-1,1);
 //				roll=CrossPlatformInputManager.GetAxis("Horizontal");
 //				pitch= CrossPlatformInputManager.GetAxis("Vertical");
+				PlayerController.Instance().powBar.fillAmount=(pow+1)*0.5f;
 			}
 
             // auto throttle up, or down if braking.
@@ -71,7 +82,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 			}
 			else{
 				airBrakes=Input.GetKey(KeyCode.LeftShift);
-				throttle= airBrakes ? -1 : 1;
+				throttle= airBrakes ? -1 : pow;
 			}
 
 			

@@ -137,11 +137,11 @@ Material:
         second: 0
       data:
         first:
-          name: _EmissionScaleUI
+          name: _Lightmapping
         second: 0
       data:
         first:
-          name: _Lightmapping
+          name: _EmissionScaleUI
         second: 0
       data:
         first:

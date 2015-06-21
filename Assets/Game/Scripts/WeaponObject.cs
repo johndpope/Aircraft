@@ -10,7 +10,7 @@ public class WeaponObject : MonoBehaviour {
 	public Entity target;
 	public Transform bulletTransform;
 	public bool inSpecialState=false;
-
+	public AudioClip voiceClip;
 	public virtual void Fire(){
 
 	}
