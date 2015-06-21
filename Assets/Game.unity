@@ -2147,6 +2147,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -3312,6 +3313,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 9f49d92bef5e24c47b6142a9fbf91a33, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -4581,6 +4583,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -4705,6 +4708,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -4939,6 +4943,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -6907,6 +6912,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -8777,6 +8783,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 9f49d92bef5e24c47b6142a9fbf91a33, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -11436,6 +11443,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 9f49d92bef5e24c47b6142a9fbf91a33, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -14922,7 +14930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6590c1ed9643462b9d0430e6313aebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponName: Weapon
+  weaponName: Mirage Colloid Stealth System
   owner: {fileID: 4343722}
   detectRange: 50
   detectAngle: 180
@@ -14943,6 +14951,8 @@ MonoBehaviour:
   invisibleSE2: {fileID: 1298595616}
   fadeDuration: 3
   invisibleAircraft: {fileID: 1667044833}
+  invisibleAircraftBody: {fileID: 0}
+  invisibleAircraftWings: {fileID: 0}
 --- !u!1 &827231197
 GameObject:
   m_ObjectHideFlags: 0
@@ -20695,6 +20705,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -21040,6 +21051,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 9f49d92bef5e24c47b6142a9fbf91a33, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -23001,6 +23013,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -26665,6 +26678,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -30994,6 +31008,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -33161,6 +33176,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -34831,6 +34847,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: f936662973bdb4a6a842a923aef46b9b, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -39552,6 +39569,7 @@ MeshRenderer:
   m_ReceiveShadows: 1
   m_Materials:
   - {fileID: 2100000, guid: 9f49d92bef5e24c47b6142a9fbf91a33, type: 2}
+  - {fileID: 2100000, guid: cf5767f6d8a084a4282f6e0deac20bdc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
