@@ -39,6 +39,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 			if (GameInputController.Instance().GetDevice()!=null ){
 				roll=GameInputController.Instance().GetAxis("Analog0");
 				pitch=-GameInputController.Instance().GetAxis("Analog1");
+
 			}
 			else{
 
@@ -66,6 +67,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 			if (GameInputController.Instance().GetDevice()!=null ){
 				airBrakes=false;
 				throttle=-GameInputController.Instance().GetAxis("Analog2");
+
 			}
 			else{
 				airBrakes=Input.GetKey(KeyCode.LeftShift);
