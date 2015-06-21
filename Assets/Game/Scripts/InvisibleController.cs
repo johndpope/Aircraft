@@ -27,6 +27,7 @@ public class InvisibleController : WeaponObject {
 	public override void FireButtonDown() {
 		if (!isInvisible){
 			Fire ();
+			PlayVoice();
 		}
 		else{
 			isInvisible=false;

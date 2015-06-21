@@ -125,9 +125,7 @@ public class BeamMagnumController : WeaponObject {
 	}
 
 	void HyperMegaCanonLaunch () {
-		if (voiceClip!=null){
-			AudioManager.Instance().PlaySFX(voiceClip);
-		}
+		PlayVoice();
 		hyperMegaCanon.gameObject.SetActive(true);
 		if (launchSpark!=null){
 			launchSpark.PlayAnimation();

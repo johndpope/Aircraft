@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour {
 	}
 
 	private AudioSource audioSource;
-	public float sfxVol=1;
+	public float sfxVol=1f;
 
 	void Awake(){
 		audioSource=GetComponent<AudioSource>();

@@ -101,9 +101,7 @@ public class TransAMController : WeaponObject {
 
 	public void TransAM() {
 
-		if (voiceClip!=null){
-			AudioManager.Instance().PlaySFX(voiceClip);
-		}
+		PlayVoice();
 
 		if (!inTransAM) {
 			inSpecialState=true;

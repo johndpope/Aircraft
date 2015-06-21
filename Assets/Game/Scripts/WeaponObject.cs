@@ -10,7 +10,10 @@ public class WeaponObject : MonoBehaviour {
 	public Entity target;
 	public Transform bulletTransform;
 	public bool inSpecialState=false;
-	public AudioClip voiceClip;
+	public AudioClip[] voiceClips;
+
+
+
 	public virtual void Fire(){
 
 	}
@@ -69,6 +72,16 @@ public class WeaponObject : MonoBehaviour {
 				target=targets[minIndex];
 			}
 		}
+	}
+
+	public void PlayVoice() {
+		if (voiceClips!=null && voiceClips.Length>=1) {
+			int _idx = (int)(Random.value * voiceClips.Length);
+			AudioManager.Instance().PlaySFX(voiceClips[_idx]);
+
+		}
+
+
 	}
 	
 	protected virtual void Update(){
