@@ -32,6 +32,8 @@ public class PlayerController : BasePlayer {
 	private string secondarySwitchButton="Button3";
 	private string specialSwitchButton="Button5";
 
+	public Image powBar;
+
 	void Awake(){
 		for (int i=0;i<maxEnemyCount;i++){
 			Image enemyDot=Instantiate(enemyDotPrefab);

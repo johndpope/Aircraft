@@ -74,6 +74,7 @@ public class InvisibleController : WeaponObject {
 		float interval=fadeDuration;
 		float distort=0;
 
+		float randomOffset=Random.value;
 		invisibleAircraft.SetActive(true);
 
 		StartCoroutine(DoInvisible() );
@@ -84,13 +85,13 @@ public class InvisibleController : WeaponObject {
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyInvisibleMaterial;
 				bodyInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 			
 			foreach (MeshRenderer singleMeshRenderer in aircraftWings.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 
 
@@ -124,13 +125,13 @@ public class InvisibleController : WeaponObject {
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyInvisibleMaterial;
 				bodyInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 			
 			foreach (MeshRenderer singleMeshRenderer in aircraftWings.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 
 

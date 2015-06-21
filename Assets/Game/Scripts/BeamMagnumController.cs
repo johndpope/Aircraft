@@ -19,6 +19,8 @@ public class BeamMagnumController : WeaponObject {
 	public Light chargeEnergyLight;
 
 
+
+
 	private float fireToggle;
 	private float chargeTimer;
 
@@ -123,6 +125,9 @@ public class BeamMagnumController : WeaponObject {
 	}
 
 	void HyperMegaCanonLaunch () {
+		if (voiceClip!=null){
+			AudioManager.Instance().PlaySFX(voiceClip);
+		}
 		hyperMegaCanon.gameObject.SetActive(true);
 		if (launchSpark!=null){
 			launchSpark.PlayAnimation();

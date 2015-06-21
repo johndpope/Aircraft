@@ -33,7 +33,7 @@ public class Bullet : Entity {
 //	}
 
 	public void OnTriggerEnter(Collider _collider){
-		Debug.Log ("hit "+_collider.name);
+//		Debug.Log ("hit "+_collider.name);
 		if (_collider.CompareTag("AttackTarget") ){
 			Entity ent=_collider.GetComponent<Entity>();
 			if (ent.player.flag!=player.flag){
