@@ -3,6 +3,7 @@ using System.Collections;
 
 public class InvisibleController : WeaponObject {
 	public Material invisibleMat;
+	public Material invisibleMat2;
 	public Material originMat;
 	public Transform invisibleTarget;
 	public GameObject aircraftBody;
@@ -19,11 +20,35 @@ public class InvisibleController : WeaponObject {
 	private Material bodyNomalMaterial;
 	private Material wingsNomalMaterial;
 
+
+
 	public override void Fire(){
 		base.Fire();
 
 
 		StartCoroutine(DoFire());
+	}
+
+	IEnumerator DoInvisible(){
+		float toggle=0;
+		float distort=0;
+		while(invisibleAircraft.gameObject.activeInHierarchy){
+			distort=Mathf.PingPong(toggle*5,128);
+			foreach (MeshRenderer singleMeshRenderer in invisibleAircraft.transform.GetComponentsInChildren<MeshRenderer>()) {
+				singleMeshRenderer.material=invisibleMat2;
+				singleMeshRenderer.material.mainTextureOffset=new Vector2(toggle,0);
+				singleMeshRenderer.material.SetInt("Distortion",(int)distort);
+				
+			}
+			
+			foreach (MeshRenderer singleMeshRenderer in invisibleAircraft.transform.GetComponentsInChildren<MeshRenderer>()) {
+				singleMeshRenderer.material=invisibleMat2;
+				singleMeshRenderer.material.mainTextureOffset=new Vector2(toggle,0);
+				singleMeshRenderer.material.SetInt("Distortion",(int)distort);
+			}
+			toggle+=TimerController.deltaTime;
+			yield return new WaitForEndOfFrame();
+		}
 	}
 
 	IEnumerator DoFire(){
@@ -34,35 +59,36 @@ public class InvisibleController : WeaponObject {
 
 		invisibleAircraft.SetActive(true);
 
+		StartCoroutine(DoInvisible() );
 		while (toggle<interval){
 			toggle+=TimerController.deltaTime;
 
-			/*
-			foreach (Transform singlePart in invisibleTarget) {
-				foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
-
-					singleMeshRenderer.material=invisibleMat;
-					invisibleMat.SetFloat("_Cutoff", (toggle/interval) );
-				}
-			}
-			*/
 
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyInvisibleMaterial;
 				bodyInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
 			}
 			
 			foreach (MeshRenderer singleMeshRenderer in aircraftWings.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
 			}
 
 			yield return new WaitForEndOfFrame();
 		}
 
+
+
+		toggle=0;
+
 		while (isInvisible){
 			yield return new WaitForEndOfFrame();
 		}
+
+
+
 
 		toggle=fadeDuration;
 		interval=fadeDuration;
@@ -70,35 +96,22 @@ public class InvisibleController : WeaponObject {
 			toggle-=TimerController.deltaTime;
 
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
-				//singleMeshRenderer.material=bodyInvisibleMaterial;
+				singleMeshRenderer.material=bodyInvisibleMaterial;
 				bodyInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
 			}
 			
 			foreach (MeshRenderer singleMeshRenderer in aircraftWings.GetComponentsInChildren<MeshRenderer>()) {
-				//singleMeshRenderer.material=wingsInvisibleMaterial;
+				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
+				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(toggle,toggle));
 			}
-			/*
-			foreach (Transform singlePart in invisibleTarget) {
-				foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
-//					singleMeshRenderer.material=invisibleMat;
-					invisibleMat.SetFloat("_Cutoff", (1-toggle/interval) );
-				}
-			}
-			*/
-
 
 			
 			yield return new WaitForEndOfFrame();
 		}
 
-		/*
-		foreach (Transform singlePart in invisibleTarget) {
-			foreach (MeshRenderer singleMeshRenderer in singlePart.GetComponentsInChildren<MeshRenderer>()) {
-				singleMeshRenderer.material=originMat;
-			}
-		}
-		*/
+
 
 		foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 			singleMeshRenderer.material=bodyNomalMaterial;
@@ -107,7 +120,6 @@ public class InvisibleController : WeaponObject {
 		foreach (MeshRenderer singleMeshRenderer in aircraftWings.GetComponentsInChildren<MeshRenderer>()) {
 			singleMeshRenderer.material=wingsNomalMaterial;
 		}
-
 		invisibleAircraft.SetActive(false);
 	}
 

@@ -14929,6 +14929,7 @@ MonoBehaviour:
   target: {fileID: 0}
   bulletTransform: {fileID: 0}
   invisibleMat: {fileID: 2100000, guid: 36cf490c24bc2449681a9c1aeefb312a, type: 2}
+  invisibleMat2: {fileID: 2100000, guid: 9f49d92bef5e24c47b6142a9fbf91a33, type: 2}
   originMat: {fileID: 2100000, guid: 141b5bb76b8b39342a5a787acbeaabfd, type: 2}
   invisibleTarget: {fileID: 1959081101}
   aircraftBody: {fileID: 1316402269}
@@ -14940,7 +14941,7 @@ MonoBehaviour:
   isInvisible: 0
   invisibleSE1: {fileID: 654846701}
   invisibleSE2: {fileID: 1298595616}
-  fadeDuration: 1
+  fadeDuration: 3
   invisibleAircraft: {fileID: 1667044833}
 --- !u!1 &827231197
 GameObject:
