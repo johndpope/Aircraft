@@ -24,10 +24,19 @@ public class InvisibleController : WeaponObject {
 	private Material wingsNomalMaterial;
 
 
+	public override void FireButtonDown() {
+		if (!isInvisible){
+			Fire ();
+		}
+		else{
+			isInvisible=false;
+			invisibleSE2.Play();
+		}
+	}
 
 	public override void Fire(){
 		base.Fire();
-
+		inSpecialState=true;
 
 		StartCoroutine(DoFire());
 	}
@@ -143,6 +152,8 @@ public class InvisibleController : WeaponObject {
 			singleMeshRenderer.material=wingsNomalMaterial;
 		}
 		invisibleAircraft.SetActive(false);
+
+		inSpecialState=false;
 	}
 
 
@@ -155,6 +166,7 @@ public class InvisibleController : WeaponObject {
 	
 	// Update is called once per frame
 	void Update () {
+		/*
 		if (Input.GetKeyDown(KeyCode.I) ){
 			if (!isInvisible){
 				Fire ();
@@ -164,5 +176,6 @@ public class InvisibleController : WeaponObject {
 				invisibleSE2.Play();
 			}
 		}
+		*/
 	}
 }

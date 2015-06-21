@@ -23,6 +23,15 @@ public class PlayerController : BasePlayer {
 	public Image enemyDotPrefab;
 	public List<Image> enemyDots;
 	public int maxEnemyCount=100;
+
+	private string mainWeaponButton="Button0";
+	private string secondaryWeaponButton="Button1";
+	private string specialWeaponButton="Button4";
+
+	private string mainSwitchButton="Button2";
+	private string secondarySwitchButton="Button3";
+	private string specialSwitchButton="Button5";
+
 	void Awake(){
 		for (int i=0;i<maxEnemyCount;i++){
 			Image enemyDot=Instantiate(enemyDotPrefab);
@@ -34,45 +43,67 @@ public class PlayerController : BasePlayer {
 	}
 
 	void Update(){
-		if (GameInputController.Instance().GetButton("Button0") || Input.GetKey(KeyCode.Z) ){
+		if (GameInputController.Instance().GetButton(mainWeaponButton) || Input.GetKey(KeyCode.Z) ){
 			player.GetMainWeapon().FireButton();
 		}
 
-		if (GameInputController.Instance().GetButtonDown("Button0") || Input.GetKeyDown(KeyCode.Z) ){
+		if (GameInputController.Instance().GetButtonDown(mainWeaponButton) || Input.GetKeyDown(KeyCode.Z) ){
 			player.GetMainWeapon().FireButtonDown();
 		}
 
-		if (GameInputController.Instance().GetButtonUp("Button0") || Input.GetKeyUp(KeyCode.Z) ){
+		if (GameInputController.Instance().GetButtonUp(mainWeaponButton) || Input.GetKeyUp(KeyCode.Z) ){
 			player.GetMainWeapon().FireButtonUp();
 		}
 
 
 
-		if (GameInputController.Instance().GetButton("Button1") || Input.GetKey(KeyCode.X) ){
+		if (GameInputController.Instance().GetButton(secondaryWeaponButton) || Input.GetKey(KeyCode.X) ){
 			player.GetSecondaryWeapon().FireButton();
 		}
 
-		if (GameInputController.Instance().GetButtonDown("Button1") || Input.GetKeyDown(KeyCode.X) ){
+		if (GameInputController.Instance().GetButtonDown(secondaryWeaponButton) || Input.GetKeyDown(KeyCode.X) ){
 			player.GetSecondaryWeapon().FireButtonDown();
 		}
 
-		if (GameInputController.Instance().GetButtonUp("Button1") || Input.GetKeyUp(KeyCode.X) ){
+		if (GameInputController.Instance().GetButtonUp(secondaryWeaponButton) || Input.GetKeyUp(KeyCode.X) ){
 			player.GetSecondaryWeapon().FireButtonUp();
 		}
 
 
 
-		if ((GameInputController.Instance().GetButtonDown("Button2") && !GameInputController.Instance().GetButton("Button0")) || (Input.GetKeyDown(KeyCode.A) && !Input.GetKey(KeyCode.Z)) ){
+		if (GameInputController.Instance().GetButton(specialWeaponButton) || Input.GetKey(KeyCode.C) ){
+			player.GetSpecialWeapon().FireButton();
+		}
+		
+		if (GameInputController.Instance().GetButtonDown(specialWeaponButton) || Input.GetKeyDown(KeyCode.C) ){
+			player.GetSpecialWeapon().FireButtonDown();
+		}
+		
+		if (GameInputController.Instance().GetButtonUp(specialWeaponButton) || Input.GetKeyUp(KeyCode.C) ){
+			player.GetSpecialWeapon().FireButtonUp();
+		}
+
+
+
+		if ((GameInputController.Instance().GetButtonDown(mainSwitchButton) && !GameInputController.Instance().GetButton(mainWeaponButton)) || (Input.GetKeyDown(KeyCode.A) && !Input.GetKey(KeyCode.Z)) ){
 			player.SwitchMainWeapon();
-			Debug.Log(player.GetMainWeapon().name);
+			//Debug.Log(player.GetMainWeapon().name);
 		}
 
-		if ((GameInputController.Instance().GetButtonDown("Button3") && !GameInputController.Instance().GetButton("Button1")) || (Input.GetKeyDown(KeyCode.S) && !Input.GetKey(KeyCode.X)) ){
+		if ((GameInputController.Instance().GetButtonDown(secondarySwitchButton) && !GameInputController.Instance().GetButton(secondaryWeaponButton)) || (Input.GetKeyDown(KeyCode.S) && !Input.GetKey(KeyCode.X)) ){
 			player.SwitchSecondaryWeapon();
-			Debug.Log(player.GetSecondaryWeapon().name);
+			//Debug.Log(player.GetSecondaryWeapon().name);
 		}
 
-		txtWeapon.text=string.Format("W1: {0}\nW2: {1}",player.GetMainWeapon().weaponName,player.GetSecondaryWeapon().weaponName );
+		if ((GameInputController.Instance().GetButtonDown(specialSwitchButton) && !GameInputController.Instance().GetButton(specialWeaponButton)) || (Input.GetKeyDown(KeyCode.D) && !Input.GetKey(KeyCode.C)) ){
+			if (!player.GetSpecialWeapon().inSpecialState) {
+				player.SwitchSpecialWeapon();
+			}
+
+			//Debug.Log(player.GetSpecialWeapon().name);
+		}
+
+		txtWeapon.text=string.Format("W1: {0}\nW2: {1}\nSP: {2}",player.GetMainWeapon().weaponName,player.GetSecondaryWeapon().weaponName,player.GetSpecialWeapon().weaponName );
 
 		Detect();
 	}
