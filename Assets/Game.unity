@@ -12812,7 +12812,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
       propertyPath: m_windSpeed
-      value: 16
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
       propertyPath: m_fourierGridSize
@@ -12821,6 +12821,14 @@ Prefab:
     - target: {fileID: 11400000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
       propertyPath: m_inverseWaveAge
       value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
+      propertyPath: m_ansio
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
+      propertyPath: m_bias
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b358411365f1427439ce58dd5d8b0714, type: 2}
@@ -39097,7 +39105,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1965291130
 Transform:
   m_ObjectHideFlags: 0
