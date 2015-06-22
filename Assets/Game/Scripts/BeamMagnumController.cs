@@ -18,7 +18,7 @@ public class BeamMagnumController : WeaponObject {
 	public ParticleSystem chargeFinishRing;
 	public Light chargeEnergyLight;
 
-
+	public Texture[] weaponIcons;
 
 
 	private float fireToggle;
@@ -82,6 +82,10 @@ public class BeamMagnumController : WeaponObject {
 		chargeTimer = 0;
 
 		weaponName="Hyper Mega Launcher";
+		if (weaponIcons != null) {
+			weaponIcon = weaponIcons[0];
+		}
+
 	}
 	
 	protected override void Update(){
@@ -106,6 +110,9 @@ public class BeamMagnumController : WeaponObject {
 				chargeTimer +=TimerController.realDeltaTime;
 				if (chargeTimer >= maxChargeTime) {
 					weaponName="Hyper Mega Canon";
+					if (weaponIcons != null) {
+						weaponIcon = weaponIcons[1];
+					}
 					chargeFinishRing.enableEmission=true;
 					chargeFinishRing.Emit(1);
 					chargeEnergyParticle.enableEmission=false;

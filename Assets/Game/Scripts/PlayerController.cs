@@ -24,6 +24,14 @@ public class PlayerController : BasePlayer {
 	public List<Image> enemyDots;
 	public int maxEnemyCount=100;
 
+	public RawImage mainWeaponIcon;
+	public RawImage secondaryWeaponIcon;
+	public RawImage specialWeaponIcon;
+
+	public Text mainWeaponText;
+	public Text secondaryWeaponText;
+	public Text specialWeaponText;
+
 	private string mainWeaponButton="Button0";
 	private string secondaryWeaponButton="Button1";
 	private string specialWeaponButton="Button4";
@@ -105,7 +113,16 @@ public class PlayerController : BasePlayer {
 			//Debug.Log(player.GetSpecialWeapon().name);
 		}
 
-		txtWeapon.text=string.Format("W1: {0}\nW2: {1}\nSP: {2}",player.GetMainWeapon().weaponName,player.GetSecondaryWeapon().weaponName,player.GetSpecialWeapon().weaponName );
+		//txtWeapon.text=string.Format("W1: {0}\nW2: {1}\nSP: {2}",player.GetMainWeapon().weaponName,player.GetSecondaryWeapon().weaponName,player.GetSpecialWeapon().weaponName );
+
+		mainWeaponText.text=player.GetMainWeapon().weaponName;
+		mainWeaponIcon.texture=player.GetMainWeapon().weaponIcon;
+
+		secondaryWeaponText.text=player.GetSecondaryWeapon().weaponName;
+		secondaryWeaponIcon.texture=player.GetSecondaryWeapon().weaponIcon;
+
+		specialWeaponText.text=player.GetSpecialWeapon().weaponName;
+		specialWeaponIcon.texture=player.GetSpecialWeapon().weaponIcon;
 
 		Detect();
 	}

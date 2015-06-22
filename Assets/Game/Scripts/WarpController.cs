@@ -96,6 +96,7 @@ public class WarpController : WeaponObject {
 		if (!inWarp) {
 			inWarp = true;
 			inSpecialState=true;
+			PlayVoice();
 			StartCoroutine(DoWarp() );
 		}
 		else{

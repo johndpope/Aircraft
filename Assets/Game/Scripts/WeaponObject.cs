@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class WeaponObject : MonoBehaviour {
 	public string weaponName="Weapon";
+	public Texture weaponIcon;
 	public Entity owner;
 	public float detectRange=50;
 	public float detectAngle=180;
@@ -11,7 +12,7 @@ public class WeaponObject : MonoBehaviour {
 	public Transform bulletTransform;
 	public bool inSpecialState=false;
 	public AudioClip[] voiceClips;
-
+	
 
 
 	public virtual void Fire(){
