@@ -253,13 +253,18 @@ MonoBehaviour:
   warpLight: {fileID: 10820080}
   animationTime: .5
   lifeTime: 1
+  moveSpeed: .860000014
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: moveSpeed
+      value: .860000014
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 142896}
