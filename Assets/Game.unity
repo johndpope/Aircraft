@@ -14578,7 +14578,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_RenderMode: 0
-  m_MaxParticleSize: .5
+  m_MaxParticleSize: 2
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -17665,6 +17665,10 @@ Prefab:
     - target: {fileID: 417482, guid: ec23e9062ee4c4bb687e9ebbde459502, type: 2}
       propertyPath: m_RootOrder
       value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 11405104, guid: ec23e9062ee4c4bb687e9ebbde459502, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 111700, guid: ec23e9062ee4c4bb687e9ebbde459502, type: 2}
       propertyPath: m_IsActive
@@ -32718,7 +32722,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1786718947}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.5}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1372276685}
@@ -32751,7 +32755,7 @@ ParticleSystemRenderer:
   m_MaxParticleSize: .5
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
-  m_LengthScale: 2
+  m_LengthScale: 1.60000002
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_SortMode: 0
@@ -32936,7 +32940,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 7
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -32951,7 +32955,7 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .571428597
+          value: .400000006
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -32998,7 +33002,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 3
-    radius: 5
+    radius: 4.5999999
     angle: 25
     length: 5
     boxX: 1
