@@ -9,6 +9,8 @@ public class HyperMegaCanon : Entity {
 	public float damagePerHit=100;
 	public GameObject bodyParticleObj;
 	public GameObject headParticleObj;
+	public GameObject fireSparkParticleObj;
+	public Light beamLight;
 	public AudioSource launchAudio;
 
 	public CameraFollower cameraFollower;
@@ -22,13 +24,14 @@ public class HyperMegaCanon : Entity {
 
 	private ParticleSystem bodyParticle;
 	private ParticleSystem headParticle;
+	private ParticleSystem fireSparkParticle;
 	private float disapperTimer;
 	private float disapperTime=0.4f;
 	private bool disappering=false;
 	private bool launching=false;
 	private float beamBodyWidth;
 	private float beamBodyCurrentWidth;
-	private Light beamLight;
+
 
 //	public ParticleSystem spark;
 	
@@ -53,7 +56,8 @@ public class HyperMegaCanon : Entity {
 		bulletBody = this.GetComponentInChildren<LineRenderer>();
 		bodyParticle = bodyParticleObj.GetComponent<ParticleSystem>();
 		headParticle = headParticleObj.GetComponent<ParticleSystem>();
-		beamLight = this.GetComponentInChildren<Light>();
+		fireSparkParticle = fireSparkParticleObj.GetComponent<ParticleSystem>();
+		//beamLight = this.GetComponentInChildren<Light>();
 		bulletTargetLength = 1000;
 		bulletLength = 1;
 		raiseTime = 2.5f;
@@ -111,6 +115,7 @@ public class HyperMegaCanon : Entity {
 	void Disapper (){
 		bodyParticle.enableEmission = false;
 		headParticle.enableEmission = false;
+		fireSparkParticle.enableEmission = false;
 		bodyParticle.gameObject.SetActive(false);
 		beamLight.gameObject.SetActive(false);
 	}
@@ -132,6 +137,7 @@ public class HyperMegaCanon : Entity {
 
 		bodyParticle.enableEmission = false;
 		headParticle.enableEmission = false;
+		fireSparkParticle.enableEmission = false;
 
 		bulletBody.gameObject.SetActive(false);
 		//this.gameObject.SetActive(false);
@@ -146,11 +152,13 @@ public class HyperMegaCanon : Entity {
 			bulletBody.gameObject.SetActive(true);
 			bodyParticle.gameObject.SetActive(true);
 			headParticle.gameObject.SetActive(true);
+			fireSparkParticle.gameObject.SetActive(true);
 			beamLight.gameObject.SetActive(true);
 			bulletCollider.enabled=true;
 			launching = true;
 			bodyParticle.enableEmission=true;
 			headParticle.enableEmission=true;
+			fireSparkParticle.enableEmission=true;
 			launchAudio.Play();
 
 			cameraFollower.ChangeCameraMode(true);
