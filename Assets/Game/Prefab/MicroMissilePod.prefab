@@ -1014,7 +1014,7 @@ MonoBehaviour:
   launchDelay: .200000003
   microMissileSpeed: 80
   minMissileSpeed: 50
-  maxMissileSpeed: 140
+  maxMissileSpeed: 200
   moveSpeed: 190
   launchingMoveSpeed: 100
   maxMoveTime: 6
@@ -3234,7 +3234,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: maxMissileSpeed
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 177342}

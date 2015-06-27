@@ -10,6 +10,7 @@ public class HyperMegaCanon : Entity {
 	public GameObject bodyParticleObj;
 	public GameObject headParticleObj;
 	public GameObject fireSparkParticleObj;
+	public ParticleSystem launchSparkParticle;
 	public Light beamLight;
 	public AudioSource launchAudio;
 
@@ -138,6 +139,7 @@ public class HyperMegaCanon : Entity {
 		bodyParticle.enableEmission = false;
 		headParticle.enableEmission = false;
 		fireSparkParticle.enableEmission = false;
+		launchSparkParticle.enableEmission = false;
 
 		bulletBody.gameObject.SetActive(false);
 		//this.gameObject.SetActive(false);
@@ -160,6 +162,9 @@ public class HyperMegaCanon : Entity {
 			headParticle.enableEmission=true;
 			fireSparkParticle.enableEmission=true;
 			launchAudio.Play();
+
+			launchSparkParticle.enableEmission=true;
+			launchSparkParticle.Emit(50);
 
 			cameraFollower.ChangeCameraMode(true);
 		}

@@ -162,7 +162,7 @@ Material:
       data:
         first:
           name: _SunDir
-        second: {r: 7.4505806e-09, g: .841064334, b: -.540935159, a: 0}
+        second: {r: -3.7252903e-09, g: .703822315, b: -.710376143, a: 0}
       data:
         first:
           name: _GridSizes

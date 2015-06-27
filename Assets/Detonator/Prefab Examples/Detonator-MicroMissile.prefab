@@ -249,8 +249,10 @@ MonoBehaviour:
   detailThreshold: 0
   nearSounds:
   - {fileID: 8300000, guid: 4df044b37e661422da1e0bbeba884f4a, type: 3}
+  - {fileID: 0}
   farSounds:
   - {fileID: 8300000, guid: 4df044b37e661422da1e0bbeba884f4a, type: 3}
+  - {fileID: 0}
   distanceThreshold: 50
   minVolume: .100000001
   maxVolume: .699999988
@@ -5539,7 +5541,23 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: farSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: nearSounds.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: nearSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: farSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145820}

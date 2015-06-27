@@ -81,7 +81,7 @@ Material:
       data:
         first:
           name: _FloatMin
-        second: .999856234
+        second: .999527931
       data:
         first:
           name: _FloatMax
