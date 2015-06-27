@@ -25,6 +25,7 @@ public class MicroMissilePodController : WeaponObject {
 		base.FireButtonUp();
 		if (microMissilePod==null){
 			Fire();
+			PlayVoice();
 		}
 		else {
 			microMissilePod.NextState();

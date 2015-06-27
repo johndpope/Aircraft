@@ -125,7 +125,7 @@ Material:
       data:
         first:
           name: _LodFadeDist
-        second: 5000
+        second: 2000
       data:
         first:
           name: _SampleScale
@@ -146,7 +146,7 @@ Material:
       data:
         first:
           name: _SunColor
-        second: {r: .214100346, g: .161841944, b: .0687038377, a: 1}
+        second: {r: .911764681, g: .899188638, b: .858131468, a: 1}
       data:
         first:
           name: _ReflectColor
@@ -162,7 +162,7 @@ Material:
       data:
         first:
           name: _SunDir
-        second: {r: -3.7252903e-09, g: -.398423672, b: .917201757, a: 0}
+        second: {r: -1.11758709e-08, g: .961510241, b: -.274769962, a: 0}
       data:
         first:
           name: _GridSizes

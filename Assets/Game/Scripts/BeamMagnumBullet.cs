@@ -49,10 +49,13 @@ public class BeamMagnumBullet : Entity {
 	
 	void Update(){
 		if (bulletCollider.height < 5) {
-			bulletCollider.height = bulletCollider.height + 20*Time.deltaTime;
+			//bulletCollider.height = bulletCollider.height + 20*Time.deltaTime;
+			bulletCollider.height = Mathf.Lerp(0.1f,5,lifeTimer/1);
 		}
+
 		if (bulletLength<50) {
-			bulletLength = bulletLength +140*Time.deltaTime;
+			bulletLength = Mathf.Lerp(2,40,lifeTimer/1);
+			//bulletLength = bulletLength +140*Time.deltaTime;
 			Vector3 pos = new Vector3(0,0,bulletLength);
 			bulletBody.SetPosition(1,pos);
 		}

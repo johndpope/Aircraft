@@ -21,6 +21,8 @@ public class TransAMController : WeaponObject {
 
 	public ParticleSystem gnParticle;
 
+	public ParticleSystem[] gnParticleRings;
+
 	private Material bodyNomalMaterial;
 	private Material wingsNomalMaterial;
 	
@@ -101,9 +103,7 @@ public class TransAMController : WeaponObject {
 
 	public void TransAM() {
 
-		if (voiceClip!=null){
-			AudioManager.Instance().PlaySFX(voiceClip);
-		}
+		PlayVoice();
 
 		if (!inTransAM) {
 			inSpecialState=true;
@@ -124,6 +124,10 @@ public class TransAMController : WeaponObject {
 
 			cameraFollower.ChangeCameraMode(true);
 			StartCoroutine(DoLerpFov() );
+
+			foreach (ParticleSystem gnParticleRing in gnParticleRings) {
+				gnParticleRing.Emit(1);
+			}
 		}
 	}
 

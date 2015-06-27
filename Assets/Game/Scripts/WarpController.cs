@@ -96,6 +96,7 @@ public class WarpController : WeaponObject {
 		if (!inWarp) {
 			inWarp = true;
 			inSpecialState=true;
+			PlayVoice();
 			StartCoroutine(DoWarp() );
 		}
 		else{
@@ -125,6 +126,9 @@ public class WarpController : WeaponObject {
 		Camera cam=CameraController.Instance().tpsCam;
 
 		WarpSpark spark = (WarpSpark)Instantiate(warpSpark,transform.position,transform.rotation);
+		spark.transform.SetParent(transform);
+		//spark.moveSpeed=aircraftController.ForwardSpeed;
+
 		warpSE1.Play();
 
 		//WARP Ready
@@ -208,6 +212,8 @@ public class WarpController : WeaponObject {
 		//WARP Finished
 		spark =(WarpSpark) Instantiate(warpSpark,sparkTransform.transform.position,sparkTransform.transform.rotation);
 		//		spark.transform.SetParent(transform);
+		spark.transform.SetParent(transform);
+		spark.moveSpeed=6;
 		warpSE2.Play();
 
 

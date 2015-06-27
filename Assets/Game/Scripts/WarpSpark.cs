@@ -10,6 +10,8 @@ public class WarpSpark : MonoBehaviour {
 	public float animationTime=0.3f;
 	public float lifeTime=1;
 
+	public float moveSpeed=2;
+
 	private float lifeTimer;
 	private float animationTimer;
 
@@ -32,6 +34,8 @@ public class WarpSpark : MonoBehaviour {
 			warpWave.transform.localScale = Vector3.Lerp(new Vector3(1f,1,1f),new Vector3(4,1,4),(animationTimer)/animationTime);
 			warpHeatwave.transform.localScale = Vector3.Lerp(new Vector3(1f,1,1f),new Vector3(4,1,4),(animationTimer)/animationTime);
 			animationTimer+=Time.deltaTime;
+
+			transform.localPosition += new Vector3(0,0,-moveSpeed);
 		}
 		else {
 			Destroy(this.gameObject);
