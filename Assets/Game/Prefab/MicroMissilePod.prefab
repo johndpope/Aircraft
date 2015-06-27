@@ -1011,7 +1011,7 @@ MonoBehaviour:
   microMissile: {fileID: 11456396, guid: e85984b4f6afb433c9044cac180fda21, type: 2}
   damage: 500
   launchDuration: 5
-  launchDelay: .200000003
+  launchDelay: .100000001
   microMissileSpeed: 80
   minMissileSpeed: 50
   maxMissileSpeed: 200
@@ -3238,6 +3238,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: maxMissileSpeed
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: launchDelay
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
