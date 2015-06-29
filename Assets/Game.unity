@@ -6666,7 +6666,7 @@ MonoBehaviour:
   weatherCommandPromptUseable: 1
   timeScrollBarUseable: 1
   startTime: .400000006
-  startTimeNumber: 1
+  startTimeNumber: 3
   moonPhaseChangeTime: 0
   weatherForecaster: 4
   SnowAmount: 0
