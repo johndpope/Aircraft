@@ -75,6 +75,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _Occlusion
+        second:
+          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _MetallicGlossMap
         second:
           m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
@@ -83,13 +90,6 @@ Material:
       data:
         first:
           name: _SpecGlossMap
-        second:
-          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Occlusion
         second:
           m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
           m_Scale: {x: 1, y: 1}
@@ -106,7 +106,7 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: 1.00806427
+        second: -.00277895667
       data:
         first:
           name: _AlphaTestRef
