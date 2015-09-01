@@ -78,7 +78,7 @@ public class WeaponObject : MonoBehaviour {
 	public void PlayVoice() {
 		if (voiceClips!=null && voiceClips.Length>=1) {
 			int _idx = (int)(Random.value * voiceClips.Length);
-			AudioManager.Instance().PlaySFX(voiceClips[_idx]);
+			AudioManager.Instance().PlayVoice(voiceClips[_idx]);
 
 		}
 

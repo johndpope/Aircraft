@@ -146,7 +146,7 @@ Material:
       data:
         first:
           name: _SunColor
-        second: {r: .886532068, g: .670144022, b: .284484148, a: 1}
+        second: {r: .677772403, g: .512339234, b: .217494115, a: 1}
       data:
         first:
           name: _ReflectColor
@@ -162,7 +162,7 @@ Material:
       data:
         first:
           name: _SunDir
-        second: {r: -0, g: -.0523545705, b: .998628914, a: 0}
+        second: {r: -0, g: -.162615642, b: -.986689508, a: 0}
       data:
         first:
           name: _GridSizes

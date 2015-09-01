@@ -2,7 +2,6 @@
 using System.Collections;
 using UnityStandardAssets.ImageEffects;
 using UnityStandardAssets.Vehicles.Aeroplane;
-using UnityStandardAssets.ImageEffects;
 
 public class WarpController : WeaponObject {
 

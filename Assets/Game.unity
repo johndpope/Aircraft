@@ -9660,6 +9660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxVol: 2
+  enableVoice: 1
 --- !u!1 &470683199
 GameObject:
   m_ObjectHideFlags: 0
@@ -32603,6 +32604,7 @@ GameObject:
   - 114: {fileID: 1633353490}
   - 114: {fileID: 1633353496}
   - 114: {fileID: 1633353500}
+  - 114: {fileID: 1633353501}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -32832,6 +32834,21 @@ MonoBehaviour:
   radius: {x: 1, y: 1}
   angle: 0
   center: {x: .5, y: .5}
+--- !u!114 &1633353501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1633353488}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33a2f5002727435fa934bc1b12b5bed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 78ce1414cc1104924bf90b4f022c38bd, type: 3}
+  blurStrength: 3
+  blurWidth: 1
+  blurCenter: {x: .5, y: .5}
 --- !u!1 &1637302892
 GameObject:
   m_ObjectHideFlags: 0
@@ -32948,7 +32965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1647110442
 Transform:
   m_ObjectHideFlags: 0
@@ -43879,6 +43896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fpsCam: {fileID: 2001277540}
   tpsCam: {fileID: 1633353499}
+  maxRadialBlurStrength: 3
 --- !u!1 &1969502745
 GameObject:
   m_ObjectHideFlags: 0

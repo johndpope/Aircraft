@@ -128,6 +128,8 @@ public class TransAMController : WeaponObject {
 			foreach (ParticleSystem gnParticleRing in gnParticleRings) {
 				gnParticleRing.Emit(1);
 			}
+
+			CameraController.Instance().AddRadialBlur();
 		}
 	}
 
