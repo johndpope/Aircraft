@@ -9,8 +9,9 @@ public class CameraController : MonoBehaviour {
 		return instance;
 	}
 
-	public Camera fpsCam;
-	public Camera tpsCam;
+	public GameObject fpsCam;
+	public GameObject tpsCam;
+	public GameObject curCam;
 
 	// Use this for initialization
 	void Start () {
@@ -21,10 +22,12 @@ public class CameraController : MonoBehaviour {
 		if (tpsCam.gameObject.activeInHierarchy){
 			tpsCam.gameObject.SetActive(false);
 			fpsCam.gameObject.SetActive(true);
+			curCam=fpsCam;
 		}
 		else{
 			tpsCam.gameObject.SetActive(true);
 			fpsCam.gameObject.SetActive(false);
+			curCam=tpsCam;
 		}
 	}
 	

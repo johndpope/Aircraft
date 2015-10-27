@@ -134,7 +134,7 @@ public class TransAMController : WeaponObject {
 	public IEnumerator DoLerpFov(){
 		float toggle=0;
 		float interval=0.5f;
-		Camera cam=CameraController.Instance().tpsCam;
+		Camera cam=CameraController.Instance().tpsCam.GetComponent<Camera>();
 
 		float orginFov=cam.fieldOfView;
 		float targetFov=80;

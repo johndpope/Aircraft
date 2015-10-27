@@ -1,4 +1,4 @@
-using System;
+ using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -40,6 +40,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 			if (GameInputController.Instance().GetDevice()!=null ){
 				roll=GameInputController.Instance().GetAxis("Analog0");
 				pitch=-GameInputController.Instance().GetAxis("Analog1");
+//				Debug.Log("roll: "+roll);
 
 			}
 			else{

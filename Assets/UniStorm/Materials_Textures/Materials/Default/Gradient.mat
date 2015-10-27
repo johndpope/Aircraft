@@ -31,6 +31,13 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _FrontTex
         second:
           m_Texture: {fileID: 0}
@@ -113,22 +120,11 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Cube
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
         second: .078125
-      data:
-        first:
-          name: _Blend
-        second: .5
       data:
         first:
           name: _PeakLevel
@@ -149,6 +145,10 @@ Material:
         first:
           name: _Slope
         second: 1
+      data:
+        first:
+          name: _Blend
+        second: .5
     m_Colors:
       data:
         first:
@@ -160,24 +160,20 @@ Material:
         second: {r: .5, g: .5, b: .5, a: 1}
       data:
         first:
-          name: _Tint
-        second: {r: .5, g: .5, b: .5, a: .5}
-      data:
-        first:
           name: _ReflectColor
         second: {r: 1, g: 1, b: 1, a: .5}
       data:
         first:
           name: _PeakColor
-        second: {r: .70330888, g: .70330888, b: .70330888, a: .899006844}
+        second: {r: .671549618, g: .671129704, b: .670348644, a: 1}
       data:
         first:
           name: _Level3Color
-        second: {r: .82738626, g: .517140746, b: .266829044, a: .899006844}
+        second: {r: .819590926, g: .512579978, b: .264234066, a: 1}
       data:
         first:
           name: _Level2Color
-        second: {r: .82738626, g: .517140746, b: .266829044, a: .899006844}
+        second: {r: .819590926, g: .512579978, b: .264234066, a: 1}
       data:
         first:
           name: _Level1Color
@@ -185,4 +181,8 @@ Material:
       data:
         first:
           name: _WaterColor
-        second: {r: .82738626, g: .517140746, b: .266829044, a: .899006844}
+        second: {r: .819590926, g: .512579978, b: .264234066, a: 1}
+      data:
+        first:
+          name: _Tint
+        second: {r: .5, g: .5, b: .5, a: .5}

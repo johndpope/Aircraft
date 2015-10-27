@@ -24,6 +24,7 @@ public class GameInputController : MonoBehaviour {
 	public float GetAxis(string _axis){
 		InputDevice inputDevice = GetDevice();
 		if (inputDevice!=null){
+//			Debug.Log(_axis+": "+inputDevice.GetControlByName(_axis).Value);
 			return inputDevice.GetControlByName(_axis).Value;
 		}
 		else{
@@ -61,10 +62,29 @@ public class GameInputController : MonoBehaviour {
 		}
 	}
 
+	void Start(){
+		InputDevice inputDevice = InputManager.ActiveDevice;
+		for (int i=0;i<inputDevice.Controls.Length;i++){
+			if (inputDevice.Controls[i]!=null ){
+				Debug.Log(inputDevice.Controls[i].ToString());
+				Debug.Log(inputDevice.GetControlByName(inputDevice.Controls[i].Handle.ToString()) );
+			}
+		}
+	}
+
 	void Update(){
 		InputDevice inputDevice = InputManager.ActiveDevice;
 		if (inputDevice.AnyButton.IsNotNull){
 			Debug.Log(inputDevice.AnyButton.ToString());
 		}
+
+//		Debug.Log("analog 0: "+Input.GetAxis("Analog0") );
+//		Debug.Log("analog 1: "+Input.GetAxis("Analog1") );
+//		Debug.Log("analog 2: "+Input.GetAxis("Analog2") );
+//		for (int i=0;i<inputDevice.Controls.Length;i++){
+//			if (inputDevice.Controls[i]!=null && inputDevice.Controls[i].Value!=0){
+//				Debug.Log(inputDevice.Controls[i].ToString());
+//			}
+//		}
 	}
 }

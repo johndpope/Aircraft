@@ -81,11 +81,11 @@ Material:
       data:
         first:
           name: _FloatMin
-        second: .999527931
+        second: .998607397
       data:
         first:
           name: _FloatMax
-        second: 1.7651701
+        second: 2.00115871
     m_Colors:
       data:
         first:
@@ -97,12 +97,12 @@ Material:
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _Emission
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _EmisColor
         second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _Emission
+        second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _TintColor

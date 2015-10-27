@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -11,6 +11,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
+  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -51,15 +52,15 @@ Material:
       data:
         first:
           name: _FogAmountMin
-        second: 0
+        second: -49973.7266
       data:
         first:
           name: _FogAmountMax
-        second: 32554.4355
+        second: 50000
       data:
         first:
           name: _FloatMin
-        second: .999531507
+        second: .999474525
       data:
         first:
           name: _FloatMax
@@ -75,12 +76,12 @@ Material:
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _Emission
-        second: {r: .373134315, g: .373134315, b: .373134315, a: 1}
-      data:
-        first:
           name: _EmisColor
         second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _Emission
+        second: {r: .373134315, g: .373134315, b: .373134315, a: 1}
       data:
         first:
           name: _TintColor
@@ -92,7 +93,7 @@ Material:
       data:
         first:
           name: _MoonColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .000262737274, g: .000262737274, b: .000262737274, a: .000232857346}
       data:
         first:
           name: _FogColor2
