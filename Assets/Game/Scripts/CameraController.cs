@@ -56,7 +56,8 @@ public class CameraController : MonoBehaviour {
 
 		Vector2 blurCenter = new Vector2(0.5f,0.5f);
 		if (customBlur) {
-			Vector3 screenPos = tpsCam.WorldToScreenPoint(blurPos);
+
+			Vector3 screenPos = tpsCam.GetComponent<Camera>().WorldToScreenPoint(blurPos);
 			blurCenter = new Vector2(screenPos.x/Screen.currentResolution.width,screenPos.y/Screen.currentResolution.height);
 			Debug.Log(screenPos);
 			Debug.Log(blurCenter);
