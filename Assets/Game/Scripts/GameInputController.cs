@@ -88,13 +88,13 @@ public class GameInputController : MonoBehaviour {
 
 	void Update(){
 		InputDevice inputDevice = InputManager.ActiveDevice;
-		if (inputDevice.AnyButton.IsNotNull){
+		if (inputDevice.AnyButton.WasPressed){
 			Debug.Log(inputDevice.AnyButton.ToString());
 		}
 
-		Debug.Log("analog 0: "+Input.GetAxis("Analog0") );
-		Debug.Log("analog 1: "+Input.GetAxis("Analog1") );
-		Debug.Log("analog 2: "+Input.GetAxis("Analog2") );
+//		Debug.Log("analog 0: "+Input.GetAxis("Analog0") );
+//		Debug.Log("analog 1: "+Input.GetAxis("Analog1") );
+//		Debug.Log("analog 2: "+Input.GetAxis("Analog2") );
 		for (int i=0;i<inputDevice.Controls.Length;i++){
 			if (inputDevice.Controls[i]!=null && inputDevice.Controls[i].Value!=0){
 				Debug.Log(inputDevice.Controls[i].ToString());
