@@ -106,7 +106,7 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: 1.00261462
+        second: -.013339065
       data:
         first:
           name: _AlphaTestRef

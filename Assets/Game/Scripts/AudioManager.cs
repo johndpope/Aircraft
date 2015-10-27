@@ -12,6 +12,7 @@ public class AudioManager : MonoBehaviour {
 
 	private AudioSource audioSource;
 	public float sfxVol=1f;
+	public bool enableVoice	= true;
 
 	void Awake(){
 		audioSource=GetComponent<AudioSource>();
@@ -19,5 +20,12 @@ public class AudioManager : MonoBehaviour {
 
 	public void PlaySFX(AudioClip _audioClip){
 		audioSource.PlayOneShot(_audioClip,sfxVol);
+	}
+
+	public void PlayVoice(AudioClip _audioClip){
+		if (enableVoice) {
+			audioSource.PlayOneShot(_audioClip,sfxVol);
+		}
+
 	}
 }
