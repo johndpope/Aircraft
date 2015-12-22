@@ -31,13 +31,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Cube
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _FrontTex
         second:
           m_Texture: {fileID: 0}
@@ -120,11 +113,22 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: .078125
+        second: 0.078125
+      data:
+        first:
+          name: _Blend
+        second: 0.5
       data:
         first:
           name: _PeakLevel
@@ -145,10 +149,6 @@ Material:
         first:
           name: _Slope
         second: 1
-      data:
-        first:
-          name: _Blend
-        second: .5
     m_Colors:
       data:
         first:
@@ -157,32 +157,32 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: .5, g: .5, b: .5, a: 1}
-      data:
-        first:
-          name: _ReflectColor
-        second: {r: 1, g: 1, b: 1, a: .5}
-      data:
-        first:
-          name: _PeakColor
-        second: {r: .626687586, g: .626015484, b: .624765515, a: 1}
-      data:
-        first:
-          name: _Level3Color
-        second: {r: .763071537, g: .478928447, b: .248646185, a: 1}
-      data:
-        first:
-          name: _Level2Color
-        second: {r: .763071537, g: .478928447, b: .248646185, a: 1}
-      data:
-        first:
-          name: _Level1Color
-        second: {r: .783582091, g: .783582091, b: .783582091, a: 1}
-      data:
-        first:
-          name: _WaterColor
-        second: {r: .763071537, g: .478928447, b: .248646185, a: 1}
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
       data:
         first:
           name: _Tint
-        second: {r: .5, g: .5, b: .5, a: .5}
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: 1, g: 1, b: 1, a: 0.5}
+      data:
+        first:
+          name: _PeakColor
+        second: {r: 0.71842045, g: 0.718264, b: 0.7179729, a: 1}
+      data:
+        first:
+          name: _Level3Color
+        second: {r: 0.87864107, g: 0.54773825, b: 0.2805199, a: 1}
+      data:
+        first:
+          name: _Level2Color
+        second: {r: 0.87864107, g: 0.54773825, b: 0.2805199, a: 1}
+      data:
+        first:
+          name: _Level1Color
+        second: {r: 0.7835821, g: 0.7835821, b: 0.7835821, a: 1}
+      data:
+        first:
+          name: _WaterColor
+        second: {r: 0.87864107, g: 0.54773825, b: 0.2805199, a: 1}

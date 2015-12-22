@@ -117,7 +117,7 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .078125
+        second: 0.078125
       data:
         first:
           name: _SunPow
@@ -133,7 +133,7 @@ Material:
       data:
         first:
           name: _EmmisionStr
-        second: .0500000007
+        second: 0.05
     m_Colors:
       data:
         first:
@@ -145,24 +145,24 @@ Material:
         second: {r: 1, g: 0, b: 0, a: 1}
       data:
         first:
-          name: _SeaColor
-        second: {r: .00278902473, g: 0, b: .0808823705, a: 1}
+          name: _SunColor
+        second: {r: 0.9819989, g: 0.7511183, b: 0.33884668, a: 1}
       data:
         first:
           name: _ReflectColor
-        second: {r: 1, g: 1, b: 1, a: .5}
-      data:
-        first:
-          name: _SunColor
-        second: {r: .971956193, g: .772290707, b: .413098544, a: 1}
+        second: {r: 1, g: 1, b: 1, a: 0.5}
       data:
         first:
           name: _SampleScale
-        second: {r: .5, g: 1, b: 0, a: 0}
+        second: {r: 0.5, g: 1, b: 0, a: 0}
+      data:
+        first:
+          name: _SeaColor
+        second: {r: 0.0027890247, g: 0, b: 0.08088237, a: 1}
       data:
         first:
           name: _SunDir
-        second: {r: -0, g: .0935583115, b: .995614231, a: 0}
+        second: {r: -1.1641532e-10, g: 0.021965563, b: 0.9997592, a: 0}
       data:
         first:
           name: _GridSizes
