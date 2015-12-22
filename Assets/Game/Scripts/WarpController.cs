@@ -122,7 +122,7 @@ public class WarpController : WeaponObject {
 
 
 		float interval=0.5f;
-		Camera cam=CameraController.Instance().tpsCam;
+		Camera cam=CameraController.Instance().tpsCam.GetComponent<Camera>();
 
 		WarpSpark spark = (WarpSpark)Instantiate(warpSpark,transform.position,transform.rotation);
 		spark.transform.SetParent(transform);
