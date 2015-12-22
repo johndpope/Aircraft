@@ -41,7 +41,7 @@ public class GameInputController : MonoBehaviour {
 //			Debug.Log(_axis+": "+inputDevice.GetControlByName(_axis).Value);
 			return inputDevice.GetControlByName(_axis).Value;
 		}
-		else{
+		else {
 			return 0;
 		}
 	}

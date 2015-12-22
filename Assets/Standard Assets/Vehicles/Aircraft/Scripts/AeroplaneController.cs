@@ -42,6 +42,8 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         private Rigidbody m_Rigidbody;
 	    WheelCollider[] m_WheelColliders;
 
+		public bool isJoystick = false;
+
 
         private void Start()
         {
@@ -159,7 +161,13 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             }
 
             // Adjust throttle based on throttle input (or immobilized state)
-            Throttle = Mathf.Clamp01(Throttle + ThrottleInput*Time.deltaTime*m_ThrottleChangeSpeed);
+			if (isJoystick){
+				Throttle = Mathf.Clamp01(ThrottleInput);
+			}
+			else {
+				Throttle = Mathf.Clamp01(Throttle + ThrottleInput*Time.deltaTime*m_ThrottleChangeSpeed);
+			}
+            
 
             // current engine power is just:
             EnginePower = Throttle*m_MaxEnginePower;

@@ -75,13 +75,6 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Occlusion
-        second:
-          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
           name: _MetallicGlossMap
         second:
           m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
@@ -90,6 +83,13 @@ Material:
       data:
         first:
           name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Occlusion
         second:
           m_Texture: {fileID: 2800000, guid: d378ff11c42566d46b0b11cd91eca3a3, type: 3}
           m_Scale: {x: 1, y: 1}
@@ -106,15 +106,15 @@ Material:
       data:
         first:
           name: _Cutoff
-        second: 1.02276576
+        second: -0.019281724
       data:
         first:
           name: _AlphaTestRef
-        second: .5
+        second: 0.5
       data:
         first:
           name: _Parallax
-        second: .0199999996
+        second: 0.02
       data:
         first:
           name: _ZWrite
@@ -141,6 +141,10 @@ Material:
         second: 0
       data:
         first:
+          name: _EmissionScaleUI
+        second: 0
+      data:
+        first:
           name: _Mode
         second: 1
       data:
@@ -150,10 +154,6 @@ Material:
       data:
         first:
           name: _Lightmapping
-        second: 0
-      data:
-        first:
-          name: _EmissionScaleUI
         second: 0
       data:
         first:
@@ -183,7 +183,7 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: .0980392173, g: .0980392173, b: .0980392173, a: 1}
+        second: {r: 0.09803922, g: 0.09803922, b: 0.09803922, a: 1}
       data:
         first:
           name: _EmissionColorUI
@@ -195,4 +195,4 @@ Material:
       data:
         first:
           name: _SpecularColor
-        second: {r: .235294119, g: .235294119, b: .235294119, a: 1}
+        second: {r: 0.23529412, g: 0.23529412, b: 0.23529412, a: 1}

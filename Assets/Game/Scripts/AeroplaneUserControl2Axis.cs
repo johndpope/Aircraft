@@ -1,4 +1,4 @@
- using System;
+using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -20,6 +20,10 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
         {
             // Set up the reference to the aeroplane controller.
             m_Aeroplane = GetComponent<AeroplaneController>();
+			if (GameInputController.Instance().GetDevice()!=null ){
+				m_Aeroplane.isJoystick = true;
+
+			}
         }
 
 
@@ -31,7 +35,8 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 			float roll=0;
 			float pitch=0; 
 			bool airBrakes=false; 
-			float throttle=0;
+			float throttle=-1;
+			float yaw=0;
 //			roll= CrossPlatformInputManager.GetAxis("Horizontal");
 //			pitch= CrossPlatformInputManager.GetAxis("Vertical");
 //			airBrakes = CrossPlatformInputManager.GetButton("Fire1");
@@ -40,8 +45,7 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 			if (GameInputController.Instance().GetDevice()!=null ){
 				roll=GameInputController.Instance().GetAxis("Analog0");
 				pitch=-GameInputController.Instance().GetAxis("Analog1");
-//				Debug.Log("roll: "+roll);
-
+				yaw=GameInputController.Instance().GetAxis("Analog2");
 			}
 			else{
 
@@ -78,8 +82,9 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
 //			Debug.Log(GameInputController.Instance().GetDevice());
 			if (GameInputController.Instance().GetDevice()!=null ){
 				airBrakes=false;
-				throttle=-GameInputController.Instance().GetAxis("Analog2");
+				throttle=-GameInputController.Instance().GetAxis("Analog3");
 
+				PlayerController.Instance().powBar.fillAmount=(throttle+1)*0.5f;
 			}
 			else{
 				airBrakes=Input.GetKey(KeyCode.LeftShift);
@@ -92,7 +97,13 @@ namespace UnityStandardAssets.Vehicles.Aeroplane
             AdjustInputForMobileControls(ref roll, ref pitch, ref throttle);
 #endif
             // Pass the input to the aeroplane
-            m_Aeroplane.Move(roll, pitch, 0, throttle, airBrakes);
+			if (GameInputController.Instance().GetDevice()!=null ){
+				m_Aeroplane.Move(roll, pitch, yaw, (throttle+1)*0.5f, airBrakes);
+			}
+			else {
+				m_Aeroplane.Move(roll, pitch, yaw, throttle, airBrakes);
+			}
+            
         }
 
 

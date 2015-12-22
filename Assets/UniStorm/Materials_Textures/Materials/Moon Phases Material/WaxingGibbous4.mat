@@ -31,16 +31,16 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _StarMask
+          name: _Mask
         second:
-          m_Texture: {fileID: 2800000, guid: 231127b5739d2674fa360d59d21c25c5, type: 3}
+          m_Texture: {fileID: 2800000, guid: 461c506976fce174786d8f0162f686d8, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _Mask
+          name: _StarMask
         second:
-          m_Texture: {fileID: 2800000, guid: 461c506976fce174786d8f0162f686d8, type: 3}
+          m_Texture: {fileID: 2800000, guid: 231127b5739d2674fa360d59d21c25c5, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -73,7 +73,7 @@ Material:
       data:
         first:
           name: _FogAmountMin
-        second: -49993.9453
+        second: -31138.312
       data:
         first:
           name: _FogAmountMax
@@ -81,11 +81,11 @@ Material:
       data:
         first:
           name: _FloatMin
-        second: .999878883
+        second: 0.62276626
       data:
         first:
           name: _FloatMax
-        second: 1.7651701
+        second: 2.000455
     m_Colors:
       data:
         first:
@@ -97,27 +97,27 @@ Material:
         second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
+          name: _EmisColor
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
           name: _Emission
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _TintColor
-        second: {r: .227941155, g: .227941155, b: .227941155, a: .243137255}
-      data:
-        first:
-          name: _MoonColor
-        second: {r: 6.05583191e-05, g: 6.05583191e-05, b: 6.05583191e-05, a: 5.36712942e-05}
-      data:
-        first:
-          name: _FogColor2
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _EmisColor
-        second: {r: 1, g: 1, b: 1, a: 0}
+        second: {r: 0.22794116, g: 0.22794116, b: 0.22794116, a: 0.24313726}
       data:
         first:
           name: _AlphaColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _MoonColor
+        second: {r: 0.18861687, g: 0.18861687, b: 0.18861687, a: 0.16716632}
+      data:
+        first:
+          name: _FogColor2
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:

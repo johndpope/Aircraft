@@ -60,7 +60,7 @@ public class Aircraft : Entity {
 		if (boom!=null){
 			GameObject boomObj=Instantiate(boom);
 			boomObj.transform.position=transform.position;
-			CameraController.Instance().AddRadialBlur(true,transform.position);
+			CameraController.Instance().AddRadialBlur(3,1,true,transform.position);
 		}
 
 //		body.isKinematic=true;
