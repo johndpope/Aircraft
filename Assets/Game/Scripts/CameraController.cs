@@ -21,7 +21,7 @@ public class CameraController : MonoBehaviour {
 	private float radialBlurTime = 1;
 
 	private IEnumerator blurCoroutine;
-
+	public GameObject curCam;
 	// Use this for initialization
 	void Start () {
 	
@@ -31,11 +31,15 @@ public class CameraController : MonoBehaviour {
 		if (tpsCam.gameObject.activeInHierarchy){
 			tpsCam.gameObject.SetActive(false);
 			fpsCam.gameObject.SetActive(true);
+			curCam=fpsCam.gameObject;
 		}
 		else{
 			tpsCam.gameObject.SetActive(true);
 			fpsCam.gameObject.SetActive(false);
+			curCam=tpsCam.gameObject;
 		}
+
+		
 	}
 	
 	// Update is called once per frame
