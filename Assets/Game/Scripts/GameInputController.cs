@@ -26,7 +26,7 @@ public class GameInputController : MonoBehaviour {
 		if (inputDevice!=null){
 			return inputDevice.GetControlByName(_axis).Value;
 		}
-		else{
+		else {
 			return 0;
 		}
 	}

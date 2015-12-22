@@ -86,13 +86,13 @@ public class InvisibleController : WeaponObject {
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyInvisibleMaterial;
 				bodyInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
+				//singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 			
 			foreach (MeshRenderer singleMeshRenderer in aircraftWings.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
+				//singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 
 
@@ -126,13 +126,13 @@ public class InvisibleController : WeaponObject {
 			foreach (MeshRenderer singleMeshRenderer in aircraftBody.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=bodyInvisibleMaterial;
 				bodyInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
+				//singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 			
 			foreach (MeshRenderer singleMeshRenderer in aircraftWings.GetComponentsInChildren<MeshRenderer>()) {
 				singleMeshRenderer.material=wingsInvisibleMaterial;
 				wingsInvisibleMaterial.SetFloat("_Cutoff", (toggle/interval) );
-				singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
+				//singleMeshRenderer.material.SetTextureOffset("Albedo",new Vector2(randomOffset+toggle,toggle));
 			}
 
 

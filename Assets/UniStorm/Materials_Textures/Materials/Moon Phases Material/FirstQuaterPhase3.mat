@@ -96,7 +96,7 @@ Material:
       data:
         first:
           name: _Scale
-        second: 17.2900009
+        second: 17.29
       data:
         first:
           name: _Cutoff
@@ -108,7 +108,7 @@ Material:
       data:
         first:
           name: _InvFade
-        second: .626250029
+        second: 0.62625
       data:
         first:
           name: _FogAmountMin
@@ -116,15 +116,15 @@ Material:
       data:
         first:
           name: _FogAmountMax
-        second: 100003.008
+        second: 100010.73
       data:
         first:
           name: _FloatMin
-        second: .999365091
+        second: 0.9993651
       data:
         first:
           name: _FloatMax
-        second: 2.00006008
+        second: 2.0002146
       data:
         first:
           name: _Blend
@@ -132,7 +132,7 @@ Material:
       data:
         first:
           name: _SliceAmount
-        second: .160714284
+        second: 0.16071428
       data:
         first:
           name: _LightScale
@@ -144,7 +144,7 @@ Material:
       data:
         first:
           name: _Size
-        second: .100000001
+        second: 0.1
       data:
         first:
           name: _Falloff
@@ -164,11 +164,11 @@ Material:
       data:
         first:
           name: _Power
-        second: -3.29999995
+        second: -3.3
       data:
         first:
           name: _Distortion
-        second: 6.51999998
+        second: 6.52
       data:
         first:
           name: _FogAmount
@@ -185,15 +185,15 @@ Material:
       data:
         first:
           name: _EmisColor
-        second: {r: .470149279, g: .470149279, b: .470149279, a: 0}
+        second: {r: 0.47014928, g: 0.47014928, b: 0.47014928, a: 0}
       data:
         first:
           name: _Emission
-        second: {r: .404411793, g: .404411793, b: .404411793, a: 1}
+        second: {r: 0.4044118, g: 0.4044118, b: 0.4044118, a: 1}
       data:
         first:
           name: _TintColor
-        second: {r: .286764681, g: .286764681, b: .286764681, a: 1}
+        second: {r: 0.28676468, g: 0.28676468, b: 0.28676468, a: 1}
       data:
         first:
           name: _AlphaColor
@@ -217,11 +217,11 @@ Material:
       data:
         first:
           name: _AtmosNear
-        second: {r: .168627501, g: .737254918, b: 1, a: 1}
+        second: {r: 0.1686275, g: 0.7372549, b: 1, a: 1}
       data:
         first:
           name: _AtmosFar
-        second: {r: .455780804, g: .518703878, b: .98507458, a: 1}
+        second: {r: 0.4557808, g: 0.5187039, b: 0.9850746, a: 1}
       data:
         first:
           name: _AtmoColor
@@ -229,7 +229,7 @@ Material:
       data:
         first:
           name: _SubColor
-        second: {r: 1, g: .125, b: .125, a: 1}
+        second: {r: 1, g: 0.125, b: 0.125, a: 1}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6

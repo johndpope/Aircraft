@@ -21,16 +21,16 @@ Material:
         second:
           m_Texture: {fileID: 2800000, guid: dfc05a28d87d8fb4fafef982a6d04e3a, type: 3}
           m_Scale: {x: 8, y: 9}
-          m_Offset: {x: .057632044, y: .0199999996}
+          m_Offset: {x: 0.057632044, y: 0.02}
     m_Floats:
       data:
         first:
           name: _Shininess
-        second: .699999988
+        second: 0.7
       data:
         first:
           name: _InvFade
-        second: 1.15999997
+        second: 1.16
     m_Colors:
       data:
         first:
@@ -47,7 +47,7 @@ Material:
       data:
         first:
           name: _TintColor
-        second: {r: .311319351, g: .311319351, b: .311319351, a: .311319351}
+        second: {r: 0.37723374, g: 0.37723374, b: 0.37723374, a: 0.37723374}
 --- !u!1002 &2100001
 EditorExtensionImpl:
   serializedVersion: 6

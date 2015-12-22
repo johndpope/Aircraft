@@ -73,7 +73,7 @@ Material:
       data:
         first:
           name: _FogAmountMin
-        second: -34434.0312
+        second: -31138.312
       data:
         first:
           name: _FogAmountMax
@@ -81,11 +81,11 @@ Material:
       data:
         first:
           name: _FloatMin
-        second: .688680649
+        second: 0.62276626
       data:
         first:
           name: _FloatMax
-        second: 1.7651701
+        second: 2.000455
     m_Colors:
       data:
         first:
@@ -106,7 +106,7 @@ Material:
       data:
         first:
           name: _TintColor
-        second: {r: .227941155, g: .227941155, b: .227941155, a: .243137255}
+        second: {r: 0.22794116, g: 0.22794116, b: 0.22794116, a: 0.24313726}
       data:
         first:
           name: _AlphaColor
@@ -114,7 +114,7 @@ Material:
       data:
         first:
           name: _MoonColor
-        second: {r: .155659676, g: .155659676, b: .155659676, a: .1379572}
+        second: {r: 0.18861687, g: 0.18861687, b: 0.18861687, a: 0.16716632}
       data:
         first:
           name: _FogColor2

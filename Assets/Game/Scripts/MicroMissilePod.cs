@@ -145,7 +145,7 @@ public class MicroMissilePod : Entity {
 	void Explode () {
 		if (fireBall!=null){
 			Object fireball = Instantiate(fireBall,this.transform.position,Quaternion.identity);
-			CameraController.Instance().AddRadialBlur(true,this.transform.position);
+			CameraController.Instance().AddRadialBlur(3,1,true,this.transform.position);
 		}
 		Destroy(this.gameObject);
 	}

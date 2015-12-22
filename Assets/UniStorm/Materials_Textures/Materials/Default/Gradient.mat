@@ -124,11 +124,11 @@ Material:
       data:
         first:
           name: _Shininess
-        second: .078125
+        second: 0.078125
       data:
         first:
           name: _Blend
-        second: .5
+        second: 0.5
       data:
         first:
           name: _PeakLevel
@@ -157,32 +157,32 @@ Material:
       data:
         first:
           name: _SpecColor
-        second: {r: .5, g: .5, b: .5, a: 1}
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
       data:
         first:
           name: _Tint
-        second: {r: .5, g: .5, b: .5, a: .5}
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
       data:
         first:
           name: _ReflectColor
-        second: {r: 1, g: 1, b: 1, a: .5}
+        second: {r: 1, g: 1, b: 1, a: 0.5}
       data:
         first:
           name: _PeakColor
-        second: {r: .25945273, g: .524275243, b: .634399414, a: .688680649}
+        second: {r: 0.2653335, g: 0.50480956, b: 0.6043936, a: 0.62276626}
       data:
         first:
           name: _Level3Color
-        second: {r: .647577941, g: .409915656, b: .218165338, a: .688680649}
+        second: {r: 0.59122765, g: 0.37631223, b: 0.20291455, a: 0.62276626}
       data:
         first:
           name: _Level2Color
-        second: {r: .647577941, g: .409915656, b: .218165338, a: .688680649}
+        second: {r: 0.59122765, g: 0.37631223, b: 0.20291455, a: 0.62276626}
       data:
         first:
           name: _Level1Color
-        second: {r: .783582091, g: .783582091, b: .783582091, a: 1}
+        second: {r: 0.7835821, g: 0.7835821, b: 0.7835821, a: 1}
       data:
         first:
           name: _WaterColor
-        second: {r: .647577941, g: .409915656, b: .218165338, a: .688680649}
+        second: {r: 0.59122765, g: 0.37631223, b: 0.20291455, a: 0.62276626}

@@ -43,6 +43,8 @@ public class BeamMagnumController : WeaponObject {
 			bullet.GetComponent<Rigidbody>().velocity=bulletTransform.forward* speed;
 			
 			this.GetComponent<AudioSource>().Play();
+
+			CameraController.Instance().AddRadialBlur(0.6f,0.1f,false,default(Vector3));
 			
 		}
 		if (launchSpark!=null){
@@ -138,6 +140,7 @@ public class BeamMagnumController : WeaponObject {
 			launchSpark.PlayAnimation();
 		}
 		hyperMegaCanon.Launch();
+		CameraController.Instance().AddRadialBlur(1f,0.1f,false,default(Vector3));
 
 	}
 }
